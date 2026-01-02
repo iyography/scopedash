@@ -1,0 +1,28 @@
+# General
+.DS_Store
+.tmp
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.env
+credentials.json
+token.json
+*.pyc
+
+# Node.js (Next.js)
+node_modules/
+.next/
+build/
+dist/
+.npm
+*.log
+.pnp
+.pnp.*
+coverage/
+.vercel/
+*.tsbuildinfo
+next-env.d.ts
