@@ -1,10 +1,22 @@
 "use client";
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { DashboardData, Video } from '@/types';
 import { VideoCard } from './VideoCard';
 import { StatsCard } from './StatsCard';
 import { PerformanceBarChart, AccountSharePieChart } from './Charts';
+
+// Global declaration for TikTok script
+declare global {
+    interface Window {
+        tiktokEmbed: {
+            lib?: {
+                render: (element?: HTMLElement[]) => void;
+            };
+            load?: () => void;
+        };
+    }
+}
 
 export default function Dashboard() {
     const [data, setData] = useState<DashboardData | null>(null);
@@ -19,6 +31,94 @@ export default function Dashboard() {
             .finally(() => setLoading(false));
     }, []);
 
+    const profiles = data ? Object.values(data.profiles) : [];
+
+    // Filter logic
+    const displayedVideos = (data && selectedProfile === 'all')
+        ? data.all_videos
+        : (data && data.profiles[selectedProfile]?.videos) || [];
+
+    // Aggregation logic
+    const totalViews = displayedVideos.reduce((acc, v) => acc + v.stats.playCount, 0);
+    const totalLikes = displayedVideos.reduce((acc, v) => acc + v.stats.diggCount, 0);
+    const totalShares = displayedVideos.reduce((acc, v) => acc + v.stats.shareCount, 0);
+    const totalComments = displayedVideos.reduce((acc, v) => acc + v.stats.commentCount, 0);
+
+    let totalFollowers = 0;
+    if (data) {
+        if (selectedProfile === 'all') {
+            totalFollowers = profiles.reduce((acc, p) => acc + p.fans, 0);
+        } else {
+            totalFollowers = data.profiles[selectedProfile]?.fans || 0;
+        }
+    }
+
+
+    // Top 6 Logic
+    let topVideos: Video[] = [];
+    if (data) {
+        if (selectedProfile === 'all') {
+            const topFromEach = profiles.map(p => {
+                if (!p.videos || p.videos.length === 0) return null;
+                return p.videos.sort((a, b) => b.stats.playCount - a.stats.playCount)[0];
+            }).filter(Boolean) as Video[];
+
+            topVideos = [...topFromEach];
+
+            if (topVideos.length < 6) {
+                const usedIds = new Set(topVideos.map(v => v.id));
+                const remainingVideos = data.all_videos
+                    .filter(v => !usedIds.has(v.id))
+                    .sort((a, b) => b.stats.playCount - a.stats.playCount);
+
+                topVideos = [...topVideos, ...remainingVideos.slice(0, 6 - topVideos.length)];
+            }
+            topVideos.sort((a, b) => b.stats.playCount - a.stats.playCount);
+        } else {
+            topVideos = displayedVideos.sort((a, b) => b.stats.playCount - a.stats.playCount).slice(0, 6);
+        }
+    }
+
+    // --- CENTRALIZED EMBED MANAGER ---
+    useEffect(() => {
+        if (!data) return;
+
+        const scriptId = 'tiktok-embed-script';
+        const existingScript = document.getElementById(scriptId);
+
+        const attemptRender = () => {
+            // Try render method first
+            if (window.tiktokEmbed && window.tiktokEmbed.lib && typeof window.tiktokEmbed.lib.render === 'function') {
+                window.tiktokEmbed.lib.render();
+            } else if (window.tiktokEmbed && typeof window.tiktokEmbed.load === 'function') {
+                // Fallback
+                window.tiktokEmbed.load();
+            }
+        };
+
+        const triggerAggressiveRender = () => {
+            console.log("Triggering TikTok Render...");
+            setTimeout(attemptRender, 100);
+            setTimeout(attemptRender, 500);
+            setTimeout(attemptRender, 1200);
+            setTimeout(attemptRender, 2500);
+        };
+
+        if (!existingScript) {
+            const script = document.createElement('script');
+            script.id = scriptId;
+            script.src = 'https://www.tiktok.com/embed.js';
+            script.async = true;
+            script.onload = triggerAggressiveRender;
+            document.body.appendChild(script);
+        } else {
+            // If script exists, force render when profile/videos change
+            triggerAggressiveRender();
+        }
+
+    }, [selectedProfile, data]); // Run whenever profile changes or data loads
+
+
     if (loading) return (
         <div className="min-h-screen flex items-center justify-center text-[#00F0FF] font-['JetBrains_Mono'] tracking-widest uppercase bg-[#0D0F12]">
             <span className="animate-pulse">Initializing System...</span>
@@ -30,51 +130,6 @@ export default function Dashboard() {
             [ERROR] DATA_LINK_SEVERED
         </div>
     );
-
-    const profiles = Object.values(data.profiles);
-
-    // Filter logic
-    const displayedVideos = selectedProfile === 'all'
-        ? data.all_videos
-        : data.profiles[selectedProfile]?.videos || [];
-
-    // Aggregation logic
-    const totalViews = displayedVideos.reduce((acc, v) => acc + v.stats.playCount, 0);
-    const totalLikes = displayedVideos.reduce((acc, v) => acc + v.stats.diggCount, 0);
-    const totalShares = displayedVideos.reduce((acc, v) => acc + v.stats.shareCount, 0);
-    const totalComments = displayedVideos.reduce((acc, v) => acc + v.stats.commentCount, 0);
-
-    let totalFollowers = 0;
-    if (selectedProfile === 'all') {
-        totalFollowers = profiles.reduce((acc, p) => acc + p.fans, 0);
-    } else {
-        totalFollowers = data.profiles[selectedProfile]?.fans || 0;
-    }
-
-
-    // Top 6 Logic
-    let topVideos: Video[] = [];
-    if (selectedProfile === 'all') {
-        const topFromEach = profiles.map(p => {
-            if (!p.videos || p.videos.length === 0) return null;
-            return p.videos.sort((a, b) => b.stats.playCount - a.stats.playCount)[0];
-        }).filter(Boolean) as Video[];
-
-        topVideos = [...topFromEach];
-
-        if (topVideos.length < 6) {
-            const usedIds = new Set(topVideos.map(v => v.id));
-            const remainingVideos = data.all_videos
-                .filter(v => !usedIds.has(v.id))
-                .sort((a, b) => b.stats.playCount - a.stats.playCount);
-
-            topVideos = [...topVideos, ...remainingVideos.slice(0, 6 - topVideos.length)];
-        }
-        topVideos.sort((a, b) => b.stats.playCount - a.stats.playCount);
-    } else {
-        topVideos = displayedVideos.sort((a, b) => b.stats.playCount - a.stats.playCount).slice(0, 6);
-    }
-
 
     return (
         <div className="min-h-screen bg-[#0D0F12] pb-10 overflow-x-hidden flex flex-col items-center">
@@ -126,7 +181,7 @@ export default function Dashboard() {
                 <header className="w-full max-w-[1600px] flex justify-between items-center border-b border-slate-800 pb-2">
                     <div className="flex items-baseline gap-2">
                         <h1 className="text-xl font-black text-white uppercase tracking-tighter leading-none">
-                            DASHBOARD <span className="text-slate-700">v4.4</span>
+                            DASHBOARD <span className="text-slate-700">v4.8</span>
                         </h1>
                     </div>
                     <div className="text-[#00FF9D] font-['JetBrains_Mono'] text-[10px] tracking-wider flex items-center justify-end gap-1">

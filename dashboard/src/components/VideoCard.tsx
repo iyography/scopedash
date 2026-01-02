@@ -1,17 +1,5 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Video } from '@/types';
-
-// Extend Window interface for TikTok global with optional chaining
-declare global {
-    interface Window {
-        tiktokEmbed: {
-            lib?: {
-                render: (element?: HTMLElement[]) => void;
-            };
-            load?: () => void;
-        };
-    }
-}
 
 interface VideoCardProps {
     video: Video;
@@ -26,32 +14,6 @@ export const VideoCard: React.FC<VideoCardProps> = ({ video, rank }) => {
         if (num >= 1000) return (num / 1000).toFixed(1) + 'K';
         return num.toString();
     };
-
-    // Ensure script is loaded and safely try to re-render
-    useEffect(() => {
-        const scriptId = 'tiktok-embed-script';
-        const existingScript = document.getElementById(scriptId);
-
-        const triggerRender = () => {
-            // Small delay to ensure React has fully painted the new blockquotes to DOM
-            setTimeout(() => {
-                if (window.tiktokEmbed && window.tiktokEmbed.lib && typeof window.tiktokEmbed.lib.render === 'function') {
-                    window.tiktokEmbed.lib.render();
-                }
-            }, 50);
-        };
-
-        if (!existingScript) {
-            const script = document.createElement('script');
-            script.id = scriptId;
-            script.src = 'https://www.tiktok.com/embed.js';
-            script.async = true;
-            script.onload = triggerRender;
-            document.body.appendChild(script);
-        } else {
-            triggerRender();
-        }
-    }, [video.id]);
 
     const embedUrl = `https://www.tiktok.com/@${video.author}/video/${video.id}`;
 
