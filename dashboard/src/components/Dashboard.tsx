@@ -206,7 +206,8 @@ export default function Dashboard() {
                     </div>
 
                     {/* Container for Flexible Grid */}
-                    <div className="w-full flex flex-wrap justify-center gap-4">
+                    {/* KEY ADDED: Forces full remount on profile change to ensure clean TikTok embed loading */}
+                    <div key={selectedProfile} className="w-full flex flex-wrap justify-center gap-4">
                         {topVideos.map((video, index) => (
                             <div key={video.id} className="relative flex-grow-0 flex-shrink-0" style={{ width: '330px' }}>
                                 <VideoCard video={video} rank={index + 1} />

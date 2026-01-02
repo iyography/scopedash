@@ -41,10 +41,10 @@ export const StatsCard: React.FC<StatProps> = ({ label, value, color = 'blue', i
     } else if (size === 'horizontal') {
         // SCALED DOWN HORIZONTAL
         // Previous was text-[10rem], scaling down to more reasonable size
-        valueSizeClass = 'text-5xl md:text-6xl lg:text-7xl tracking-tighter loading-none';
+        valueSizeClass = 'text-6xl md:text-7xl lg:text-8xl tracking-tighter loading-none';
         labelSizeClass = 'text-xs md:text-sm tracking-[0.2em] text-center opacity-70 mb-0';
         containerClass = 'flex flex-col justify-center items-center h-full w-full';
-        heightClass = 'h-[120px] py-1'; // Reduced height significantly
+        heightClass = 'h-[140px] py-1'; // Increased height to fit larger text
     }
 
     return (
