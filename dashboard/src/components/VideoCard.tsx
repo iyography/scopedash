@@ -21,21 +21,22 @@ export const VideoCard: React.FC<VideoCardProps> = ({ video, rank }) => {
         <div className="bg-[#0D0F12] border-2 border-slate-800 hover:border-[#FCEE0A] transition-colors duration-300 rounded-xl flex flex-col w-full overflow-hidden shadow-2xl h-full">
 
             {/* HEADER: RANK (Left) & VIEWS (Right) - BIGGER & BOLDER */}
-            <div className="bg-[#0A0C10] px-4 py-3 flex justify-between items-center border-b-2 border-slate-800">
+            {/* HEADER: RANK (Left) & VIEWS (Right) - BIGGER & BOLDER */}
+            <div className="bg-[#0A0C10] px-4 py-4 flex justify-between items-center border-b-2 border-slate-800">
 
                 {/* Rank Badge - Increased Size */}
-                <div className="flex items-center justify-center w-10 h-10 bg-[#00F0FF]/10 border-2 border-[#00F0FF] rounded-lg shadow-[0_0_10px_rgba(0,240,255,0.3)]">
-                    <span className="text-[#00F0FF] font-['Rajdhani'] font-black text-2xl leading-none pt-0.5">#{rank}</span>
+                <div className="flex items-center justify-center w-16 h-16 bg-[#00F0FF]/10 border-2 border-[#00F0FF] rounded-lg shadow-[0_0_10px_rgba(0,240,255,0.3)]">
+                    <span className="text-[#00F0FF] font-['Rajdhani'] font-black text-5xl leading-none pt-1">#{rank}</span>
                 </div>
 
                 {/* Views - Increased Size with Icon */}
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-3">
                     {/* Eyeball Icon */}
-                    <svg className="w-6 h-6 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg className="w-10 h-10 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                     </svg>
-                    <span className="text-white font-['Rajdhani'] font-black text-3xl leading-none tracking-tight shadow-black drop-shadow-sm">{formatNumber(video.stats.playCount)}</span>
+                    <span className="text-white font-['Rajdhani'] font-black text-6xl leading-none tracking-tight shadow-black drop-shadow-sm">{formatNumber(video.stats.playCount)}</span>
                 </div>
 
             </div>
