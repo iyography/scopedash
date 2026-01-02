@@ -39,12 +39,12 @@ export const StatsCard: React.FC<StatProps> = ({ label, value, color = 'blue', i
         containerClass = 'flex flex-col justify-center items-center h-full w-full';
         heightClass = 'min-h-[400px]';
     } else if (size === 'horizontal') {
-        // SCALED DOWN HORIZONTAL
-        // Previous was text-[10rem], scaling down to more reasonable size
-        valueSizeClass = 'text-6xl md:text-7xl lg:text-8xl tracking-tighter loading-none';
-        labelSizeClass = 'text-xs md:text-sm tracking-[0.2em] text-center opacity-70 mb-0';
+        // EXTREME HORIZONTAL
+        // Explicitly huge size as requested
+        valueSizeClass = 'text-[8rem] leading-[0.8] tracking-tighter';
+        labelSizeClass = 'text-sm md:text-base tracking-[0.3em] text-center opacity-80 mb-2 font-black';
         containerClass = 'flex flex-col justify-center items-center h-full w-full';
-        heightClass = 'h-[140px] py-1'; // Increased height to fit larger text
+        heightClass = 'h-[180px] py-2'; // Increased height to accommodate the massive numbers
     }
 
     return (

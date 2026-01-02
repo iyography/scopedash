@@ -1,10 +1,9 @@
 "use client";
 
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState, useRef, useMemo } from 'react';
 import { DashboardData, Video } from '@/types';
 import { VideoCard } from './VideoCard';
 import { StatsCard } from './StatsCard';
-import { PerformanceBarChart, AccountSharePieChart } from './Charts';
 
 // Global declaration for TikTok script
 declare global {
@@ -33,15 +32,56 @@ export default function Dashboard() {
 
     const profiles = data ? Object.values(data.profiles) : [];
 
-    // Filter logic
+    // --- PRE-CALCULATE ALL VIDEO LISTS ---
+    // This allows us to render ALL grids at once and just toggle visibility
+    const videoLists = useMemo(() => {
+        if (!data) return {};
+
+        const lists: Record<string, Video[]> = {};
+
+        // 1. "ALL" List (Top 6 from everyone)
+        const allTopVideos: Video[] = [];
+        const topFromEach = profiles.map(p => {
+            if (!p.videos || p.videos.length === 0) return null;
+            return p.videos.sort((a, b) => b.stats.playCount - a.stats.playCount)[0];
+        }).filter(Boolean) as Video[];
+
+        allTopVideos.push(...topFromEach);
+
+        if (allTopVideos.length < 6) {
+            const usedIds = new Set(allTopVideos.map(v => v.id));
+            const remainingVideos = data.all_videos
+                .filter(v => !usedIds.has(v.id))
+                .sort((a, b) => b.stats.playCount - a.stats.playCount);
+
+            allTopVideos.push(...remainingVideos.slice(0, 6 - allTopVideos.length));
+        }
+        allTopVideos.sort((a, b) => b.stats.playCount - a.stats.playCount);
+        lists['all'] = allTopVideos.slice(0, 6);
+
+        // 2. Individual Profile Lists
+        profiles.forEach(p => {
+            if (p.videos) {
+                lists[p.name] = [...p.videos]
+                    .sort((a, b) => b.stats.playCount - a.stats.playCount)
+                    .slice(0, 6);
+            } else {
+                lists[p.name] = [];
+            }
+        });
+
+        return lists;
+    }, [data]);
+
+
+    // --- FILTERED STATS ---
+    // Stats still update dynamically based on selection
     const displayedVideos = (data && selectedProfile === 'all')
         ? data.all_videos
         : (data && data.profiles[selectedProfile]?.videos) || [];
 
-    // Aggregation logic
     const totalViews = displayedVideos.reduce((acc, v) => acc + v.stats.playCount, 0);
     const totalLikes = displayedVideos.reduce((acc, v) => acc + v.stats.diggCount, 0);
-    const totalShares = displayedVideos.reduce((acc, v) => acc + v.stats.shareCount, 0);
     const totalComments = displayedVideos.reduce((acc, v) => acc + v.stats.commentCount, 0);
 
     let totalFollowers = 0;
@@ -54,32 +94,7 @@ export default function Dashboard() {
     }
 
 
-    // Top 6 Logic
-    let topVideos: Video[] = [];
-    if (data) {
-        if (selectedProfile === 'all') {
-            const topFromEach = profiles.map(p => {
-                if (!p.videos || p.videos.length === 0) return null;
-                return p.videos.sort((a, b) => b.stats.playCount - a.stats.playCount)[0];
-            }).filter(Boolean) as Video[];
-
-            topVideos = [...topFromEach];
-
-            if (topVideos.length < 6) {
-                const usedIds = new Set(topVideos.map(v => v.id));
-                const remainingVideos = data.all_videos
-                    .filter(v => !usedIds.has(v.id))
-                    .sort((a, b) => b.stats.playCount - a.stats.playCount);
-
-                topVideos = [...topVideos, ...remainingVideos.slice(0, 6 - topVideos.length)];
-            }
-            topVideos.sort((a, b) => b.stats.playCount - a.stats.playCount);
-        } else {
-            topVideos = displayedVideos.sort((a, b) => b.stats.playCount - a.stats.playCount).slice(0, 6);
-        }
-    }
-
-    // --- CENTRALIZED EMBED MANAGER ---
+    // --- SINGLE GLOBAL EMBED LOADER ---
     useEffect(() => {
         if (!data) return;
 
@@ -87,21 +102,19 @@ export default function Dashboard() {
         const existingScript = document.getElementById(scriptId);
 
         const attemptRender = () => {
-            // Try render method first
+            console.log("Triggering TikTok Render...");
             if (window.tiktokEmbed && window.tiktokEmbed.lib && typeof window.tiktokEmbed.lib.render === 'function') {
                 window.tiktokEmbed.lib.render();
             } else if (window.tiktokEmbed && typeof window.tiktokEmbed.load === 'function') {
-                // Fallback
                 window.tiktokEmbed.load();
             }
         };
 
         const triggerAggressiveRender = () => {
-            console.log("Triggering TikTok Render...");
             setTimeout(attemptRender, 100);
             setTimeout(attemptRender, 500);
-            setTimeout(attemptRender, 1200);
-            setTimeout(attemptRender, 2500);
+            setTimeout(attemptRender, 1500);
+            setTimeout(attemptRender, 3000);
         };
 
         if (!existingScript) {
@@ -112,11 +125,12 @@ export default function Dashboard() {
             script.onload = triggerAggressiveRender;
             document.body.appendChild(script);
         } else {
-            // If script exists, force render when profile/videos change
+            // Even if script exists, we trigger render when profile changes
+            // ensuring any newly visible (display: block) elements are caught
             triggerAggressiveRender();
         }
 
-    }, [selectedProfile, data]); // Run whenever profile changes or data loads
+    }, [data, selectedProfile]); // Re-trigger on profile change to catch visibility changes
 
 
     if (loading) return (
@@ -181,7 +195,7 @@ export default function Dashboard() {
                 <header className="w-full max-w-[1600px] flex justify-between items-center border-b border-slate-800 pb-2">
                     <div className="flex items-baseline gap-2">
                         <h1 className="text-xl font-black text-white uppercase tracking-tighter leading-none">
-                            DASHBOARD <span className="text-slate-700">v4.8</span>
+                            DASHBOARD <span className="text-slate-700">v4.10</span>
                         </h1>
                     </div>
                     <div className="text-[#00FF9D] font-['JetBrains_Mono'] text-[10px] tracking-wider flex items-center justify-end gap-1">
@@ -197,7 +211,7 @@ export default function Dashboard() {
                     <StatsCard label="TOTAL COMMENTS" value={(totalComments >= 1000 ? (totalComments / 1000).toFixed(1) + 'K' : totalComments.toLocaleString())} color="yellow" size="horizontal" />
                 </div>
 
-                {/* Top Assets - FLEX WRAP GRID */}
+                {/* Top Assets - PERSISTENT GRIDS */}
                 <div className="w-full border-t border-slate-800 pt-6 flex flex-col items-center">
                     <div className="flex justify-center items-center mb-6">
                         <h3 className="font-['Rajdhani'] font-bold text-3xl text-white uppercase flex items-center gap-3 tracking-wide text-shadow-glow">
@@ -205,15 +219,36 @@ export default function Dashboard() {
                         </h3>
                     </div>
 
-                    {/* Container for Flexible Grid */}
-                    {/* KEY ADDED: Forces full remount on profile change to ensure clean TikTok embed loading */}
-                    <div key={selectedProfile} className="w-full flex flex-wrap justify-center gap-4">
-                        {topVideos.map((video, index) => (
-                            <div key={video.id} className="relative flex-grow-0 flex-shrink-0" style={{ width: '330px' }}>
+                    {/* 
+                        PERSISTENT RENDERING STRATEGY:
+                        We render a container for 'all' and for every profile.
+                        We hide/show them using CSS (className hidden/flex).
+                        This keeps TIkTok embeds ALIVE in the DOM so they don't reload.
+                    */}
+
+                    {/* 1. ALL GRID */}
+                    <div className={`w-full flex-wrap justify-center gap-4 ${selectedProfile === 'all' ? 'flex' : 'hidden'}`}>
+                        {videoLists['all']?.map((video, index) => (
+                            <div key={`all-${video.id}`} className="relative flex-grow-0 flex-shrink-0" style={{ width: '330px' }}>
                                 <VideoCard video={video} rank={index + 1} />
                             </div>
                         ))}
                     </div>
+
+                    {/* 2. PROFILE GRIDS */}
+                    {profiles.map(p => (
+                        <div
+                            key={`grid-${p.name}`}
+                            className={`w-full flex-wrap justify-center gap-4 ${selectedProfile === p.name ? 'flex' : 'hidden'}`}
+                        >
+                            {videoLists[p.name]?.map((video, index) => (
+                                <div key={`${p.name}-${video.id}`} className="relative flex-grow-0 flex-shrink-0" style={{ width: '330px' }}>
+                                    <VideoCard video={video} rank={index + 1} />
+                                </div>
+                            ))}
+                        </div>
+                    ))}
+
                 </div>
             </main>
         </div>
