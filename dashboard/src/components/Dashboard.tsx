@@ -18,20 +18,51 @@ declare global {
 }
 
 export default function Dashboard() {
-    const [data, setData] = useState<DashboardData | null>(null);
     const [loading, setLoading] = useState(true);
+    const [refreshing, setRefreshing] = useState(false);
+    const [refreshKey, setRefreshKey] = useState(0);
     const [selectedProfile, setSelectedProfile] = useState<string | 'all'>('all');
 
+    const loadData = async () => {
+        setLoading(true);
+        try {
+            const res = await fetch('/data.json');
+            const json = await res.json();
+            setData(json);
+        } catch (error) {
+            console.error(error);
+        } finally {
+            setLoading(false);
+        }
+    };
+
     useEffect(() => {
-        fetch('/data.json')
-            .then(res => res.json())
-            .then(setData)
-            .catch(console.error)
-            .finally(() => setLoading(false));
+        loadData();
     }, []);
+
+    const handleRefresh = async () => {
+        if (refreshing) return;
+        setRefreshing(true);
+        try {
+            const res = await fetch('/api/refresh', { method: 'POST' });
+            if (res.ok) {
+                // Wait for file system to sync
+                await new Promise(resolve => setTimeout(resolve, 1000));
+                await loadData();
+                setRefreshKey(prev => prev + 1); // Force remount of embeds
+            } else {
+                console.error("Refresh failed");
+            }
+        } catch (e) {
+            console.error(e);
+        } finally {
+            setRefreshing(false);
+        }
+    };
 
     const profiles = data ? Object.values(data.profiles) : [];
 
+    // ... (videoLists useMemo remains the same)
     // --- PRE-CALCULATE ALL VIDEO LISTS ---
     // This allows us to render ALL grids at once and just toggle visibility
     const videoLists = useMemo(() => {
@@ -71,7 +102,7 @@ export default function Dashboard() {
         });
 
         return lists;
-    }, [data]);
+    }, [data, profiles]);
 
 
     // --- FILTERED STATS ---
@@ -243,59 +274,65 @@ export default function Dashboard() {
                             SCOPEDASH
                         </h1>
                     </div>
-                    <div className="text-[#00FF9D] font-['JetBrains_Mono'] text-[10px] tracking-wider flex items-center justify-end gap-1">
-                        ONLINE <span className="w-1.5 h-1.5 bg-[#00FF9D] rounded-full animate-pulse"></span>
+                    <div className="flex items-center gap-4">
+                        {/* REFRESH BUTTON */}
+                        <button
+                            onClick={handleRefresh}
+                            disabled={refreshing}
+                            className={`text-slate-500 hover:text-[#00F0FF] transition-all duration-300`}
+                            title="Refresh Data"
+                        >
+                            <svg
+                                className={refreshing ? 'animate-spin text-[#00F0FF]' : ''}
+                                xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
+                            >
+                                <path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.3" />
+                            </svg>
+                        </button>
+
+                        <div className="text-[#00FF9D] font-['JetBrains_Mono'] text-[10px] tracking-wider flex items-center justify-end gap-1">
+                            ONLINE <span className="w-1.5 h-1.5 bg-[#00FF9D] rounded-full animate-pulse"></span>
+                        </div>
                     </div>
                 </header>
 
-                {/* MAIN STATS - 4 ACROSS HORIZONTAL */}
-                <div className="w-full max-w-[1600px] grid grid-cols-4 gap-4">
-                    <StatsCard label="TOTAL FOLLOWERS" value={(totalFollowers >= 1000000 ? (totalFollowers / 1000000).toFixed(1) + 'M' : totalFollowers.toLocaleString())} color="slate" size="horizontal" />
-                    <StatsCard label="TOTAL VIEWS" value={(totalViews >= 1000000 ? (totalViews / 1000000).toFixed(1) + 'M' : totalViews.toLocaleString())} color="blue" size="horizontal" />
-                    <StatsCard label="TOTAL LIKES" value={(totalLikes >= 1000000 ? (totalLikes / 1000000).toFixed(1) + 'M' : totalLikes.toLocaleString())} color="green" size="horizontal" />
-                    <StatsCard label="TOTAL COMMENTS" value={(totalComments >= 1000 ? (totalComments / 1000).toFixed(1) + 'K' : totalComments.toLocaleString())} color="yellow" size="horizontal" />
+                {/* Stats Cards */}
+                <div className="w-full max-w-[1600px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <StatsCard label="Total Views" value={totalViews} />
+                    <StatsCard label="Total Likes" value={totalLikes} />
+                    <StatsCard label="Total Comments" value={totalComments} />
+                    <StatsCard label="Total Followers" value={totalFollowers} />
                 </div>
 
                 {/* Top Assets - PERSISTENT GRIDS */}
-                <div className="w-full border-t border-slate-800 pt-6 flex flex-col items-center">
-                    <div className="flex justify-center items-center mb-6">
-                        <h3 className="font-['Rajdhani'] font-bold text-3xl text-white uppercase flex items-center gap-3 tracking-wide text-shadow-glow">
-                            <span className="text-[#FCEE0A] drop-shadow-[0_0_10px_rgba(252,238,10,0.8)]">★</span> Top Embeds
-                        </h3>
-                    </div>
-
-                    {/* 
-                        PERSISTENT RENDERING STRATEGY:
-                        We render a container for 'all' and for every profile.
-                        We hide/show them using CSS (className hidden/flex).
-                        This keeps TIkTok embeds ALIVE in the DOM so they don't reload.
-                    */}
-
-                    {/* 1. ALL GRID */}
-                    <div className={`w-full flex-wrap justify-center gap-4 ${selectedProfile === 'all' ? 'flex' : 'hidden'}`}>
-                        {videoLists['all']?.map((video, index) => (
-                            <div key={`all-${video.id}`} className="relative flex-grow-0 flex-shrink-0" style={{ width: '330px' }}>
-                                <VideoCard video={video} rank={index + 1} />
-                            </div>
-                        ))}
-                    </div>
-
-                    {/* 2. PROFILE GRIDS */}
-                    {profiles.map(p => (
-                        <div
-                            key={`grid-${p.name}`}
-                            className={`w-full flex-wrap justify-center gap-4 ${selectedProfile === p.name ? 'flex' : 'hidden'}`}
-                        >
-                            {videoLists[p.name]?.map((video, index) => (
-                                <div key={`${p.name}-${video.id}`} className="relative flex-grow-0 flex-shrink-0" style={{ width: '330px' }}>
+                <div className="w-full max-w-[1600px] relative" key={refreshKey}>
+                    {/* "ALL" Grid */}
+                    <div className={selectedProfile === 'all' ? 'block' : 'hidden'}>
+                        <div className="grid grid-cols-[repeat(auto-fit,minmax(330px,1fr))] justify-center gap-6">
+                            {videoLists['all']?.map((video, index) => (
+                                <div key={`${video.id}-all`} style={{ width: '330px' }}>
                                     <VideoCard video={video} rank={index + 1} />
                                 </div>
                             ))}
                         </div>
-                    ))}
+                    </div>
 
+                    {/* Individual Profile Grids */}
+                    {profiles.map(p => (
+                        <div key={p.name} className={selectedProfile === p.name ? 'block' : 'hidden'}>
+                            <div className="grid grid-cols-[repeat(auto-fit,minmax(330px,1fr))] justify-center gap-6">
+                                {videoLists[p.name]?.map((video, index) => (
+                                    <div key={`${video.id}-${p.name}`} style={{ width: '330px' }}>
+                                        <VideoCard video={video} rank={index + 1} />
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    ))}
                 </div>
+
             </main>
         </div>
     );
+
 }
