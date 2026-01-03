@@ -298,7 +298,7 @@ export default function Dashboard() {
                 </header>
 
                 {/* Stats Cards */}
-                <div className="w-full max-w-[1600px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div className="w-full max-w-[1600px] grid grid-cols-4 gap-4">
                     <StatsCard label="TOTAL FOLLOWERS" value={(totalFollowers >= 1000000 ? (totalFollowers / 1000000).toFixed(1) + 'M' : totalFollowers >= 1000 ? (totalFollowers / 1000).toFixed(1) + 'K' : totalFollowers.toLocaleString())} color="slate" size="horizontal" />
                     <StatsCard label="TOTAL VIEWS" value={(totalViews >= 1000000 ? (totalViews / 1000000).toFixed(1) + 'M' : totalViews >= 1000 ? (totalViews / 1000).toFixed(1) + 'K' : totalViews.toLocaleString())} color="blue" size="horizontal" />
                     <StatsCard label="TOTAL LIKES" value={(totalLikes >= 1000000 ? (totalLikes / 1000000).toFixed(1) + 'M' : totalLikes >= 1000 ? (totalLikes / 1000).toFixed(1) + 'K' : totalLikes.toLocaleString())} color="green" size="horizontal" />
