@@ -14,42 +14,74 @@ if not APIFY_API_KEY:
 # Initialize the ApifyClient with your API token
 client = ApifyClient(APIFY_API_KEY)
 
-# Actor Input Config
-ACTOR_INPUT = {
+import concurrent.futures
+
+# Base Actor Input Config (Profiles will be injected dynamically)
+BASE_ACTOR_INPUT = {
     "excludePinnedPosts": False,
     "oldestPostDateUnified": "60 days",
     "profileScrapeSections": ["videos"],
     "profileSorting": "latest",
-    "profiles": [
-        "matchupvault",
-        "wrestler.trivia",
-        "callthemoment",
-        "street.slamdown",
-        "ragequitguy"
-    ],
     "proxyCountryCode": "None",
     "resultsPerPage": 100,
     "scrapeRelatedVideos": False,
-    "shouldDownloadAvatars": True, # Changed to True to get avatars for UI
-    "shouldDownloadCovers": True, # Changed to True for video thumbnails
+    "shouldDownloadAvatars": True,
+    "shouldDownloadCovers": True,
     "shouldDownloadMusicCovers": False,
     "shouldDownloadSlideshowImages": False,
     "shouldDownloadSubtitles": False,
     "shouldDownloadVideos": False
 }
 
+PROFILES = [
+    "matchupvault",
+    "wrestler.trivia",
+    "callthemoment",
+    "street.slamdown",
+    "ragequitguy"
+]
+
+def fetch_single_profile(profile):
+    """Scrapes a single profile using the Apify actor."""
+    print(f"[START] Scraping profile: {profile}")
+    
+    # Create profile-specific input
+    run_input = BASE_ACTOR_INPUT.copy()
+    run_input["profiles"] = [profile]
+    
+    try:
+        # Run the Actor and wait for it to finish
+        run = client.actor("GdWCkxBtKWOsKjdch").call(run_input=run_input)
+        
+        # Fetch results from the dataset
+        dataset_items = client.dataset(run["defaultDatasetId"]).list_items().items
+        print(f"[DONE] Finished {profile}: Found {len(dataset_items)} items")
+        return dataset_items
+    except Exception as e:
+        print(f"[ERROR] Failed to scrape {profile}: {e}")
+        return []
+
 def fetch_data():
-    print(f"Starting Apify run for profiles: {ACTOR_INPUT['profiles']}")
+    print(f"Starting parallel Apify runs for {len(PROFILES)} profiles...")
     
-    # Run the Actor and wait for it to finish
-    run = client.actor("GdWCkxBtKWOsKjdch").call(run_input=ACTOR_INPUT)
+    all_items = []
     
-    print(f"Run finished. Dataset ID: {run['defaultDatasetId']}")
-    
-    # Fetch results from the dataset
-    dataset_items = client.dataset(run["defaultDatasetId"]).list_items().items
-    
-    return dataset_items
+    # Run in parallel using ThreadPoolExecutor
+    # We use max_workers=len(PROFILES) to ensure full parallelism
+    with concurrent.futures.ThreadPoolExecutor(max_workers=len(PROFILES)) as executor:
+        # Submit all jobs
+        future_to_profile = {executor.submit(fetch_single_profile, p): p for p in PROFILES}
+        
+        # Process results as they complete
+        for future in concurrent.futures.as_completed(future_to_profile):
+            profile = future_to_profile[future]
+            try:
+                items = future.result()
+                all_items.extend(items)
+            except Exception as exc:
+                print(f"{profile} generated an exception: {exc}")
+                
+    return all_items
 
 def transform_data(items):
     print("Transforming data...")
@@ -57,7 +89,7 @@ def transform_data(items):
     processed_data = {
         "metadata": {
             "last_updated": datetime.now().isoformat(),
-            "profile_count": len(ACTOR_INPUT["profiles"])
+            "profile_count": len(PROFILES)
         },
         "profiles": {},
         "all_videos": []

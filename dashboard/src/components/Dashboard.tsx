@@ -72,10 +72,12 @@ export default function Dashboard() {
         const lists: Record<string, Video[]> = {};
 
         // 1. "ALL" List (Top 6 from everyone)
+        // CRITICAL FIX: Make sure we don't mutate the original profile videos
         const allTopVideos: Video[] = [];
         const topFromEach = profiles.map(p => {
             if (!p.videos || p.videos.length === 0) return null;
-            return p.videos.sort((a, b) => b.stats.playCount - a.stats.playCount)[0];
+            // Create a copy before sorting!
+            return [...p.videos].sort((a, b) => b.stats.playCount - a.stats.playCount)[0];
         }).filter(Boolean) as Video[];
 
         allTopVideos.push(...topFromEach);
@@ -88,12 +90,15 @@ export default function Dashboard() {
 
             allTopVideos.push(...remainingVideos.slice(0, 6 - allTopVideos.length));
         }
+
+        // Final sort to ensure rank #1 is actually highest views
         allTopVideos.sort((a, b) => b.stats.playCount - a.stats.playCount);
         lists['all'] = allTopVideos.slice(0, 6);
 
         // 2. Individual Profile Lists
         profiles.forEach(p => {
             if (p.videos) {
+                // strict safe sort
                 lists[p.name] = [...p.videos]
                     .sort((a, b) => b.stats.playCount - a.stats.playCount)
                     .slice(0, 6);
@@ -162,7 +167,7 @@ export default function Dashboard() {
             triggerAggressiveRender();
         }
 
-    }, [data, selectedProfile]); // Re-trigger on profile change to catch visibility changes
+    }, [data, selectedProfile, refreshKey]); // Re-trigger on profile change OR refresh to catch visibility changes
 
 
     if (loading) return (
@@ -179,6 +184,18 @@ export default function Dashboard() {
 
     return (
         <div className="min-h-screen bg-[#0D0F12] pb-10 overflow-x-hidden flex flex-col items-center">
+            {/* REFRESH OVERLAY */}
+            {refreshing && (
+                <div className="fixed inset-0 z-[100] bg-black/80 backdrop-blur-sm flex items-center justify-center transition-all duration-300">
+                    <div className="flex flex-col items-center gap-6">
+                        <div className="w-20 h-20 border-4 border-t-[#00F0FF] border-r-[#00FF9D] border-b-[#FCEE0A] border-l-[#FF0055] rounded-full animate-spin"></div>
+                        <div className="text-white font-['JetBrains_Mono'] text-2xl tracking-[0.2em] animate-pulse">
+                            UPDATING INTELLIGENCE...
+                        </div>
+                    </div>
+                </div>
+            )}
+
             {/* Sticky Top Navigation */}
             <nav className="sticky top-0 z-50 bg-[#0D0F12]/95 backdrop-blur-xl border-b border-slate-800 shadow-xl py-2 w-full flex justify-center">
                 <div className="w-full max-w-[1400px] px-4 flex justify-center">
@@ -297,14 +314,17 @@ export default function Dashboard() {
                     </div>
                 </header>
 
-                {/* Stats Cards */}
-                <div className="w-full max-w-[1600px] grid grid-cols-4 gap-4 mb-16">
-                    <StatsCard label="TOTAL FOLLOWERS" value={(totalFollowers >= 1000000 ? (totalFollowers / 1000000).toFixed(1) + 'M' : totalFollowers >= 1000 ? (totalFollowers / 1000).toFixed(1) + 'K' : totalFollowers.toLocaleString())} color="slate" size="horizontal" />
-                    <StatsCard label="TOTAL VIEWS" value={(totalViews >= 1000000 ? (totalViews / 1000000).toFixed(1) + 'M' : totalViews >= 1000 ? (totalViews / 1000).toFixed(1) + 'K' : totalViews.toLocaleString())} color="blue" size="horizontal" />
-                    <StatsCard label="TOTAL LIKES" value={(totalLikes >= 1000000 ? (totalLikes / 1000000).toFixed(1) + 'M' : totalLikes >= 1000 ? (totalLikes / 1000).toFixed(1) + 'K' : totalLikes.toLocaleString())} color="green" size="horizontal" />
-                    <StatsCard label="TOTAL COMMENTS" value={(totalComments >= 1000000 ? (totalComments / 1000000).toFixed(1) + 'M' : totalComments >= 1000 ? (totalComments / 1000).toFixed(1) + 'K' : totalComments.toLocaleString())} color="yellow" size="horizontal" />
+                {/* Stats Cards Wrapper for Spacing */}
+                <div className="w-full max-w-[1600px] pb-16">
+                    <div className="grid grid-cols-4 gap-4">
+                        <StatsCard label="TOTAL FOLLOWERS" value={(totalFollowers >= 1000000 ? (totalFollowers / 1000000).toFixed(1) + 'M' : totalFollowers >= 1000 ? (totalFollowers / 1000).toFixed(1) + 'K' : totalFollowers.toLocaleString())} color="slate" size="horizontal" />
+                        <StatsCard label="TOTAL VIEWS" value={(totalViews >= 1000000 ? (totalViews / 1000000).toFixed(1) + 'M' : totalViews >= 1000 ? (totalViews / 1000).toFixed(1) + 'K' : totalViews.toLocaleString())} color="blue" size="horizontal" />
+                        <StatsCard label="TOTAL LIKES" value={(totalLikes >= 1000000 ? (totalLikes / 1000000).toFixed(1) + 'M' : totalLikes >= 1000 ? (totalLikes / 1000).toFixed(1) + 'K' : totalLikes.toLocaleString())} color="green" size="horizontal" />
+                        <StatsCard label="TOTAL COMMENTS" value={(totalComments >= 1000000 ? (totalComments / 1000000).toFixed(1) + 'M' : totalComments >= 1000 ? (totalComments / 1000).toFixed(1) + 'K' : totalComments.toLocaleString())} color="yellow" size="horizontal" />
+                    </div>
                 </div>
 
+                {/* Top Assets - PERSISTENT GRIDS */}
                 {/* Top Assets - PERSISTENT GRIDS */}
                 <div className="w-full max-w-[1600px] relative" key={refreshKey}>
                     {/* "ALL" Grid */}

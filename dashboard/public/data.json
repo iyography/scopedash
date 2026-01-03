@@ -1,341 +1,13 @@
 {
   "metadata": {
-    "last_updated": "2026-01-02T17:08:32.759162",
+    "last_updated": "2026-01-02T18:08:26.003903",
     "profile_count": 5
   },
   "profiles": {
-    "callthemoment": {
-      "name": "callthemoment",
-      "nickname": "callthemoment",
-      "avatar": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/avatar-callthemom-7575359298278491191.jpg",
-      "signature": "What if everything had WWE commentary? 🎤\nOrdinary moments. Legendary calls.\nSound on for full experience 🔊",
-      "fans": 1,
-      "following": 11,
-      "heart": 3,
-      "video": 4,
-      "videos": [
-        {
-          "id": "7589435114535308574",
-          "desc": "Stacking cups",
-          "createTime": 1767053081,
-          "createTimeISO": "2025-12-30T00:04:41.000Z",
-          "stats": {
-            "diggCount": 2,
-            "shareCount": 0,
-            "commentCount": 0,
-            "playCount": 118,
-            "collectCount": 0
-          },
-          "videoUrl": "https://www.tiktok.com/@callthemoment/video/7589435114535308574",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-callthemom-20251230000441-7589435114535308574.jpg",
-          "author": "callthemoment"
-        },
-        {
-          "id": "7586071577754750221",
-          "desc": "Tying my shoes…",
-          "createTime": 1766269968,
-          "createTimeISO": "2025-12-20T22:32:48.000Z",
-          "stats": {
-            "diggCount": 0,
-            "shareCount": 0,
-            "commentCount": 0,
-            "playCount": 86,
-            "collectCount": 0
-          },
-          "videoUrl": "https://www.tiktok.com/@callthemoment/video/7586071577754750221",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-callthemom-20251220223248-7586071577754750221.jpg",
-          "author": "callthemoment"
-        },
-        {
-          "id": "7585423252105809183",
-          "desc": "Sorting loose change by size",
-          "createTime": 1766118987,
-          "createTimeISO": "2025-12-19T04:36:27.000Z",
-          "stats": {
-            "diggCount": 0,
-            "shareCount": 0,
-            "commentCount": 0,
-            "playCount": 1,
-            "collectCount": 0
-          },
-          "videoUrl": "https://www.tiktok.com/@callthemoment/video/7585423252105809183",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-callthemom-20251219043627-7585423252105809183.jpg",
-          "author": "callthemoment"
-        },
-        {
-          "id": "7584951085303876894",
-          "desc": "Eating a banana",
-          "createTime": 1766009052,
-          "createTimeISO": "2025-12-17T22:04:12.000Z",
-          "stats": {
-            "diggCount": 1,
-            "shareCount": 0,
-            "commentCount": 1,
-            "playCount": 1,
-            "collectCount": 1
-          },
-          "videoUrl": "https://www.tiktok.com/@callthemoment/video/7584951085303876894",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-callthemom-20251217220412-7584951085303876894.jpg",
-          "author": "callthemoment"
-        }
-      ]
-    },
-    "wrestler.trivia": {
-      "name": "wrestler.trivia",
-      "nickname": "wrestler.trivia",
-      "avatar": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/avatar-wrestlertr-7571889738837345293.jpg",
-      "signature": "If you can't pass our quizzes are you even a wrestling fan? 🏆\nDaily trivia, facts & debates\nBring your A game ♦️",
-      "fans": 31,
-      "following": 18,
-      "heart": 358,
-      "video": 15,
-      "videos": [
-        {
-          "id": "7590893703586270495",
-          "desc": "Who has the most punchable face in the WWW? Who makes your blood boil? Who can you absolutely NOT stand? What WWE superstar do you most want to fight? #wwe #wrestling #fyp #wrestlingtiktok ",
-          "createTime": 1767392697,
-          "createTimeISO": "2026-01-02T22:24:57.000Z",
-          "stats": {
-            "diggCount": 16,
-            "shareCount": 0,
-            "commentCount": 23,
-            "playCount": 882,
-            "collectCount": 0
-          },
-          "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7590893703586270495",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-wrestlertr-20260102222457-7590893703586270495.jpg",
-          "author": "wrestler.trivia"
-        },
-        {
-          "id": "7590411218121149709",
-          "desc": "Can you guess the WWE Superstar? How long did it take you to get it right? #wwe #trivia #wrestling",
-          "createTime": 1767280386,
-          "createTimeISO": "2026-01-01T15:13:06.000Z",
-          "stats": {
-            "diggCount": 8,
-            "shareCount": 0,
-            "commentCount": 1,
-            "playCount": 378,
-            "collectCount": 0
-          },
-          "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7590411218121149709",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-wrestlertr-20260101151306-7590411218121149709.jpg",
-          "author": "wrestler.trivia"
-        },
-        {
-          "id": "7590040372525698317",
-          "desc": "Can you guess the WWE Superstar? How long did it take you to get it right? #wwe #trivia #wrestling",
-          "createTime": 1767194003,
-          "createTimeISO": "2025-12-31T15:13:23.000Z",
-          "stats": {
-            "diggCount": 25,
-            "shareCount": 1,
-            "commentCount": 7,
-            "playCount": 1076,
-            "collectCount": 3
-          },
-          "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7590040372525698317",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-wrestlertr-20251231151323-7590040372525698317.jpg",
-          "author": "wrestler.trivia"
-        },
-        {
-          "id": "7589754979087404318",
-          "desc": "#wwe #wrestling #fyp",
-          "createTime": 1767127548,
-          "createTimeISO": "2025-12-30T20:45:48.000Z",
-          "stats": {
-            "diggCount": 62,
-            "shareCount": 0,
-            "commentCount": 167,
-            "playCount": 4152,
-            "collectCount": 6
-          },
-          "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7589754979087404318",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-wrestlertr-20251230204548-7589754979087404318.jpg",
-          "author": "wrestler.trivia"
-        },
-        {
-          "id": "7589669176294280461",
-          "desc": "Can you guess the WWE Superstar? How long did it take you to get it right? #wwe #trivia #wrestling",
-          "createTime": 1767107603,
-          "createTimeISO": "2025-12-30T15:13:23.000Z",
-          "stats": {
-            "diggCount": 42,
-            "shareCount": 0,
-            "commentCount": 7,
-            "playCount": 1086,
-            "collectCount": 5
-          },
-          "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7589669176294280461",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-wrestlertr-20251230151323-7589669176294280461.jpg",
-          "author": "wrestler.trivia"
-        },
-        {
-          "id": "7588927079740083469",
-          "desc": "Can you guess the WWE Superstar? How long did it take you to get it right? #wwe #trivia #wrestling",
-          "createTime": 1766934820,
-          "createTimeISO": "2025-12-28T15:13:40.000Z",
-          "stats": {
-            "diggCount": 27,
-            "shareCount": 0,
-            "commentCount": 8,
-            "playCount": 1044,
-            "collectCount": 5
-          },
-          "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7588927079740083469",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-wrestlertr-20251228151340-7588927079740083469.jpg",
-          "author": "wrestler.trivia"
-        },
-        {
-          "id": "7588184887555820814",
-          "desc": "Can you guess the WWE Superstar? How long did it take you to get it right? #wwe #trivia #wrestling",
-          "createTime": 1766762027,
-          "createTimeISO": "2025-12-26T15:13:47.000Z",
-          "stats": {
-            "diggCount": 20,
-            "shareCount": 0,
-            "commentCount": 5,
-            "playCount": 977,
-            "collectCount": 1
-          },
-          "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7588184887555820814",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-wrestlertr-20251226151347-7588184887555820814.jpg",
-          "author": "wrestler.trivia"
-        },
-        {
-          "id": "7587442658717584653",
-          "desc": "Can you guess the WWE Superstar? How long did it take you to get it right? #wwe #trivia #wrestling",
-          "createTime": 1766589200,
-          "createTimeISO": "2025-12-24T15:13:20.000Z",
-          "stats": {
-            "diggCount": 20,
-            "shareCount": 0,
-            "commentCount": 4,
-            "playCount": 913,
-            "collectCount": 1
-          },
-          "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7587442658717584653",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-wrestlertr-20251224151320-7587442658717584653.jpg",
-          "author": "wrestler.trivia"
-        },
-        {
-          "id": "7587071694028721421",
-          "desc": "Can you guess the WWE Superstar? How long did it take you to get it right? #wwe #trivia #wrestling",
-          "createTime": 1766502799,
-          "createTimeISO": "2025-12-23T15:13:19.000Z",
-          "stats": {
-            "diggCount": 19,
-            "shareCount": 1,
-            "commentCount": 1,
-            "playCount": 1125,
-            "collectCount": 0
-          },
-          "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7587071694028721421",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-wrestlertr-20251223151319-7587071694028721421.jpg",
-          "author": "wrestler.trivia"
-        },
-        {
-          "id": "7586730661680139575",
-          "desc": "Can you guess the WWE Superstar? How long did it take you to get it right? #wwe #trivia #wrestling",
-          "createTime": 1766423403,
-          "createTimeISO": "2025-12-22T17:10:03.000Z",
-          "stats": {
-            "diggCount": 9,
-            "shareCount": 0,
-            "commentCount": 1,
-            "playCount": 363,
-            "collectCount": 1
-          },
-          "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7586730661680139575",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-wrestlertr-20251222171003-7586730661680139575.jpg",
-          "author": "wrestler.trivia"
-        },
-        {
-          "id": "7586484467582192951",
-          "desc": "Can you guess the WWE Superstar? How long did it take you to get it right? #wwe #trivia #wrestling",
-          "createTime": 1766366084,
-          "createTimeISO": "2025-12-22T01:14:44.000Z",
-          "stats": {
-            "diggCount": 24,
-            "shareCount": 1,
-            "commentCount": 7,
-            "playCount": 757,
-            "collectCount": 2
-          },
-          "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7586484467582192951",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-wrestlertr-20251222011444-7586484467582192951.jpg",
-          "author": "wrestler.trivia"
-        },
-        {
-          "id": "7585649959312067895",
-          "desc": "Can you guess the WWE Superstar?!\n\nHow long did it take you to get it right?\n#wwe #trivia #wrestling ",
-          "createTime": 1766171788,
-          "createTimeISO": "2025-12-19T19:16:28.000Z",
-          "stats": {
-            "diggCount": 20,
-            "shareCount": 0,
-            "commentCount": 7,
-            "playCount": 584,
-            "collectCount": 1
-          },
-          "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7585649959312067895",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-wrestlertr-20251219191628-7585649959312067895.jpg",
-          "author": "wrestler.trivia"
-        },
-        {
-          "id": "7585587428560243982",
-          "desc": "Can you guess the WWE Superstar? How long did it take you to get it right? #wwe #trivia #wrestling",
-          "createTime": 1766157217,
-          "createTimeISO": "2025-12-19T15:13:37.000Z",
-          "stats": {
-            "diggCount": 24,
-            "shareCount": 0,
-            "commentCount": 2,
-            "playCount": 595,
-            "collectCount": 0
-          },
-          "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7585587428560243982",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-wrestlertr-20251219151337-7585587428560243982.jpg",
-          "author": "wrestler.trivia"
-        },
-        {
-          "id": "7585380853048495373",
-          "desc": "How much do you know about legendary WWE Superstar Kurt Angle?\n\nHow many did you get right?\n#wwe #trivia #wrestling #wrestlemania #wrestlingtiktok ",
-          "createTime": 1766109130,
-          "createTimeISO": "2025-12-19T01:52:10.000Z",
-          "stats": {
-            "diggCount": 16,
-            "shareCount": 0,
-            "commentCount": 2,
-            "playCount": 535,
-            "collectCount": 0
-          },
-          "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7585380853048495373",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-wrestlertr-20251219015210-7585380853048495373.jpg",
-          "author": "wrestler.trivia"
-        },
-        {
-          "id": "7584919085222317343",
-          "desc": "Can you guess the WWE Superstar?\n\nHow long did it take you to get it right?\n#wwe #trivia #wrestling ",
-          "createTime": 1766001603,
-          "createTimeISO": "2025-12-17T20:00:03.000Z",
-          "stats": {
-            "diggCount": 26,
-            "shareCount": 0,
-            "commentCount": 9,
-            "playCount": 1800,
-            "collectCount": 4
-          },
-          "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7584919085222317343",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-wrestlertr-20251217200003-7584919085222317343.jpg",
-          "author": "wrestler.trivia"
-        }
-      ]
-    },
     "street.slamdown": {
       "name": "street.slamdown",
       "nickname": "STREET SLAMDOWN",
-      "avatar": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/avatar-streetslam-7575322667214046221.jpg",
+      "avatar": "https://api.apify.com/v2/key-value-stores/KcQkmz5edsRVr8grq/records/avatar-streetslam-7575322667214046221.jpg",
       "signature": "No ring. No rules. All chaos 🔥\nBackyard wrestling at its finest\nDon't try this at home.",
       "fans": 7,
       "following": 15,
@@ -355,7 +27,7 @@
             "collectCount": 2
           },
           "videoUrl": "https://www.tiktok.com/@street.slamdown/video/7589753658615614751",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-streetslam-20251230204040-7589753658615614751.jpg",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/KcQkmz5edsRVr8grq/records/cover-streetslam-20251230204040-7589753658615614751.jpg",
           "author": "street.slamdown"
         },
         {
@@ -371,7 +43,7 @@
             "collectCount": 0
           },
           "videoUrl": "https://www.tiktok.com/@street.slamdown/video/7589425211515211038",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-streetslam-20251229232616-7589425211515211038.jpg",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/KcQkmz5edsRVr8grq/records/cover-streetslam-20251229232616-7589425211515211038.jpg",
           "author": "street.slamdown"
         },
         {
@@ -383,11 +55,11 @@
             "diggCount": 68,
             "shareCount": 0,
             "commentCount": 1,
-            "playCount": 919,
+            "playCount": 922,
             "collectCount": 4
           },
           "videoUrl": "https://www.tiktok.com/@street.slamdown/video/7589008899676605727",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-streetslam-20251228203057-7589008899676605727.jpg",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/KcQkmz5edsRVr8grq/records/cover-streetslam-20251228203057-7589008899676605727.jpg",
           "author": "street.slamdown"
         },
         {
@@ -403,7 +75,7 @@
             "collectCount": 4
           },
           "videoUrl": "https://www.tiktok.com/@street.slamdown/video/7588239286395325726",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-streetslam-20251226184423-7588239286395325726.jpg",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/KcQkmz5edsRVr8grq/records/cover-streetslam-20251226184423-7588239286395325726.jpg",
           "author": "street.slamdown"
         },
         {
@@ -419,7 +91,7 @@
             "collectCount": 1
           },
           "videoUrl": "https://www.tiktok.com/@street.slamdown/video/7586830538548317495",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-streetslam-20251222233758-7586830538548317495.jpg",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/KcQkmz5edsRVr8grq/records/cover-streetslam-20251222233758-7586830538548317495.jpg",
           "author": "street.slamdown"
         },
         {
@@ -435,7 +107,7 @@
             "collectCount": 1
           },
           "videoUrl": "https://www.tiktok.com/@street.slamdown/video/7585366877036121375",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-streetslam-20251219005749-7585366877036121375.jpg",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/KcQkmz5edsRVr8grq/records/cover-streetslam-20251219005749-7585366877036121375.jpg",
           "author": "street.slamdown"
         },
         {
@@ -451,7 +123,7 @@
             "collectCount": 4
           },
           "videoUrl": "https://www.tiktok.com/@street.slamdown/video/7584958598011194654",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-streetslam-20251217223322-7584958598011194654.jpg",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/KcQkmz5edsRVr8grq/records/cover-streetslam-20251217223322-7584958598011194654.jpg",
           "author": "street.slamdown"
         }
       ]
@@ -459,7 +131,7 @@
     "ragequitguy": {
       "name": "ragequitguy",
       "nickname": "Rage Quit",
-      "avatar": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/avatar-ragequitgu-7576470850129871927.jpg",
+      "avatar": "https://api.apify.com/v2/key-value-stores/63UDT3Wc5FzgxpGdU/records/avatar-ragequitgu-7576470850129871927.jpg",
       "signature": "Caught on camera rage quitting",
       "fans": 3,
       "following": 6,
@@ -479,7 +151,7 @@
             "collectCount": 0
           },
           "videoUrl": "https://www.tiktok.com/@ragequitguy/video/7590890988692835614",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-ragequitgu-20260102221411-7590890988692835614.jpg",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/63UDT3Wc5FzgxpGdU/records/cover-ragequitgu-20260102221411-7590890988692835614.jpg",
           "author": "ragequitguy"
         },
         {
@@ -491,11 +163,11 @@
             "diggCount": 5,
             "shareCount": 0,
             "commentCount": 2,
-            "playCount": 294,
+            "playCount": 295,
             "collectCount": 1
           },
           "videoUrl": "https://www.tiktok.com/@ragequitguy/video/7590088634762611999",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-ragequitgu-20251231182038-7590088634762611999.jpg",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/63UDT3Wc5FzgxpGdU/records/cover-ragequitgu-20251231182038-7590088634762611999.jpg",
           "author": "ragequitguy"
         },
         {
@@ -511,7 +183,7 @@
             "collectCount": 0
           },
           "videoUrl": "https://www.tiktok.com/@ragequitguy/video/7589825571136245022",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-ragequitgu-20251231011944-7589825571136245022.jpg",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/63UDT3Wc5FzgxpGdU/records/cover-ragequitgu-20251231011944-7589825571136245022.jpg",
           "author": "ragequitguy"
         },
         {
@@ -523,11 +195,11 @@
             "diggCount": 6,
             "shareCount": 0,
             "commentCount": 12,
-            "playCount": 1388,
+            "playCount": 1450,
             "collectCount": 0
           },
           "videoUrl": "https://www.tiktok.com/@ragequitguy/video/7589771192920247582",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-ragequitgu-20251230214843-7589771192920247582.jpg",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/63UDT3Wc5FzgxpGdU/records/cover-ragequitgu-20251230214843-7589771192920247582.jpg",
           "author": "ragequitguy"
         }
       ]
@@ -535,11 +207,11 @@
     "matchupvault": {
       "name": "matchupvault",
       "nickname": "Matchup Vault",
-      "avatar": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/avatar-matchupvau-7575356014707606583.jpg",
+      "avatar": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/avatar-matchupvau-7575356014707606583.jpg",
       "signature": "Hybrid Fusions 🧬\nDaily Matchups 🥊\nCinematic AI Videos 🤖",
       "fans": 121,
       "following": 33,
-      "heart": 1386,
+      "heart": 1389,
       "video": 17,
       "videos": [
         {
@@ -551,11 +223,11 @@
             "diggCount": 2,
             "shareCount": 0,
             "commentCount": 1,
-            "playCount": 416,
+            "playCount": 481,
             "collectCount": 1
           },
           "videoUrl": "https://www.tiktok.com/@matchupvault/video/7590872396438048031",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-matchupvau-20260102210208-7590872396438048031.jpg",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20260102210208-7590872396438048031.jpg",
           "author": "matchupvault"
         },
         {
@@ -565,13 +237,13 @@
           "createTimeISO": "2026-01-02T16:37:29.000Z",
           "stats": {
             "diggCount": 12,
-            "shareCount": 8,
+            "shareCount": 9,
             "commentCount": 12,
-            "playCount": 888,
+            "playCount": 922,
             "collectCount": 2
           },
           "videoUrl": "https://www.tiktok.com/@matchupvault/video/7590804153509776670",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-matchupvau-20260102163729-7590804153509776670.jpg",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20260102163729-7590804153509776670.jpg",
           "author": "matchupvault"
         },
         {
@@ -583,11 +255,11 @@
             "diggCount": 8,
             "shareCount": 5,
             "commentCount": 1,
-            "playCount": 2198,
+            "playCount": 2218,
             "collectCount": 1
           },
           "videoUrl": "https://www.tiktok.com/@matchupvault/video/7590562335966727455",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-matchupvau-20260102005856-7590562335966727455.jpg",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20260102005856-7590562335966727455.jpg",
           "author": "matchupvault"
         },
         {
@@ -599,11 +271,11 @@
             "diggCount": 32,
             "shareCount": 27,
             "commentCount": 5,
-            "playCount": 2945,
+            "playCount": 2952,
             "collectCount": 2
           },
           "videoUrl": "https://www.tiktok.com/@matchupvault/video/7590444916518456606",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-matchupvau-20260101172317-7590444916518456606.jpg",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20260101172317-7590444916518456606.jpg",
           "author": "matchupvault"
         },
         {
@@ -614,12 +286,12 @@
           "stats": {
             "diggCount": 20,
             "shareCount": 5,
-            "commentCount": 7,
-            "playCount": 3323,
+            "commentCount": 8,
+            "playCount": 3408,
             "collectCount": 3
           },
           "videoUrl": "https://www.tiktok.com/@matchupvault/video/7590202975184882975",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-matchupvau-20260101014420-7590202975184882975.jpg",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20260101014420-7590202975184882975.jpg",
           "author": "matchupvault"
         },
         {
@@ -631,11 +303,11 @@
             "diggCount": 14,
             "shareCount": 1,
             "commentCount": 4,
-            "playCount": 1134,
+            "playCount": 1137,
             "collectCount": 1
           },
           "videoUrl": "https://www.tiktok.com/@matchupvault/video/7590154321870736671",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-matchupvau-20251231223526-7590154321870736671.jpg",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20251231223526-7590154321870736671.jpg",
           "author": "matchupvault"
         },
         {
@@ -644,14 +316,14 @@
           "createTime": 1767199442,
           "createTimeISO": "2025-12-31T16:44:02.000Z",
           "stats": {
-            "diggCount": 31,
+            "diggCount": 32,
             "shareCount": 22,
             "commentCount": 9,
-            "playCount": 5309,
+            "playCount": 5328,
             "collectCount": 5
           },
           "videoUrl": "https://www.tiktok.com/@matchupvault/video/7590063652770778381",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-matchupvau-20251231164402-7590063652770778381.jpg",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20251231164402-7590063652770778381.jpg",
           "author": "matchupvault"
         },
         {
@@ -660,14 +332,14 @@
           "createTime": 1767151905,
           "createTimeISO": "2025-12-31T03:31:45.000Z",
           "stats": {
-            "diggCount": 1240,
-            "shareCount": 975,
-            "commentCount": 228,
-            "playCount": 76900,
-            "collectCount": 93
+            "diggCount": 1243,
+            "shareCount": 981,
+            "commentCount": 229,
+            "playCount": 77100,
+            "collectCount": 94
           },
           "videoUrl": "https://www.tiktok.com/@matchupvault/video/7589859601995009294",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-matchupvau-20251231033145-7589859601995009294.jpg",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20251231033145-7589859601995009294.jpg",
           "author": "matchupvault"
         },
         {
@@ -679,11 +351,11 @@
             "diggCount": 9,
             "shareCount": 3,
             "commentCount": 5,
-            "playCount": 1240,
+            "playCount": 1242,
             "collectCount": 1
           },
           "videoUrl": "https://www.tiktok.com/@matchupvault/video/7589725483181329694",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-matchupvau-20251230185129-7589725483181329694.jpg",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20251230185129-7589725483181329694.jpg",
           "author": "matchupvault"
         },
         {
@@ -695,11 +367,11 @@
             "diggCount": 3,
             "shareCount": 0,
             "commentCount": 2,
-            "playCount": 1079,
+            "playCount": 1081,
             "collectCount": 1
           },
           "videoUrl": "https://www.tiktok.com/@matchupvault/video/7589397525128285470",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-matchupvau-20251229213846-7589397525128285470.jpg",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20251229213846-7589397525128285470.jpg",
           "author": "matchupvault"
         },
         {
@@ -711,11 +383,11 @@
             "diggCount": 3,
             "shareCount": 1,
             "commentCount": 3,
-            "playCount": 1029,
+            "playCount": 1032,
             "collectCount": 1
           },
           "videoUrl": "https://www.tiktok.com/@matchupvault/video/7589193496943168799",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-matchupvau-20251229082728-7589193496943168799.jpg",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20251229082728-7589193496943168799.jpg",
           "author": "matchupvault"
         },
         {
@@ -727,11 +399,11 @@
             "diggCount": 2,
             "shareCount": 1,
             "commentCount": 9,
-            "playCount": 939,
+            "playCount": 943,
             "collectCount": 0
           },
           "videoUrl": "https://www.tiktok.com/@matchupvault/video/7588302202406522142",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-matchupvau-20251226224830-7588302202406522142.jpg",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20251226224830-7588302202406522142.jpg",
           "author": "matchupvault"
         },
         {
@@ -747,7 +419,7 @@
             "collectCount": 1
           },
           "videoUrl": "https://www.tiktok.com/@matchupvault/video/7587528337111698719",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-matchupvau-20251224204522-7587528337111698719.jpg",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20251224204522-7587528337111698719.jpg",
           "author": "matchupvault"
         },
         {
@@ -763,7 +435,7 @@
             "collectCount": 0
           },
           "videoUrl": "https://www.tiktok.com/@matchupvault/video/7587213125842193695",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-matchupvau-20251224002206-7587213125842193695.jpg",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20251224002206-7587213125842193695.jpg",
           "author": "matchupvault"
         },
         {
@@ -779,7 +451,7 @@
             "collectCount": 2
           },
           "videoUrl": "https://www.tiktok.com/@matchupvault/video/7586731461932371231",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-matchupvau-20251222171304-7586731461932371231.jpg",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20251222171304-7586731461932371231.jpg",
           "author": "matchupvault"
         },
         {
@@ -795,7 +467,7 @@
             "collectCount": 0
           },
           "videoUrl": "https://www.tiktok.com/@matchupvault/video/7585783784075775245",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-matchupvau-20251220035549-7585783784075775245.jpg",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20251220035549-7585783784075775245.jpg",
           "author": "matchupvault"
         },
         {
@@ -811,8 +483,336 @@
             "collectCount": 0
           },
           "videoUrl": "https://www.tiktok.com/@matchupvault/video/7585279903528946975",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-matchupvau-20251218192014-7585279903528946975.jpg",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20251218192014-7585279903528946975.jpg",
           "author": "matchupvault"
+        }
+      ]
+    },
+    "callthemoment": {
+      "name": "callthemoment",
+      "nickname": "callthemoment",
+      "avatar": "https://api.apify.com/v2/key-value-stores/JkvCJglI63VvqTLaJ/records/avatar-callthemom-7575359298278491191.jpg",
+      "signature": "What if everything had WWE commentary? 🎤\nOrdinary moments. Legendary calls.\nSound on for full experience 🔊",
+      "fans": 1,
+      "following": 11,
+      "heart": 3,
+      "video": 4,
+      "videos": [
+        {
+          "id": "7589435114535308574",
+          "desc": "Stacking cups",
+          "createTime": 1767053081,
+          "createTimeISO": "2025-12-30T00:04:41.000Z",
+          "stats": {
+            "diggCount": 2,
+            "shareCount": 0,
+            "commentCount": 0,
+            "playCount": 118,
+            "collectCount": 0
+          },
+          "videoUrl": "https://www.tiktok.com/@callthemoment/video/7589435114535308574",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/JkvCJglI63VvqTLaJ/records/cover-callthemom-20251230000441-7589435114535308574.jpg",
+          "author": "callthemoment"
+        },
+        {
+          "id": "7586071577754750221",
+          "desc": "Tying my shoes…",
+          "createTime": 1766269968,
+          "createTimeISO": "2025-12-20T22:32:48.000Z",
+          "stats": {
+            "diggCount": 0,
+            "shareCount": 0,
+            "commentCount": 0,
+            "playCount": 86,
+            "collectCount": 0
+          },
+          "videoUrl": "https://www.tiktok.com/@callthemoment/video/7586071577754750221",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/JkvCJglI63VvqTLaJ/records/cover-callthemom-20251220223248-7586071577754750221.jpg",
+          "author": "callthemoment"
+        },
+        {
+          "id": "7585423252105809183",
+          "desc": "Sorting loose change by size",
+          "createTime": 1766118987,
+          "createTimeISO": "2025-12-19T04:36:27.000Z",
+          "stats": {
+            "diggCount": 0,
+            "shareCount": 0,
+            "commentCount": 0,
+            "playCount": 1,
+            "collectCount": 0
+          },
+          "videoUrl": "https://www.tiktok.com/@callthemoment/video/7585423252105809183",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/JkvCJglI63VvqTLaJ/records/cover-callthemom-20251219043627-7585423252105809183.jpg",
+          "author": "callthemoment"
+        },
+        {
+          "id": "7584951085303876894",
+          "desc": "Eating a banana",
+          "createTime": 1766009052,
+          "createTimeISO": "2025-12-17T22:04:12.000Z",
+          "stats": {
+            "diggCount": 1,
+            "shareCount": 0,
+            "commentCount": 1,
+            "playCount": 1,
+            "collectCount": 1
+          },
+          "videoUrl": "https://www.tiktok.com/@callthemoment/video/7584951085303876894",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/JkvCJglI63VvqTLaJ/records/cover-callthemom-20251217220412-7584951085303876894.jpg",
+          "author": "callthemoment"
+        }
+      ]
+    },
+    "wrestler.trivia": {
+      "name": "wrestler.trivia",
+      "nickname": "wrestler.trivia",
+      "avatar": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/avatar-wrestlertr-7571889738837345293.jpg",
+      "signature": "If you can't pass our quizzes are you even a wrestling fan? 🏆\nDaily trivia, facts & debates\nBring your A game ♦️",
+      "fans": 31,
+      "following": 18,
+      "heart": 360,
+      "video": 15,
+      "videos": [
+        {
+          "id": "7590893703586270495",
+          "desc": "Who has the most punchable face in the WWW? Who makes your blood boil? Who can you absolutely NOT stand? What WWE superstar do you most want to fight? #wwe #wrestling #fyp #wrestlingtiktok ",
+          "createTime": 1767392697,
+          "createTimeISO": "2026-01-02T22:24:57.000Z",
+          "stats": {
+            "diggCount": 17,
+            "shareCount": 0,
+            "commentCount": 31,
+            "playCount": 949,
+            "collectCount": 0
+          },
+          "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7590893703586270495",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20260102222457-7590893703586270495.jpg",
+          "author": "wrestler.trivia"
+        },
+        {
+          "id": "7590411218121149709",
+          "desc": "Can you guess the WWE Superstar? How long did it take you to get it right? #wwe #trivia #wrestling",
+          "createTime": 1767280386,
+          "createTimeISO": "2026-01-01T15:13:06.000Z",
+          "stats": {
+            "diggCount": 8,
+            "shareCount": 0,
+            "commentCount": 1,
+            "playCount": 378,
+            "collectCount": 0
+          },
+          "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7590411218121149709",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20260101151306-7590411218121149709.jpg",
+          "author": "wrestler.trivia"
+        },
+        {
+          "id": "7590040372525698317",
+          "desc": "Can you guess the WWE Superstar? How long did it take you to get it right? #wwe #trivia #wrestling",
+          "createTime": 1767194003,
+          "createTimeISO": "2025-12-31T15:13:23.000Z",
+          "stats": {
+            "diggCount": 25,
+            "shareCount": 1,
+            "commentCount": 7,
+            "playCount": 1076,
+            "collectCount": 3
+          },
+          "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7590040372525698317",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251231151323-7590040372525698317.jpg",
+          "author": "wrestler.trivia"
+        },
+        {
+          "id": "7589754979087404318",
+          "desc": "#wwe #wrestling #fyp",
+          "createTime": 1767127548,
+          "createTimeISO": "2025-12-30T20:45:48.000Z",
+          "stats": {
+            "diggCount": 63,
+            "shareCount": 0,
+            "commentCount": 170,
+            "playCount": 4181,
+            "collectCount": 6
+          },
+          "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7589754979087404318",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251230204548-7589754979087404318.jpg",
+          "author": "wrestler.trivia"
+        },
+        {
+          "id": "7589669176294280461",
+          "desc": "Can you guess the WWE Superstar? How long did it take you to get it right? #wwe #trivia #wrestling",
+          "createTime": 1767107603,
+          "createTimeISO": "2025-12-30T15:13:23.000Z",
+          "stats": {
+            "diggCount": 42,
+            "shareCount": 0,
+            "commentCount": 7,
+            "playCount": 1086,
+            "collectCount": 5
+          },
+          "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7589669176294280461",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251230151323-7589669176294280461.jpg",
+          "author": "wrestler.trivia"
+        },
+        {
+          "id": "7588927079740083469",
+          "desc": "Can you guess the WWE Superstar? How long did it take you to get it right? #wwe #trivia #wrestling",
+          "createTime": 1766934820,
+          "createTimeISO": "2025-12-28T15:13:40.000Z",
+          "stats": {
+            "diggCount": 27,
+            "shareCount": 0,
+            "commentCount": 8,
+            "playCount": 1050,
+            "collectCount": 5
+          },
+          "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7588927079740083469",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251228151340-7588927079740083469.jpg",
+          "author": "wrestler.trivia"
+        },
+        {
+          "id": "7588184887555820814",
+          "desc": "Can you guess the WWE Superstar? How long did it take you to get it right? #wwe #trivia #wrestling",
+          "createTime": 1766762027,
+          "createTimeISO": "2025-12-26T15:13:47.000Z",
+          "stats": {
+            "diggCount": 20,
+            "shareCount": 0,
+            "commentCount": 5,
+            "playCount": 977,
+            "collectCount": 1
+          },
+          "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7588184887555820814",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251226151347-7588184887555820814.jpg",
+          "author": "wrestler.trivia"
+        },
+        {
+          "id": "7587442658717584653",
+          "desc": "Can you guess the WWE Superstar? How long did it take you to get it right? #wwe #trivia #wrestling",
+          "createTime": 1766589200,
+          "createTimeISO": "2025-12-24T15:13:20.000Z",
+          "stats": {
+            "diggCount": 20,
+            "shareCount": 0,
+            "commentCount": 4,
+            "playCount": 913,
+            "collectCount": 1
+          },
+          "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7587442658717584653",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251224151320-7587442658717584653.jpg",
+          "author": "wrestler.trivia"
+        },
+        {
+          "id": "7587071694028721421",
+          "desc": "Can you guess the WWE Superstar? How long did it take you to get it right? #wwe #trivia #wrestling",
+          "createTime": 1766502799,
+          "createTimeISO": "2025-12-23T15:13:19.000Z",
+          "stats": {
+            "diggCount": 19,
+            "shareCount": 1,
+            "commentCount": 1,
+            "playCount": 1125,
+            "collectCount": 0
+          },
+          "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7587071694028721421",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251223151319-7587071694028721421.jpg",
+          "author": "wrestler.trivia"
+        },
+        {
+          "id": "7586730661680139575",
+          "desc": "Can you guess the WWE Superstar? How long did it take you to get it right? #wwe #trivia #wrestling",
+          "createTime": 1766423403,
+          "createTimeISO": "2025-12-22T17:10:03.000Z",
+          "stats": {
+            "diggCount": 9,
+            "shareCount": 0,
+            "commentCount": 1,
+            "playCount": 363,
+            "collectCount": 1
+          },
+          "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7586730661680139575",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251222171003-7586730661680139575.jpg",
+          "author": "wrestler.trivia"
+        },
+        {
+          "id": "7586484467582192951",
+          "desc": "Can you guess the WWE Superstar? How long did it take you to get it right? #wwe #trivia #wrestling",
+          "createTime": 1766366084,
+          "createTimeISO": "2025-12-22T01:14:44.000Z",
+          "stats": {
+            "diggCount": 24,
+            "shareCount": 1,
+            "commentCount": 7,
+            "playCount": 757,
+            "collectCount": 2
+          },
+          "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7586484467582192951",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251222011444-7586484467582192951.jpg",
+          "author": "wrestler.trivia"
+        },
+        {
+          "id": "7585649959312067895",
+          "desc": "Can you guess the WWE Superstar?!\n\nHow long did it take you to get it right?\n#wwe #trivia #wrestling ",
+          "createTime": 1766171788,
+          "createTimeISO": "2025-12-19T19:16:28.000Z",
+          "stats": {
+            "diggCount": 20,
+            "shareCount": 0,
+            "commentCount": 7,
+            "playCount": 584,
+            "collectCount": 1
+          },
+          "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7585649959312067895",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251219191628-7585649959312067895.jpg",
+          "author": "wrestler.trivia"
+        },
+        {
+          "id": "7585587428560243982",
+          "desc": "Can you guess the WWE Superstar? How long did it take you to get it right? #wwe #trivia #wrestling",
+          "createTime": 1766157217,
+          "createTimeISO": "2025-12-19T15:13:37.000Z",
+          "stats": {
+            "diggCount": 24,
+            "shareCount": 0,
+            "commentCount": 2,
+            "playCount": 595,
+            "collectCount": 0
+          },
+          "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7585587428560243982",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251219151337-7585587428560243982.jpg",
+          "author": "wrestler.trivia"
+        },
+        {
+          "id": "7585380853048495373",
+          "desc": "How much do you know about legendary WWE Superstar Kurt Angle?\n\nHow many did you get right?\n#wwe #trivia #wrestling #wrestlemania #wrestlingtiktok ",
+          "createTime": 1766109130,
+          "createTimeISO": "2025-12-19T01:52:10.000Z",
+          "stats": {
+            "diggCount": 16,
+            "shareCount": 0,
+            "commentCount": 2,
+            "playCount": 535,
+            "collectCount": 0
+          },
+          "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7585380853048495373",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251219015210-7585380853048495373.jpg",
+          "author": "wrestler.trivia"
+        },
+        {
+          "id": "7584919085222317343",
+          "desc": "Can you guess the WWE Superstar?\n\nHow long did it take you to get it right?\n#wwe #trivia #wrestling ",
+          "createTime": 1766001603,
+          "createTimeISO": "2025-12-17T20:00:03.000Z",
+          "stats": {
+            "diggCount": 26,
+            "shareCount": 0,
+            "commentCount": 9,
+            "playCount": 1800,
+            "collectCount": 4
+          },
+          "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7584919085222317343",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251217200003-7584919085222317343.jpg",
+          "author": "wrestler.trivia"
         }
       ]
     }
@@ -824,14 +824,14 @@
       "createTime": 1767151905,
       "createTimeISO": "2025-12-31T03:31:45.000Z",
       "stats": {
-        "diggCount": 1240,
-        "shareCount": 975,
-        "commentCount": 228,
-        "playCount": 76900,
-        "collectCount": 93
+        "diggCount": 1243,
+        "shareCount": 981,
+        "commentCount": 229,
+        "playCount": 77100,
+        "collectCount": 94
       },
       "videoUrl": "https://www.tiktok.com/@matchupvault/video/7589859601995009294",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-matchupvau-20251231033145-7589859601995009294.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20251231033145-7589859601995009294.jpg",
       "author": "matchupvault"
     },
     {
@@ -840,14 +840,14 @@
       "createTime": 1767199442,
       "createTimeISO": "2025-12-31T16:44:02.000Z",
       "stats": {
-        "diggCount": 31,
+        "diggCount": 32,
         "shareCount": 22,
         "commentCount": 9,
-        "playCount": 5309,
+        "playCount": 5328,
         "collectCount": 5
       },
       "videoUrl": "https://www.tiktok.com/@matchupvault/video/7590063652770778381",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-matchupvau-20251231164402-7590063652770778381.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20251231164402-7590063652770778381.jpg",
       "author": "matchupvault"
     },
     {
@@ -856,14 +856,14 @@
       "createTime": 1767127548,
       "createTimeISO": "2025-12-30T20:45:48.000Z",
       "stats": {
-        "diggCount": 62,
+        "diggCount": 63,
         "shareCount": 0,
-        "commentCount": 167,
-        "playCount": 4152,
+        "commentCount": 170,
+        "playCount": 4181,
         "collectCount": 6
       },
       "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7589754979087404318",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-wrestlertr-20251230204548-7589754979087404318.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251230204548-7589754979087404318.jpg",
       "author": "wrestler.trivia"
     },
     {
@@ -874,12 +874,12 @@
       "stats": {
         "diggCount": 20,
         "shareCount": 5,
-        "commentCount": 7,
-        "playCount": 3323,
+        "commentCount": 8,
+        "playCount": 3408,
         "collectCount": 3
       },
       "videoUrl": "https://www.tiktok.com/@matchupvault/video/7590202975184882975",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-matchupvau-20260101014420-7590202975184882975.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20260101014420-7590202975184882975.jpg",
       "author": "matchupvault"
     },
     {
@@ -891,11 +891,11 @@
         "diggCount": 32,
         "shareCount": 27,
         "commentCount": 5,
-        "playCount": 2945,
+        "playCount": 2952,
         "collectCount": 2
       },
       "videoUrl": "https://www.tiktok.com/@matchupvault/video/7590444916518456606",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-matchupvau-20260101172317-7590444916518456606.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20260101172317-7590444916518456606.jpg",
       "author": "matchupvault"
     },
     {
@@ -907,11 +907,11 @@
         "diggCount": 8,
         "shareCount": 5,
         "commentCount": 1,
-        "playCount": 2198,
+        "playCount": 2218,
         "collectCount": 1
       },
       "videoUrl": "https://www.tiktok.com/@matchupvault/video/7590562335966727455",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-matchupvau-20260102005856-7590562335966727455.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20260102005856-7590562335966727455.jpg",
       "author": "matchupvault"
     },
     {
@@ -927,7 +927,7 @@
         "collectCount": 4
       },
       "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7584919085222317343",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-wrestlertr-20251217200003-7584919085222317343.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251217200003-7584919085222317343.jpg",
       "author": "wrestler.trivia"
     },
     {
@@ -939,11 +939,11 @@
         "diggCount": 6,
         "shareCount": 0,
         "commentCount": 12,
-        "playCount": 1388,
+        "playCount": 1450,
         "collectCount": 0
       },
       "videoUrl": "https://www.tiktok.com/@ragequitguy/video/7589771192920247582",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-ragequitgu-20251230214843-7589771192920247582.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/63UDT3Wc5FzgxpGdU/records/cover-ragequitgu-20251230214843-7589771192920247582.jpg",
       "author": "ragequitguy"
     },
     {
@@ -959,7 +959,7 @@
         "collectCount": 4
       },
       "videoUrl": "https://www.tiktok.com/@street.slamdown/video/7584958598011194654",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-streetslam-20251217223322-7584958598011194654.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/KcQkmz5edsRVr8grq/records/cover-streetslam-20251217223322-7584958598011194654.jpg",
       "author": "street.slamdown"
     },
     {
@@ -971,11 +971,11 @@
         "diggCount": 9,
         "shareCount": 3,
         "commentCount": 5,
-        "playCount": 1240,
+        "playCount": 1242,
         "collectCount": 1
       },
       "videoUrl": "https://www.tiktok.com/@matchupvault/video/7589725483181329694",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-matchupvau-20251230185129-7589725483181329694.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20251230185129-7589725483181329694.jpg",
       "author": "matchupvault"
     },
     {
@@ -987,11 +987,11 @@
         "diggCount": 14,
         "shareCount": 1,
         "commentCount": 4,
-        "playCount": 1134,
+        "playCount": 1137,
         "collectCount": 1
       },
       "videoUrl": "https://www.tiktok.com/@matchupvault/video/7590154321870736671",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-matchupvau-20251231223526-7590154321870736671.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20251231223526-7590154321870736671.jpg",
       "author": "matchupvault"
     },
     {
@@ -1007,7 +1007,7 @@
         "collectCount": 0
       },
       "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7587071694028721421",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-wrestlertr-20251223151319-7587071694028721421.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251223151319-7587071694028721421.jpg",
       "author": "wrestler.trivia"
     },
     {
@@ -1023,7 +1023,7 @@
         "collectCount": 5
       },
       "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7589669176294280461",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-wrestlertr-20251230151323-7589669176294280461.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251230151323-7589669176294280461.jpg",
       "author": "wrestler.trivia"
     },
     {
@@ -1035,11 +1035,11 @@
         "diggCount": 3,
         "shareCount": 0,
         "commentCount": 2,
-        "playCount": 1079,
+        "playCount": 1081,
         "collectCount": 1
       },
       "videoUrl": "https://www.tiktok.com/@matchupvault/video/7589397525128285470",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-matchupvau-20251229213846-7589397525128285470.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20251229213846-7589397525128285470.jpg",
       "author": "matchupvault"
     },
     {
@@ -1055,7 +1055,7 @@
         "collectCount": 3
       },
       "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7590040372525698317",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-wrestlertr-20251231151323-7590040372525698317.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251231151323-7590040372525698317.jpg",
       "author": "wrestler.trivia"
     },
     {
@@ -1067,11 +1067,11 @@
         "diggCount": 27,
         "shareCount": 0,
         "commentCount": 8,
-        "playCount": 1044,
+        "playCount": 1050,
         "collectCount": 5
       },
       "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7588927079740083469",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-wrestlertr-20251228151340-7588927079740083469.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251228151340-7588927079740083469.jpg",
       "author": "wrestler.trivia"
     },
     {
@@ -1083,11 +1083,11 @@
         "diggCount": 3,
         "shareCount": 1,
         "commentCount": 3,
-        "playCount": 1029,
+        "playCount": 1032,
         "collectCount": 1
       },
       "videoUrl": "https://www.tiktok.com/@matchupvault/video/7589193496943168799",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-matchupvau-20251229082728-7589193496943168799.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20251229082728-7589193496943168799.jpg",
       "author": "matchupvault"
     },
     {
@@ -1103,7 +1103,23 @@
         "collectCount": 1
       },
       "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7588184887555820814",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-wrestlertr-20251226151347-7588184887555820814.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251226151347-7588184887555820814.jpg",
+      "author": "wrestler.trivia"
+    },
+    {
+      "id": "7590893703586270495",
+      "desc": "Who has the most punchable face in the WWW? Who makes your blood boil? Who can you absolutely NOT stand? What WWE superstar do you most want to fight? #wwe #wrestling #fyp #wrestlingtiktok ",
+      "createTime": 1767392697,
+      "createTimeISO": "2026-01-02T22:24:57.000Z",
+      "stats": {
+        "diggCount": 17,
+        "shareCount": 0,
+        "commentCount": 31,
+        "playCount": 949,
+        "collectCount": 0
+      },
+      "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7590893703586270495",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20260102222457-7590893703586270495.jpg",
       "author": "wrestler.trivia"
     },
     {
@@ -1115,11 +1131,11 @@
         "diggCount": 2,
         "shareCount": 1,
         "commentCount": 9,
-        "playCount": 939,
+        "playCount": 943,
         "collectCount": 0
       },
       "videoUrl": "https://www.tiktok.com/@matchupvault/video/7588302202406522142",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-matchupvau-20251226224830-7588302202406522142.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20251226224830-7588302202406522142.jpg",
       "author": "matchupvault"
     },
     {
@@ -1131,12 +1147,28 @@
         "diggCount": 68,
         "shareCount": 0,
         "commentCount": 1,
-        "playCount": 919,
+        "playCount": 922,
         "collectCount": 4
       },
       "videoUrl": "https://www.tiktok.com/@street.slamdown/video/7589008899676605727",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-streetslam-20251228203057-7589008899676605727.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/KcQkmz5edsRVr8grq/records/cover-streetslam-20251228203057-7589008899676605727.jpg",
       "author": "street.slamdown"
+    },
+    {
+      "id": "7590804153509776670",
+      "desc": "Billie Eilish x Vladimir Putin \nName this fusion! #BillieEilish #VladimirPutin #ai #fusion #russia ",
+      "createTime": 1767371849,
+      "createTimeISO": "2026-01-02T16:37:29.000Z",
+      "stats": {
+        "diggCount": 12,
+        "shareCount": 9,
+        "commentCount": 12,
+        "playCount": 922,
+        "collectCount": 2
+      },
+      "videoUrl": "https://www.tiktok.com/@matchupvault/video/7590804153509776670",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20260102163729-7590804153509776670.jpg",
+      "author": "matchupvault"
     },
     {
       "id": "7587442658717584653",
@@ -1151,39 +1183,7 @@
         "collectCount": 1
       },
       "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7587442658717584653",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-wrestlertr-20251224151320-7587442658717584653.jpg",
-      "author": "wrestler.trivia"
-    },
-    {
-      "id": "7590804153509776670",
-      "desc": "Billie Eilish x Vladimir Putin \nName this fusion! #BillieEilish #VladimirPutin #ai #fusion #russia ",
-      "createTime": 1767371849,
-      "createTimeISO": "2026-01-02T16:37:29.000Z",
-      "stats": {
-        "diggCount": 12,
-        "shareCount": 8,
-        "commentCount": 12,
-        "playCount": 888,
-        "collectCount": 2
-      },
-      "videoUrl": "https://www.tiktok.com/@matchupvault/video/7590804153509776670",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-matchupvau-20260102163729-7590804153509776670.jpg",
-      "author": "matchupvault"
-    },
-    {
-      "id": "7590893703586270495",
-      "desc": "Who has the most punchable face in the WWW? Who makes your blood boil? Who can you absolutely NOT stand? What WWE superstar do you most want to fight? #wwe #wrestling #fyp #wrestlingtiktok ",
-      "createTime": 1767392697,
-      "createTimeISO": "2026-01-02T22:24:57.000Z",
-      "stats": {
-        "diggCount": 16,
-        "shareCount": 0,
-        "commentCount": 23,
-        "playCount": 882,
-        "collectCount": 0
-      },
-      "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7590893703586270495",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-wrestlertr-20260102222457-7590893703586270495.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251224151320-7587442658717584653.jpg",
       "author": "wrestler.trivia"
     },
     {
@@ -1199,7 +1199,7 @@
         "collectCount": 2
       },
       "videoUrl": "https://www.tiktok.com/@street.slamdown/video/7589753658615614751",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-streetslam-20251230204040-7589753658615614751.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/KcQkmz5edsRVr8grq/records/cover-streetslam-20251230204040-7589753658615614751.jpg",
       "author": "street.slamdown"
     },
     {
@@ -1215,7 +1215,7 @@
         "collectCount": 2
       },
       "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7586484467582192951",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-wrestlertr-20251222011444-7586484467582192951.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251222011444-7586484467582192951.jpg",
       "author": "wrestler.trivia"
     },
     {
@@ -1231,7 +1231,7 @@
         "collectCount": 1
       },
       "videoUrl": "https://www.tiktok.com/@matchupvault/video/7587528337111698719",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-matchupvau-20251224204522-7587528337111698719.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20251224204522-7587528337111698719.jpg",
       "author": "matchupvault"
     },
     {
@@ -1247,7 +1247,7 @@
         "collectCount": 0
       },
       "videoUrl": "https://www.tiktok.com/@matchupvault/video/7587213125842193695",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-matchupvau-20251224002206-7587213125842193695.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20251224002206-7587213125842193695.jpg",
       "author": "matchupvault"
     },
     {
@@ -1263,7 +1263,7 @@
         "collectCount": 0
       },
       "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7585587428560243982",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-wrestlertr-20251219151337-7585587428560243982.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251219151337-7585587428560243982.jpg",
       "author": "wrestler.trivia"
     },
     {
@@ -1279,7 +1279,7 @@
         "collectCount": 1
       },
       "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7585649959312067895",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-wrestlertr-20251219191628-7585649959312067895.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251219191628-7585649959312067895.jpg",
       "author": "wrestler.trivia"
     },
     {
@@ -1295,7 +1295,7 @@
         "collectCount": 0
       },
       "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7585380853048495373",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-wrestlertr-20251219015210-7585380853048495373.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251219015210-7585380853048495373.jpg",
       "author": "wrestler.trivia"
     },
     {
@@ -1311,7 +1311,7 @@
         "collectCount": 2
       },
       "videoUrl": "https://www.tiktok.com/@matchupvault/video/7586731461932371231",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-matchupvau-20251222171304-7586731461932371231.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20251222171304-7586731461932371231.jpg",
       "author": "matchupvault"
     },
     {
@@ -1327,7 +1327,7 @@
         "collectCount": 4
       },
       "videoUrl": "https://www.tiktok.com/@street.slamdown/video/7588239286395325726",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-streetslam-20251226184423-7588239286395325726.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/KcQkmz5edsRVr8grq/records/cover-streetslam-20251226184423-7588239286395325726.jpg",
       "author": "street.slamdown"
     },
     {
@@ -1339,11 +1339,11 @@
         "diggCount": 2,
         "shareCount": 0,
         "commentCount": 1,
-        "playCount": 416,
+        "playCount": 481,
         "collectCount": 1
       },
       "videoUrl": "https://www.tiktok.com/@matchupvault/video/7590872396438048031",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-matchupvau-20260102210208-7590872396438048031.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20260102210208-7590872396438048031.jpg",
       "author": "matchupvault"
     },
     {
@@ -1359,7 +1359,7 @@
         "collectCount": 0
       },
       "videoUrl": "https://www.tiktok.com/@matchupvault/video/7585783784075775245",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-matchupvau-20251220035549-7585783784075775245.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20251220035549-7585783784075775245.jpg",
       "author": "matchupvault"
     },
     {
@@ -1375,7 +1375,7 @@
         "collectCount": 1
       },
       "videoUrl": "https://www.tiktok.com/@street.slamdown/video/7585366877036121375",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-streetslam-20251219005749-7585366877036121375.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/KcQkmz5edsRVr8grq/records/cover-streetslam-20251219005749-7585366877036121375.jpg",
       "author": "street.slamdown"
     },
     {
@@ -1391,7 +1391,7 @@
         "collectCount": 0
       },
       "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7590411218121149709",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-wrestlertr-20260101151306-7590411218121149709.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20260101151306-7590411218121149709.jpg",
       "author": "wrestler.trivia"
     },
     {
@@ -1407,7 +1407,7 @@
         "collectCount": 1
       },
       "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7586730661680139575",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-wrestlertr-20251222171003-7586730661680139575.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251222171003-7586730661680139575.jpg",
       "author": "wrestler.trivia"
     },
     {
@@ -1423,7 +1423,7 @@
         "collectCount": 0
       },
       "videoUrl": "https://www.tiktok.com/@matchupvault/video/7585279903528946975",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-matchupvau-20251218192014-7585279903528946975.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20251218192014-7585279903528946975.jpg",
       "author": "matchupvault"
     },
     {
@@ -1435,11 +1435,11 @@
         "diggCount": 5,
         "shareCount": 0,
         "commentCount": 2,
-        "playCount": 294,
+        "playCount": 295,
         "collectCount": 1
       },
       "videoUrl": "https://www.tiktok.com/@ragequitguy/video/7590088634762611999",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-ragequitgu-20251231182038-7590088634762611999.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/63UDT3Wc5FzgxpGdU/records/cover-ragequitgu-20251231182038-7590088634762611999.jpg",
       "author": "ragequitguy"
     },
     {
@@ -1455,7 +1455,7 @@
         "collectCount": 0
       },
       "videoUrl": "https://www.tiktok.com/@ragequitguy/video/7589825571136245022",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-ragequitgu-20251231011944-7589825571136245022.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/63UDT3Wc5FzgxpGdU/records/cover-ragequitgu-20251231011944-7589825571136245022.jpg",
       "author": "ragequitguy"
     },
     {
@@ -1471,7 +1471,7 @@
         "collectCount": 0
       },
       "videoUrl": "https://www.tiktok.com/@ragequitguy/video/7590890988692835614",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-ragequitgu-20260102221411-7590890988692835614.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/63UDT3Wc5FzgxpGdU/records/cover-ragequitgu-20260102221411-7590890988692835614.jpg",
       "author": "ragequitguy"
     },
     {
@@ -1487,7 +1487,7 @@
         "collectCount": 1
       },
       "videoUrl": "https://www.tiktok.com/@street.slamdown/video/7586830538548317495",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-streetslam-20251222233758-7586830538548317495.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/KcQkmz5edsRVr8grq/records/cover-streetslam-20251222233758-7586830538548317495.jpg",
       "author": "street.slamdown"
     },
     {
@@ -1503,7 +1503,7 @@
         "collectCount": 0
       },
       "videoUrl": "https://www.tiktok.com/@callthemoment/video/7589435114535308574",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-callthemom-20251230000441-7589435114535308574.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/JkvCJglI63VvqTLaJ/records/cover-callthemom-20251230000441-7589435114535308574.jpg",
       "author": "callthemoment"
     },
     {
@@ -1519,7 +1519,7 @@
         "collectCount": 0
       },
       "videoUrl": "https://www.tiktok.com/@callthemoment/video/7586071577754750221",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-callthemom-20251220223248-7586071577754750221.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/JkvCJglI63VvqTLaJ/records/cover-callthemom-20251220223248-7586071577754750221.jpg",
       "author": "callthemoment"
     },
     {
@@ -1535,7 +1535,7 @@
         "collectCount": 0
       },
       "videoUrl": "https://www.tiktok.com/@street.slamdown/video/7589425211515211038",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-streetslam-20251229232616-7589425211515211038.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/KcQkmz5edsRVr8grq/records/cover-streetslam-20251229232616-7589425211515211038.jpg",
       "author": "street.slamdown"
     },
     {
@@ -1551,7 +1551,7 @@
         "collectCount": 0
       },
       "videoUrl": "https://www.tiktok.com/@callthemoment/video/7585423252105809183",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-callthemom-20251219043627-7585423252105809183.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/JkvCJglI63VvqTLaJ/records/cover-callthemom-20251219043627-7585423252105809183.jpg",
       "author": "callthemoment"
     },
     {
@@ -1567,7 +1567,7 @@
         "collectCount": 1
       },
       "videoUrl": "https://www.tiktok.com/@callthemoment/video/7584951085303876894",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/66IJAy5id1oc8M7it/records/cover-callthemom-20251217220412-7584951085303876894.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/JkvCJglI63VvqTLaJ/records/cover-callthemom-20251217220412-7584951085303876894.jpg",
       "author": "callthemoment"
     }
   ]
