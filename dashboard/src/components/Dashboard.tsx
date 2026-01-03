@@ -299,10 +299,10 @@ export default function Dashboard() {
 
                 {/* Stats Cards */}
                 <div className="w-full max-w-[1600px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                    <StatsCard label="Total Views" value={totalViews} />
-                    <StatsCard label="Total Likes" value={totalLikes} />
-                    <StatsCard label="Total Comments" value={totalComments} />
-                    <StatsCard label="Total Followers" value={totalFollowers} />
+                    <StatsCard label="TOTAL FOLLOWERS" value={(totalFollowers >= 1000000 ? (totalFollowers / 1000000).toFixed(1) + 'M' : totalFollowers.toLocaleString())} color="slate" size="horizontal" />
+                    <StatsCard label="TOTAL VIEWS" value={(totalViews >= 1000000 ? (totalViews / 1000000).toFixed(1) + 'M' : totalViews.toLocaleString())} color="blue" size="horizontal" />
+                    <StatsCard label="TOTAL LIKES" value={(totalLikes >= 1000000 ? (totalLikes / 1000000).toFixed(1) + 'M' : totalLikes.toLocaleString())} color="green" size="horizontal" />
+                    <StatsCard label="TOTAL COMMENTS" value={(totalComments >= 1000 ? (totalComments / 1000).toFixed(1) + 'K' : totalComments.toLocaleString())} color="yellow" size="horizontal" />
                 </div>
 
                 {/* Top Assets - PERSISTENT GRIDS */}
