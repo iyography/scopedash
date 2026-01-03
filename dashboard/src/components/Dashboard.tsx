@@ -150,19 +150,40 @@ export default function Dashboard() {
             {/* Sticky Top Navigation */}
             <nav className="sticky top-0 z-50 bg-[#0D0F12]/95 backdrop-blur-xl border-b border-slate-800 shadow-xl py-2 w-full flex justify-center">
                 <div className="w-full max-w-[1400px] px-4 flex justify-center">
-                    <div className="flex items-center gap-4 overflow-x-auto scrollbar-none p-2">
+                    <div className="flex items-center gap-4 overflow-x-auto no-scrollbar p-2">
 
-                        {/* ALL Button */}
                         <button
                             onClick={() => setSelectedProfile('all')}
-                            className={`transition-all duration-300 group shrink-0 ${selectedProfile === 'all' ? 'scale-105 z-10' : 'opacity-80 hover:opacity-100 hover:scale-105'
+                            style={{
+                                width: '56px',
+                                height: '56px',
+                                borderRadius: '50%',
+                                padding: 0,
+                                outline: 'none',
+                                border: 'none',
+                                background: 'transparent',
+                                cursor: 'pointer',
+                                overflow: 'hidden'
+                            }}
+                            className={`transition-all duration-300 group shrink-0 ${selectedProfile === 'all' ? 'opacity-100 z-10' : 'opacity-70 hover:opacity-100 hover:scale-105'
                                 }`}
                         >
-                            <div className={`px-8 py-3 rounded-full flex items-center justify-center transition-all ${selectedProfile === 'all'
-                                ? 'bg-[#00F0FF] text-black shadow-[0_0_20px_rgba(0,240,255,0.7)] font-black mobile:px-6 mobile:py-2'
-                                : 'bg-transparent border-2 border-slate-600 text-slate-300 group-hover:border-slate-400 group-hover:text-white'
-                                }`}>
-                                <span className="font-['JetBrains_Mono'] text-lg font-bold tracking-wider">ALL</span>
+                            <div
+                                style={{
+                                    width: '100%',
+                                    height: '100%',
+                                    borderRadius: '50%',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    border: selectedProfile === 'all' ? '2px solid white' : '2px solid #334155',
+                                    backgroundColor: selectedProfile === 'all' ? 'rgba(255,255,255,0.2)' : 'transparent',
+                                    color: selectedProfile === 'all' ? 'white' : '#94a3b8',
+                                    backgroundClip: 'padding-box',
+                                    boxSizing: 'border-box'
+                                }}
+                            >
+                                <span style={{ fontFamily: 'JetBrains Mono, monospace', fontSize: '14px', fontWeight: 'bold', letterSpacing: '2px' }}>ALL</span>
                             </div>
                         </button>
 
@@ -171,18 +192,42 @@ export default function Dashboard() {
                             <button
                                 key={p.name}
                                 onClick={() => setSelectedProfile(p.name)}
-                                className={`bg-transparent flex flex-col items-center justify-center gap-0 transition-all duration-300 group relative shrink-0 rounded-full p-1 hover:bg-white/5 ${selectedProfile === p.name ? 'scale-110 z-10' : 'opacity-70 hover:opacity-100'
+                                style={{
+                                    width: '56px',
+                                    height: '56px',
+                                    borderRadius: '50%',
+                                    padding: 0,
+                                    outline: 'none',
+                                    border: 'none',
+                                    background: 'transparent',
+                                    cursor: 'pointer',
+                                    overflow: 'hidden',
+                                    marginLeft: '8px',
+                                    marginRight: '8px'
+                                }}
+                                className={`transition-all duration-300 shrink-0 ${selectedProfile === p.name
+                                    ? 'opacity-100 z-10'
+                                    : 'opacity-50 grayscale hover:opacity-100 hover:grayscale-0 hover:scale-105'
                                     }`}
                             >
-                                <img
-                                    src={p.avatar}
-                                    alt={p.name}
-                                    style={{ width: '56px', height: '56px', minWidth: '56px', minHeight: '56px' }}
-                                    className={`rounded-full object-cover transition-all duration-300 ${selectedProfile === p.name
-                                        ? 'ring-4 ring-[#FCEE0A] shadow-[0_0_20px_rgba(252,238,10,0.6)] grayscale-0'
-                                        : 'grayscale group-hover:grayscale-0 ring-2 ring-slate-700'
-                                        }`}
-                                />
+                                <div
+                                    style={{
+                                        width: '100%',
+                                        height: '100%',
+                                        borderRadius: '50%',
+                                        border: selectedProfile === p.name ? '4px solid #FCEE0A' : '2px solid #334155',
+                                        boxSizing: 'border-box',
+                                        overflow: 'hidden',
+                                        position: 'relative',
+                                        boxShadow: selectedProfile === p.name ? '0 0 15px rgba(252, 238, 10, 0.4)' : 'none'
+                                    }}
+                                >
+                                    <img
+                                        src={p.avatar}
+                                        alt={p.name}
+                                        className="w-full h-full object-cover"
+                                    />
+                                </div>
                             </button>
                         ))}
                     </div>
@@ -195,7 +240,7 @@ export default function Dashboard() {
                 <header className="w-full max-w-[1600px] flex justify-between items-center border-b border-slate-800 pb-2">
                     <div className="flex items-baseline gap-2">
                         <h1 className="text-xl font-black text-white uppercase tracking-tighter leading-none">
-                            DASHBOARD <span className="text-slate-700">v4.10</span>
+                            SCOPEDASH <span className="text-slate-700">v4.10</span>
                         </h1>
                     </div>
                     <div className="text-[#00FF9D] font-['JetBrains_Mono'] text-[10px] tracking-wider flex items-center justify-end gap-1">
