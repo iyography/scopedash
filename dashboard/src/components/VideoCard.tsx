@@ -66,7 +66,7 @@ export const VideoCard: React.FC<VideoCardProps> = ({ video, rank }) => {
                     cite={embedUrl}
                     data-video-id={video.id}
                     data-embed-from="embed_page"
-                    style={{ maxWidth: '605px', minWidth: '325px', margin: 0 }}
+                    style={{ maxWidth: '605px', minWidth: '200px', margin: 0 }}
                 >
                     <section>
                         <a target="_blank" title={`@${video.author}`} href={`https://www.tiktok.com/@${video.author}?refer=embed`}>@{video.author}</a>

@@ -298,7 +298,7 @@ export default function Dashboard() {
                 </header>
 
                 {/* Stats Cards */}
-                <div className="w-full max-w-[1600px] grid grid-cols-4 gap-4">
+                <div className="w-full max-w-[1600px] grid grid-cols-4 gap-4 mb-16">
                     <StatsCard label="TOTAL FOLLOWERS" value={(totalFollowers >= 1000000 ? (totalFollowers / 1000000).toFixed(1) + 'M' : totalFollowers >= 1000 ? (totalFollowers / 1000).toFixed(1) + 'K' : totalFollowers.toLocaleString())} color="slate" size="horizontal" />
                     <StatsCard label="TOTAL VIEWS" value={(totalViews >= 1000000 ? (totalViews / 1000000).toFixed(1) + 'M' : totalViews >= 1000 ? (totalViews / 1000).toFixed(1) + 'K' : totalViews.toLocaleString())} color="blue" size="horizontal" />
                     <StatsCard label="TOTAL LIKES" value={(totalLikes >= 1000000 ? (totalLikes / 1000000).toFixed(1) + 'M' : totalLikes >= 1000 ? (totalLikes / 1000).toFixed(1) + 'K' : totalLikes.toLocaleString())} color="green" size="horizontal" />
@@ -309,9 +309,9 @@ export default function Dashboard() {
                 <div className="w-full max-w-[1600px] relative" key={refreshKey}>
                     {/* "ALL" Grid */}
                     <div className={selectedProfile === 'all' ? 'block' : 'hidden'}>
-                        <div className="grid grid-cols-[repeat(auto-fit,minmax(330px,1fr))] justify-center gap-6">
+                        <div className="grid grid-cols-6 justify-center gap-3">
                             {videoLists['all']?.map((video, index) => (
-                                <div key={`${video.id}-all`} style={{ width: '330px' }}>
+                                <div key={`${video.id}-all`} style={{ width: '100%' }}>
                                     <VideoCard video={video} rank={index + 1} />
                                 </div>
                             ))}
@@ -321,9 +321,9 @@ export default function Dashboard() {
                     {/* Individual Profile Grids */}
                     {profiles.map(p => (
                         <div key={p.name} className={selectedProfile === p.name ? 'block' : 'hidden'}>
-                            <div className="grid grid-cols-[repeat(auto-fit,minmax(330px,1fr))] justify-center gap-6">
+                            <div className="grid grid-cols-6 justify-center gap-3">
                                 {videoLists[p.name]?.map((video, index) => (
-                                    <div key={`${video.id}-${p.name}`} style={{ width: '330px' }}>
+                                    <div key={`${video.id}-${p.name}`} style={{ width: '100%' }}>
                                         <VideoCard video={video} rank={index + 1} />
                                     </div>
                                 ))}
