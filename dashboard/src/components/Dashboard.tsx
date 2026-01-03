@@ -234,13 +234,13 @@ export default function Dashboard() {
                 </div>
             </nav>
 
-            <main className="w-full px-4 py-6 flex flex-col items-center gap-8">
+            <main className="w-full px-4 py-6 flex flex-col items-center gap-8" style={{ zoom: '0.75' }}>
 
                 {/* Header Info */}
                 <header className="w-full max-w-[1600px] flex justify-between items-center border-b border-slate-800 pb-2">
                     <div className="flex items-baseline gap-2">
                         <h1 className="text-xl font-black text-white uppercase tracking-tighter leading-none">
-                            SCOPEDASH <span className="text-slate-700">v4.10</span>
+                            SCOPEDASH
                         </h1>
                     </div>
                     <div className="text-[#00FF9D] font-['JetBrains_Mono'] text-[10px] tracking-wider flex items-center justify-end gap-1">
