@@ -1,497 +1,13 @@
 {
   "metadata": {
-    "last_updated": "2026-01-02T18:08:26.003903",
+    "last_updated": "2026-01-15T17:37:44.796786",
     "profile_count": 5
   },
   "profiles": {
-    "street.slamdown": {
-      "name": "street.slamdown",
-      "nickname": "STREET SLAMDOWN",
-      "avatar": "https://api.apify.com/v2/key-value-stores/KcQkmz5edsRVr8grq/records/avatar-streetslam-7575322667214046221.jpg",
-      "signature": "No ring. No rules. All chaos 🔥\nBackyard wrestling at its finest\nDon't try this at home.",
-      "fans": 7,
-      "following": 15,
-      "heart": 251,
-      "video": 7,
-      "videos": [
-        {
-          "id": "7589753658615614751",
-          "desc": "Day 7 - finding the best backyard wrestling in the US - Decorah, Iowa #wrestling #backyardwrestling #WWE #wrestlingtiktok ",
-          "createTime": 1767127240,
-          "createTimeISO": "2025-12-30T20:40:40.000Z",
-          "stats": {
-            "diggCount": 65,
-            "shareCount": 2,
-            "commentCount": 1,
-            "playCount": 857,
-            "collectCount": 2
-          },
-          "videoUrl": "https://www.tiktok.com/@street.slamdown/video/7589753658615614751",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/KcQkmz5edsRVr8grq/records/cover-streetslam-20251230204040-7589753658615614751.jpg",
-          "author": "street.slamdown"
-        },
-        {
-          "id": "7589425211515211038",
-          "desc": "Day 6 of finding the best backyard wrestling in the US - Abilene, KS #wrestling #backyardwrestling #WWE #wrestlingtiktok #professionalwrestling ",
-          "createTime": 1767050776,
-          "createTimeISO": "2025-12-29T23:26:16.000Z",
-          "stats": {
-            "diggCount": 0,
-            "shareCount": 0,
-            "commentCount": 0,
-            "playCount": 17,
-            "collectCount": 0
-          },
-          "videoUrl": "https://www.tiktok.com/@street.slamdown/video/7589425211515211038",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/KcQkmz5edsRVr8grq/records/cover-streetslam-20251229232616-7589425211515211038.jpg",
-          "author": "street.slamdown"
-        },
-        {
-          "id": "7589008899676605727",
-          "desc": "Day 5 - finding the best backyard wrestling in the US! Pella, Iowa\n#wrestling #backyardwrestling #WWE #wrestlingtiktok #professionalwrestling ",
-          "createTime": 1766953857,
-          "createTimeISO": "2025-12-28T20:30:57.000Z",
-          "stats": {
-            "diggCount": 68,
-            "shareCount": 0,
-            "commentCount": 1,
-            "playCount": 922,
-            "collectCount": 4
-          },
-          "videoUrl": "https://www.tiktok.com/@street.slamdown/video/7589008899676605727",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/KcQkmz5edsRVr8grq/records/cover-streetslam-20251228203057-7589008899676605727.jpg",
-          "author": "street.slamdown"
-        },
-        {
-          "id": "7588239286395325726",
-          "desc": "Day 4 of finding the best backyard underground wrestling in the US of A! #wrestling #backyardwrestling #WWE #wrestlingtiktok ",
-          "createTime": 1766774663,
-          "createTimeISO": "2025-12-26T18:44:23.000Z",
-          "stats": {
-            "diggCount": 23,
-            "shareCount": 0,
-            "commentCount": 2,
-            "playCount": 486,
-            "collectCount": 4
-          },
-          "videoUrl": "https://www.tiktok.com/@street.slamdown/video/7588239286395325726",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/KcQkmz5edsRVr8grq/records/cover-streetslam-20251226184423-7588239286395325726.jpg",
-          "author": "street.slamdown"
-        },
-        {
-          "id": "7586830538548317495",
-          "desc": "Day 3 of finding the best underground backyard wrestling in the USA!\n\nToday we're in Livingston, Montana #wrestling #WWE #backyardwrestling #wrestlingtiktok #professionalwrestling",
-          "createTime": 1766446678,
-          "createTimeISO": "2025-12-22T23:37:58.000Z",
-          "stats": {
-            "diggCount": 6,
-            "shareCount": 0,
-            "commentCount": 0,
-            "playCount": 204,
-            "collectCount": 1
-          },
-          "videoUrl": "https://www.tiktok.com/@street.slamdown/video/7586830538548317495",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/KcQkmz5edsRVr8grq/records/cover-streetslam-20251222233758-7586830538548317495.jpg",
-          "author": "street.slamdown"
-        },
-        {
-          "id": "7585366877036121375",
-          "desc": "Day 2 of finding the best underground backyard wrestling in the USA!\n\nToday we're in Hood River, Oregon #wrestling #WWE #backyardwrestling #wrestlingtiktok #professionalwrestling",
-          "createTime": 1766105869,
-          "createTimeISO": "2025-12-19T00:57:49.000Z",
-          "stats": {
-            "diggCount": 27,
-            "shareCount": 0,
-            "commentCount": 0,
-            "playCount": 393,
-            "collectCount": 1
-          },
-          "videoUrl": "https://www.tiktok.com/@street.slamdown/video/7585366877036121375",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/KcQkmz5edsRVr8grq/records/cover-streetslam-20251219005749-7585366877036121375.jpg",
-          "author": "street.slamdown"
-        },
-        {
-          "id": "7584958598011194654",
-          "desc": "Day 1 of finding the best underground backyard wrestling in the USA!\n\nToday we’re in Bemidji, Minnesota\n#wrestling #wwe #backyardwrestling #wrestlingtiktok #professionalwrestling ",
-          "createTime": 1766010802,
-          "createTimeISO": "2025-12-17T22:33:22.000Z",
-          "stats": {
-            "diggCount": 62,
-            "shareCount": 1,
-            "commentCount": 2,
-            "playCount": 1294,
-            "collectCount": 4
-          },
-          "videoUrl": "https://www.tiktok.com/@street.slamdown/video/7584958598011194654",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/KcQkmz5edsRVr8grq/records/cover-streetslam-20251217223322-7584958598011194654.jpg",
-          "author": "street.slamdown"
-        }
-      ]
-    },
-    "ragequitguy": {
-      "name": "ragequitguy",
-      "nickname": "Rage Quit",
-      "avatar": "https://api.apify.com/v2/key-value-stores/63UDT3Wc5FzgxpGdU/records/avatar-ragequitgu-7576470850129871927.jpg",
-      "signature": "Caught on camera rage quitting",
-      "fans": 3,
-      "following": 6,
-      "heart": 15,
-      "video": 4,
-      "videos": [
-        {
-          "id": "7590890988692835614",
-          "desc": "Rage quit 😂 #meltdown #ragequit #freakout #gaming #gamerfreakout ",
-          "createTime": 1767392051,
-          "createTimeISO": "2026-01-02T22:14:11.000Z",
-          "stats": {
-            "diggCount": 1,
-            "shareCount": 0,
-            "commentCount": 3,
-            "playCount": 273,
-            "collectCount": 0
-          },
-          "videoUrl": "https://www.tiktok.com/@ragequitguy/video/7590890988692835614",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/63UDT3Wc5FzgxpGdU/records/cover-ragequitgu-20260102221411-7590890988692835614.jpg",
-          "author": "ragequitguy"
-        },
-        {
-          "id": "7590088634762611999",
-          "desc": "First rage quit caught on camera? 😂 #meltdown #ragequit #freakout #gaming ",
-          "createTime": 1767205238,
-          "createTimeISO": "2025-12-31T18:20:38.000Z",
-          "stats": {
-            "diggCount": 5,
-            "shareCount": 0,
-            "commentCount": 2,
-            "playCount": 295,
-            "collectCount": 1
-          },
-          "videoUrl": "https://www.tiktok.com/@ragequitguy/video/7590088634762611999",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/63UDT3Wc5FzgxpGdU/records/cover-ragequitgu-20251231182038-7590088634762611999.jpg",
-          "author": "ragequitguy"
-        },
-        {
-          "id": "7589825571136245022",
-          "desc": "I think he lost 😂 #meltdown #ragequit #gamerfreakout #freakout ",
-          "createTime": 1767143984,
-          "createTimeISO": "2025-12-31T01:19:44.000Z",
-          "stats": {
-            "diggCount": 3,
-            "shareCount": 1,
-            "commentCount": 1,
-            "playCount": 288,
-            "collectCount": 0
-          },
-          "videoUrl": "https://www.tiktok.com/@ragequitguy/video/7589825571136245022",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/63UDT3Wc5FzgxpGdU/records/cover-ragequitgu-20251231011944-7589825571136245022.jpg",
-          "author": "ragequitguy"
-        },
-        {
-          "id": "7589771192920247582",
-          "desc": "",
-          "createTime": 1767131323,
-          "createTimeISO": "2025-12-30T21:48:43.000Z",
-          "stats": {
-            "diggCount": 6,
-            "shareCount": 0,
-            "commentCount": 12,
-            "playCount": 1450,
-            "collectCount": 0
-          },
-          "videoUrl": "https://www.tiktok.com/@ragequitguy/video/7589771192920247582",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/63UDT3Wc5FzgxpGdU/records/cover-ragequitgu-20251230214843-7589771192920247582.jpg",
-          "author": "ragequitguy"
-        }
-      ]
-    },
-    "matchupvault": {
-      "name": "matchupvault",
-      "nickname": "Matchup Vault",
-      "avatar": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/avatar-matchupvau-7575356014707606583.jpg",
-      "signature": "Hybrid Fusions 🧬\nDaily Matchups 🥊\nCinematic AI Videos 🤖",
-      "fans": 121,
-      "following": 33,
-      "heart": 1389,
-      "video": 17,
-      "videos": [
-        {
-          "id": "7590872396438048031",
-          "desc": "Caleb McLaughlin (Lucas) x Vecna\nName this fusion! \nStranger Things hybrid\n#CalebMcLaughlin #Vecna #ai #fusion #strangerthings #lucas",
-          "createTime": 1767387728,
-          "createTimeISO": "2026-01-02T21:02:08.000Z",
-          "stats": {
-            "diggCount": 2,
-            "shareCount": 0,
-            "commentCount": 1,
-            "playCount": 481,
-            "collectCount": 1
-          },
-          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7590872396438048031",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20260102210208-7590872396438048031.jpg",
-          "author": "matchupvault"
-        },
-        {
-          "id": "7590804153509776670",
-          "desc": "Billie Eilish x Vladimir Putin \nName this fusion! #BillieEilish #VladimirPutin #ai #fusion #russia ",
-          "createTime": 1767371849,
-          "createTimeISO": "2026-01-02T16:37:29.000Z",
-          "stats": {
-            "diggCount": 12,
-            "shareCount": 9,
-            "commentCount": 12,
-            "playCount": 922,
-            "collectCount": 2
-          },
-          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7590804153509776670",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20260102163729-7590804153509776670.jpg",
-          "author": "matchupvault"
-        },
-        {
-          "id": "7590562335966727455",
-          "desc": "Sadie Sink x Demogorgon (stranger things) \nName this fusion! \n#SadieSink #demogorgon #strangerthings #ai #fusion #max ",
-          "createTime": 1767315536,
-          "createTimeISO": "2026-01-02T00:58:56.000Z",
-          "stats": {
-            "diggCount": 8,
-            "shareCount": 5,
-            "commentCount": 1,
-            "playCount": 2218,
-            "collectCount": 1
-          },
-          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7590562335966727455",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20260102005856-7590562335966727455.jpg",
-          "author": "matchupvault"
-        },
-        {
-          "id": "7590444916518456606",
-          "desc": "Noah Schnapp x Princess Peach \nName this fusion! #NoahSchnapp #PrincessPeach #ai #fusion #strangerthings #strangerthings5 #strangerthingsfinale ",
-          "createTime": 1767288197,
-          "createTimeISO": "2026-01-01T17:23:17.000Z",
-          "stats": {
-            "diggCount": 32,
-            "shareCount": 27,
-            "commentCount": 5,
-            "playCount": 2952,
-            "collectCount": 2
-          },
-          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7590444916518456606",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20260101172317-7590444916518456606.jpg",
-          "author": "matchupvault"
-        },
-        {
-          "id": "7590202975184882975",
-          "desc": "Eleven x Vecna (stranger things) \nName this fusion! #Eleven #Vecna #ai #fusion #strangerthings #strangerthings5 #strangerthingsedit ",
-          "createTime": 1767231860,
-          "createTimeISO": "2026-01-01T01:44:20.000Z",
-          "stats": {
-            "diggCount": 20,
-            "shareCount": 5,
-            "commentCount": 8,
-            "playCount": 3408,
-            "collectCount": 3
-          },
-          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7590202975184882975",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20260101014420-7590202975184882975.jpg",
-          "author": "matchupvault"
-        },
-        {
-          "id": "7590154321870736671",
-          "desc": "Pikachu x Raiden! \nName this fusion. #fusion #ai #pikachu #raiden #metalgearsolid #pokemon ",
-          "createTime": 1767220526,
-          "createTimeISO": "2025-12-31T22:35:26.000Z",
-          "stats": {
-            "diggCount": 14,
-            "shareCount": 1,
-            "commentCount": 4,
-            "playCount": 1137,
-            "collectCount": 1
-          },
-          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7590154321870736671",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20251231223526-7590154321870736671.jpg",
-          "author": "matchupvault"
-        },
-        {
-          "id": "7590063652770778381",
-          "desc": "Donald Trump x Kim Kardashain Fusion! #fusion #ai #trump #donaldtrump #kimkardashian ",
-          "createTime": 1767199442,
-          "createTimeISO": "2025-12-31T16:44:02.000Z",
-          "stats": {
-            "diggCount": 32,
-            "shareCount": 22,
-            "commentCount": 9,
-            "playCount": 5328,
-            "collectCount": 5
-          },
-          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7590063652770778381",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20251231164402-7590063652770778381.jpg",
-          "author": "matchupvault"
-        },
-        {
-          "id": "7589859601995009294",
-          "desc": "Joe Rogan x Nicki Minaj Fusion! #fusion #ai #joerogan #nickiminaj ",
-          "createTime": 1767151905,
-          "createTimeISO": "2025-12-31T03:31:45.000Z",
-          "stats": {
-            "diggCount": 1243,
-            "shareCount": 981,
-            "commentCount": 229,
-            "playCount": 77100,
-            "collectCount": 94
-          },
-          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7589859601995009294",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20251231033145-7589859601995009294.jpg",
-          "author": "matchupvault"
-        },
-        {
-          "id": "7589725483181329694",
-          "desc": "Deadpool x Frieza Fusion 🔥\n#deadpool #frieza #dragonball #fusion #fyp ",
-          "createTime": 1767120689,
-          "createTimeISO": "2025-12-30T18:51:29.000Z",
-          "stats": {
-            "diggCount": 9,
-            "shareCount": 3,
-            "commentCount": 5,
-            "playCount": 1242,
-            "collectCount": 1
-          },
-          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7589725483181329694",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20251230185129-7589725483181329694.jpg",
-          "author": "matchupvault"
-        },
-        {
-          "id": "7589397525128285470",
-          "desc": "Who would win? #whowouldwin #fight #battle #vs #starwars",
-          "createTime": 1767044326,
-          "createTimeISO": "2025-12-29T21:38:46.000Z",
-          "stats": {
-            "diggCount": 3,
-            "shareCount": 0,
-            "commentCount": 2,
-            "playCount": 1081,
-            "collectCount": 1
-          },
-          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7589397525128285470",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20251229213846-7589397525128285470.jpg",
-          "author": "matchupvault"
-        },
-        {
-          "id": "7589193496943168799",
-          "desc": "Who would win? Spider-Man vs Thanos #whowouldwin #fight #battle #vs #marvel ",
-          "createTime": 1766996848,
-          "createTimeISO": "2025-12-29T08:27:28.000Z",
-          "stats": {
-            "diggCount": 3,
-            "shareCount": 1,
-            "commentCount": 3,
-            "playCount": 1032,
-            "collectCount": 1
-          },
-          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7589193496943168799",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20251229082728-7589193496943168799.jpg",
-          "author": "matchupvault"
-        },
-        {
-          "id": "7588302202406522142",
-          "desc": "Who would win? #whowouldwin #fight #battle #vs ",
-          "createTime": 1766789310,
-          "createTimeISO": "2025-12-26T22:48:30.000Z",
-          "stats": {
-            "diggCount": 2,
-            "shareCount": 1,
-            "commentCount": 9,
-            "playCount": 943,
-            "collectCount": 0
-          },
-          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7588302202406522142",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20251226224830-7588302202406522142.jpg",
-          "author": "matchupvault"
-        },
-        {
-          "id": "7587528337111698719",
-          "desc": "Who would win?\n\nWait till you see Wolverine vs Alien Xenomorph #whowouldwin #fight #battle #vs #xmen #dragonballz ",
-          "createTime": 1766609122,
-          "createTimeISO": "2025-12-24T20:45:22.000Z",
-          "stats": {
-            "diggCount": 2,
-            "shareCount": 2,
-            "commentCount": 4,
-            "playCount": 709,
-            "collectCount": 1
-          },
-          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7587528337111698719",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20251224204522-7587528337111698719.jpg",
-          "author": "matchupvault"
-        },
-        {
-          "id": "7587213125842193695",
-          "desc": "1 SPACE MARINE vs 100 ALIENS! 🔫👽 Can heavy armor withstand the hive mind? Or is he bug food? 👇 Drop your prediction! #whowouldwin #scifi #marines #aliens #hordebattle ",
-          "createTime": 1766535726,
-          "createTimeISO": "2025-12-24T00:22:06.000Z",
-          "stats": {
-            "diggCount": 5,
-            "shareCount": 0,
-            "commentCount": 1,
-            "playCount": 656,
-            "collectCount": 0
-          },
-          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7587213125842193695",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20251224002206-7587213125842193695.jpg",
-          "author": "matchupvault"
-        },
-        {
-          "id": "7586731461932371231",
-          "desc": "FUTURE vs PAST! 🤖🦴 Can a bone club dent titanium? The Chrome Titan takes on Grog! 👇 Who takes this? #whowouldwin #robot #caveman #scifi #battle",
-          "createTime": 1766423584,
-          "createTimeISO": "2025-12-22T17:13:04.000Z",
-          "stats": {
-            "diggCount": 2,
-            "shareCount": 0,
-            "commentCount": 0,
-            "playCount": 503,
-            "collectCount": 2
-          },
-          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7586731461932371231",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20251222171304-7586731461932371231.jpg",
-          "author": "matchupvault"
-        },
-        {
-          "id": "7585783784075775245",
-          "desc": "Who would win?\n#whowouldwin #ai #fight #fyp ",
-          "createTime": 1766202949,
-          "createTimeISO": "2025-12-20T03:55:49.000Z",
-          "stats": {
-            "diggCount": 1,
-            "shareCount": 0,
-            "commentCount": 0,
-            "playCount": 409,
-            "collectCount": 0
-          },
-          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7585783784075775245",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20251220035549-7585783784075775245.jpg",
-          "author": "matchupvault"
-        },
-        {
-          "id": "7585279903528946975",
-          "desc": "Who would win?\n#ai #whowouldwin #fight #fyp",
-          "createTime": 1766085614,
-          "createTimeISO": "2025-12-18T19:20:14.000Z",
-          "stats": {
-            "diggCount": 0,
-            "shareCount": 0,
-            "commentCount": 0,
-            "playCount": 329,
-            "collectCount": 0
-          },
-          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7585279903528946975",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20251218192014-7585279903528946975.jpg",
-          "author": "matchupvault"
-        }
-      ]
-    },
     "callthemoment": {
       "name": "callthemoment",
       "nickname": "callthemoment",
-      "avatar": "https://api.apify.com/v2/key-value-stores/JkvCJglI63VvqTLaJ/records/avatar-callthemom-7575359298278491191.jpg",
+      "avatar": "https://api.apify.com/v2/key-value-stores/jYu1hapvNPM7rT6Bd/records/avatar-callthemom-7575359298278491191.jpg",
       "signature": "What if everything had WWE commentary? 🎤\nOrdinary moments. Legendary calls.\nSound on for full experience 🔊",
       "fans": 1,
       "following": 11,
@@ -507,11 +23,11 @@
             "diggCount": 2,
             "shareCount": 0,
             "commentCount": 0,
-            "playCount": 118,
+            "playCount": 126,
             "collectCount": 0
           },
           "videoUrl": "https://www.tiktok.com/@callthemoment/video/7589435114535308574",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/JkvCJglI63VvqTLaJ/records/cover-callthemom-20251230000441-7589435114535308574.jpg",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/jYu1hapvNPM7rT6Bd/records/cover-callthemom-20251230000441-7589435114535308574.jpg",
           "author": "callthemoment"
         },
         {
@@ -523,11 +39,11 @@
             "diggCount": 0,
             "shareCount": 0,
             "commentCount": 0,
-            "playCount": 86,
+            "playCount": 88,
             "collectCount": 0
           },
           "videoUrl": "https://www.tiktok.com/@callthemoment/video/7586071577754750221",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/JkvCJglI63VvqTLaJ/records/cover-callthemom-20251220223248-7586071577754750221.jpg",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/jYu1hapvNPM7rT6Bd/records/cover-callthemom-20251220223248-7586071577754750221.jpg",
           "author": "callthemoment"
         },
         {
@@ -543,7 +59,7 @@
             "collectCount": 0
           },
           "videoUrl": "https://www.tiktok.com/@callthemoment/video/7585423252105809183",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/JkvCJglI63VvqTLaJ/records/cover-callthemom-20251219043627-7585423252105809183.jpg",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/jYu1hapvNPM7rT6Bd/records/cover-callthemom-20251219043627-7585423252105809183.jpg",
           "author": "callthemoment"
         },
         {
@@ -559,7 +75,7 @@
             "collectCount": 1
           },
           "videoUrl": "https://www.tiktok.com/@callthemoment/video/7584951085303876894",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/JkvCJglI63VvqTLaJ/records/cover-callthemom-20251217220412-7584951085303876894.jpg",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/jYu1hapvNPM7rT6Bd/records/cover-callthemom-20251217220412-7584951085303876894.jpg",
           "author": "callthemoment"
         }
       ]
@@ -567,27 +83,139 @@
     "wrestler.trivia": {
       "name": "wrestler.trivia",
       "nickname": "wrestler.trivia",
-      "avatar": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/avatar-wrestlertr-7571889738837345293.jpg",
+      "avatar": "https://api.apify.com/v2/key-value-stores/sOyRcriEYmAWtpyvq/records/avatar-wrestlertr-7571889738837345293.jpg",
       "signature": "If you can't pass our quizzes are you even a wrestling fan? 🏆\nDaily trivia, facts & debates\nBring your A game ♦️",
-      "fans": 31,
+      "fans": 49,
       "following": 18,
-      "heart": 360,
-      "video": 15,
+      "heart": 779,
+      "video": 22,
       "videos": [
+        {
+          "id": "7595690703045266701",
+          "desc": "How much do you know about Ric Flair? How many did you get right? #wwe #trivia #wrestling",
+          "createTime": 1768509569,
+          "createTimeISO": "2026-01-15T20:39:29.000Z",
+          "stats": {
+            "diggCount": 0,
+            "shareCount": 0,
+            "commentCount": 0,
+            "playCount": 121,
+            "collectCount": 0
+          },
+          "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7595690703045266701",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/sOyRcriEYmAWtpyvq/records/cover-wrestlertr-20260115203929-7595690703045266701.jpg",
+          "author": "wrestler.trivia"
+        },
+        {
+          "id": "7594864354537884983",
+          "desc": "Can you guess the WWE Superstar? How long did it take you to get it right? #wwe #trivia #wrestling",
+          "createTime": 1768317225,
+          "createTimeISO": "2026-01-13T15:13:45.000Z",
+          "stats": {
+            "diggCount": 10,
+            "shareCount": 0,
+            "commentCount": 3,
+            "playCount": 844,
+            "collectCount": 2
+          },
+          "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7594864354537884983",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/sOyRcriEYmAWtpyvq/records/cover-wrestlertr-20260113151345-7594864354537884983.jpg",
+          "author": "wrestler.trivia"
+        },
+        {
+          "id": "7594122274349927735",
+          "desc": "Can you guess the WWE Superstar? How long did it take you to get it right? #wwe #trivia #wrestling",
+          "createTime": 1768144431,
+          "createTimeISO": "2026-01-11T15:13:51.000Z",
+          "stats": {
+            "diggCount": 5,
+            "shareCount": 0,
+            "commentCount": 0,
+            "playCount": 214,
+            "collectCount": 0
+          },
+          "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7594122274349927735",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/sOyRcriEYmAWtpyvq/records/cover-wrestlertr-20260111151351-7594122274349927735.jpg",
+          "author": "wrestler.trivia"
+        },
+        {
+          "id": "7593380037081058573",
+          "desc": "Can you guess the WWE Superstar? How long did it take you to get it right? #wwe #trivia #wrestling",
+          "createTime": 1767971619,
+          "createTimeISO": "2026-01-09T15:13:39.000Z",
+          "stats": {
+            "diggCount": 2,
+            "shareCount": 0,
+            "commentCount": 1,
+            "playCount": 163,
+            "collectCount": 0
+          },
+          "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7593380037081058573",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/sOyRcriEYmAWtpyvq/records/cover-wrestlertr-20260109151339-7593380037081058573.jpg",
+          "author": "wrestler.trivia"
+        },
+        {
+          "id": "7592693938054581535",
+          "desc": "Who are you favorite WWE wrestlers? John Cena? Cody Rhodes? Logan Paul? Becky Lynch? #wwe #wrestling #fyp ",
+          "createTime": 1767811855,
+          "createTimeISO": "2026-01-07T18:50:55.000Z",
+          "stats": {
+            "diggCount": 85,
+            "shareCount": 0,
+            "commentCount": 89,
+            "playCount": 1778,
+            "collectCount": 11
+          },
+          "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7592693938054581535",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/sOyRcriEYmAWtpyvq/records/cover-wrestlertr-20260107185055-7592693938054581535.jpg",
+          "author": "wrestler.trivia"
+        },
+        {
+          "id": "7592638120579845389",
+          "desc": "Can you guess the WWE Superstar? How long did it take you to get it right? #wwe #trivia #wrestling",
+          "createTime": 1767798835,
+          "createTimeISO": "2026-01-07T15:13:55.000Z",
+          "stats": {
+            "diggCount": 27,
+            "shareCount": 0,
+            "commentCount": 4,
+            "playCount": 653,
+            "collectCount": 2
+          },
+          "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7592638120579845389",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/sOyRcriEYmAWtpyvq/records/cover-wrestlertr-20260107151355-7592638120579845389.jpg",
+          "author": "wrestler.trivia"
+        },
+        {
+          "id": "7591153356492590391",
+          "desc": "Can you guess the WWE Superstar? How long did it take you to get it right? #wwe #trivia #wrestling",
+          "createTime": 1767453189,
+          "createTimeISO": "2026-01-03T15:13:09.000Z",
+          "stats": {
+            "diggCount": 24,
+            "shareCount": 1,
+            "commentCount": 7,
+            "playCount": 638,
+            "collectCount": 4
+          },
+          "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7591153356492590391",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/sOyRcriEYmAWtpyvq/records/cover-wrestlertr-20260103151309-7591153356492590391.jpg",
+          "author": "wrestler.trivia"
+        },
         {
           "id": "7590893703586270495",
           "desc": "Who has the most punchable face in the WWW? Who makes your blood boil? Who can you absolutely NOT stand? What WWE superstar do you most want to fight? #wwe #wrestling #fyp #wrestlingtiktok ",
           "createTime": 1767392697,
           "createTimeISO": "2026-01-02T22:24:57.000Z",
           "stats": {
-            "diggCount": 17,
-            "shareCount": 0,
-            "commentCount": 31,
-            "playCount": 949,
-            "collectCount": 0
+            "diggCount": 187,
+            "shareCount": 8,
+            "commentCount": 423,
+            "playCount": 7623,
+            "collectCount": 21
           },
           "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7590893703586270495",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20260102222457-7590893703586270495.jpg",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/sOyRcriEYmAWtpyvq/records/cover-wrestlertr-20260102222457-7590893703586270495.jpg",
           "author": "wrestler.trivia"
         },
         {
@@ -596,14 +224,14 @@
           "createTime": 1767280386,
           "createTimeISO": "2026-01-01T15:13:06.000Z",
           "stats": {
-            "diggCount": 8,
+            "diggCount": 31,
             "shareCount": 0,
-            "commentCount": 1,
-            "playCount": 378,
-            "collectCount": 0
+            "commentCount": 3,
+            "playCount": 864,
+            "collectCount": 2
           },
           "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7590411218121149709",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20260101151306-7590411218121149709.jpg",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/sOyRcriEYmAWtpyvq/records/cover-wrestlertr-20260101151306-7590411218121149709.jpg",
           "author": "wrestler.trivia"
         },
         {
@@ -612,14 +240,14 @@
           "createTime": 1767194003,
           "createTimeISO": "2025-12-31T15:13:23.000Z",
           "stats": {
-            "diggCount": 25,
+            "diggCount": 42,
             "shareCount": 1,
-            "commentCount": 7,
-            "playCount": 1076,
-            "collectCount": 3
+            "commentCount": 12,
+            "playCount": 1492,
+            "collectCount": 5
           },
           "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7590040372525698317",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251231151323-7590040372525698317.jpg",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/sOyRcriEYmAWtpyvq/records/cover-wrestlertr-20251231151323-7590040372525698317.jpg",
           "author": "wrestler.trivia"
         },
         {
@@ -628,14 +256,14 @@
           "createTime": 1767127548,
           "createTimeISO": "2025-12-30T20:45:48.000Z",
           "stats": {
-            "diggCount": 63,
+            "diggCount": 101,
             "shareCount": 0,
-            "commentCount": 170,
-            "playCount": 4181,
-            "collectCount": 6
+            "commentCount": 209,
+            "playCount": 5885,
+            "collectCount": 19
           },
           "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7589754979087404318",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251230204548-7589754979087404318.jpg",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/sOyRcriEYmAWtpyvq/records/cover-wrestlertr-20251230204548-7589754979087404318.jpg",
           "author": "wrestler.trivia"
         },
         {
@@ -644,14 +272,14 @@
           "createTime": 1767107603,
           "createTimeISO": "2025-12-30T15:13:23.000Z",
           "stats": {
-            "diggCount": 42,
+            "diggCount": 45,
             "shareCount": 0,
             "commentCount": 7,
-            "playCount": 1086,
-            "collectCount": 5
+            "playCount": 1132,
+            "collectCount": 6
           },
           "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7589669176294280461",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251230151323-7589669176294280461.jpg",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/sOyRcriEYmAWtpyvq/records/cover-wrestlertr-20251230151323-7589669176294280461.jpg",
           "author": "wrestler.trivia"
         },
         {
@@ -660,14 +288,14 @@
           "createTime": 1766934820,
           "createTimeISO": "2025-12-28T15:13:40.000Z",
           "stats": {
-            "diggCount": 27,
+            "diggCount": 30,
             "shareCount": 0,
             "commentCount": 8,
-            "playCount": 1050,
-            "collectCount": 5
+            "playCount": 1145,
+            "collectCount": 6
           },
           "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7588927079740083469",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251228151340-7588927079740083469.jpg",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/sOyRcriEYmAWtpyvq/records/cover-wrestlertr-20251228151340-7588927079740083469.jpg",
           "author": "wrestler.trivia"
         },
         {
@@ -676,14 +304,14 @@
           "createTime": 1766762027,
           "createTimeISO": "2025-12-26T15:13:47.000Z",
           "stats": {
-            "diggCount": 20,
+            "diggCount": 21,
             "shareCount": 0,
             "commentCount": 5,
-            "playCount": 977,
-            "collectCount": 1
+            "playCount": 1015,
+            "collectCount": 2
           },
           "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7588184887555820814",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251226151347-7588184887555820814.jpg",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/sOyRcriEYmAWtpyvq/records/cover-wrestlertr-20251226151347-7588184887555820814.jpg",
           "author": "wrestler.trivia"
         },
         {
@@ -692,14 +320,14 @@
           "createTime": 1766589200,
           "createTimeISO": "2025-12-24T15:13:20.000Z",
           "stats": {
-            "diggCount": 20,
+            "diggCount": 21,
             "shareCount": 0,
             "commentCount": 4,
-            "playCount": 913,
-            "collectCount": 1
+            "playCount": 943,
+            "collectCount": 2
           },
           "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7587442658717584653",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251224151320-7587442658717584653.jpg",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/sOyRcriEYmAWtpyvq/records/cover-wrestlertr-20251224151320-7587442658717584653.jpg",
           "author": "wrestler.trivia"
         },
         {
@@ -711,11 +339,11 @@
             "diggCount": 19,
             "shareCount": 1,
             "commentCount": 1,
-            "playCount": 1125,
-            "collectCount": 0
+            "playCount": 1155,
+            "collectCount": 1
           },
           "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7587071694028721421",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251223151319-7587071694028721421.jpg",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/sOyRcriEYmAWtpyvq/records/cover-wrestlertr-20251223151319-7587071694028721421.jpg",
           "author": "wrestler.trivia"
         },
         {
@@ -724,14 +352,14 @@
           "createTime": 1766423403,
           "createTimeISO": "2025-12-22T17:10:03.000Z",
           "stats": {
-            "diggCount": 9,
+            "diggCount": 10,
             "shareCount": 0,
             "commentCount": 1,
-            "playCount": 363,
-            "collectCount": 1
+            "playCount": 387,
+            "collectCount": 2
           },
           "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7586730661680139575",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251222171003-7586730661680139575.jpg",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/sOyRcriEYmAWtpyvq/records/cover-wrestlertr-20251222171003-7586730661680139575.jpg",
           "author": "wrestler.trivia"
         },
         {
@@ -740,14 +368,14 @@
           "createTime": 1766366084,
           "createTimeISO": "2025-12-22T01:14:44.000Z",
           "stats": {
-            "diggCount": 24,
+            "diggCount": 25,
             "shareCount": 1,
             "commentCount": 7,
-            "playCount": 757,
-            "collectCount": 2
+            "playCount": 786,
+            "collectCount": 3
           },
           "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7586484467582192951",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251222011444-7586484467582192951.jpg",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/sOyRcriEYmAWtpyvq/records/cover-wrestlertr-20251222011444-7586484467582192951.jpg",
           "author": "wrestler.trivia"
         },
         {
@@ -756,14 +384,14 @@
           "createTime": 1766171788,
           "createTimeISO": "2025-12-19T19:16:28.000Z",
           "stats": {
-            "diggCount": 20,
+            "diggCount": 21,
             "shareCount": 0,
             "commentCount": 7,
-            "playCount": 584,
-            "collectCount": 1
+            "playCount": 607,
+            "collectCount": 2
           },
           "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7585649959312067895",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251219191628-7585649959312067895.jpg",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/sOyRcriEYmAWtpyvq/records/cover-wrestlertr-20251219191628-7585649959312067895.jpg",
           "author": "wrestler.trivia"
         },
         {
@@ -772,14 +400,14 @@
           "createTime": 1766157217,
           "createTimeISO": "2025-12-19T15:13:37.000Z",
           "stats": {
-            "diggCount": 24,
+            "diggCount": 25,
             "shareCount": 0,
             "commentCount": 2,
-            "playCount": 595,
+            "playCount": 618,
             "collectCount": 0
           },
           "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7585587428560243982",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251219151337-7585587428560243982.jpg",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/sOyRcriEYmAWtpyvq/records/cover-wrestlertr-20251219151337-7585587428560243982.jpg",
           "author": "wrestler.trivia"
         },
         {
@@ -791,11 +419,11 @@
             "diggCount": 16,
             "shareCount": 0,
             "commentCount": 2,
-            "playCount": 535,
+            "playCount": 565,
             "collectCount": 0
           },
           "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7585380853048495373",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251219015210-7585380853048495373.jpg",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/sOyRcriEYmAWtpyvq/records/cover-wrestlertr-20251219015210-7585380853048495373.jpg",
           "author": "wrestler.trivia"
         },
         {
@@ -804,15 +432,931 @@
           "createTime": 1766001603,
           "createTimeISO": "2025-12-17T20:00:03.000Z",
           "stats": {
-            "diggCount": 26,
-            "shareCount": 0,
-            "commentCount": 9,
-            "playCount": 1800,
+            "diggCount": 32,
+            "shareCount": 1,
+            "commentCount": 13,
+            "playCount": 2082,
             "collectCount": 4
           },
           "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7584919085222317343",
-          "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251217200003-7584919085222317343.jpg",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/sOyRcriEYmAWtpyvq/records/cover-wrestlertr-20251217200003-7584919085222317343.jpg",
           "author": "wrestler.trivia"
+        }
+      ]
+    },
+    "matchupvault": {
+      "name": "matchupvault",
+      "nickname": "Matchup Vault",
+      "avatar": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/avatar-matchupvau-7575356014707606583.jpg",
+      "signature": "Hybrid Fusions 🧬\nDaily Matchups 🥊\nCinematic AI Videos 🤖",
+      "fans": 267,
+      "following": 41,
+      "heart": 2898,
+      "video": 40,
+      "videos": [
+        {
+          "id": "7592761802962865438",
+          "desc": "The Rock x Cardi B \nName this fusion! \n#TheRock #CardiB #ai #fusion #wwe ",
+          "createTime": 1767827638,
+          "createTimeISO": "2026-01-07T23:13:58.000Z",
+          "stats": {
+            "diggCount": 180,
+            "shareCount": 147,
+            "commentCount": 67,
+            "playCount": 16000,
+            "collectCount": 28
+          },
+          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7592761802962865438",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260107231358-7592761802962865438.jpg",
+          "author": "matchupvault"
+        },
+        {
+          "id": "7591601499248151839",
+          "desc": "John Cena x Becky Lynch \nName this fusion! \n#JohnCena #BeckyLynch #ai #fusion #wwe  ",
+          "createTime": 1767557485,
+          "createTimeISO": "2026-01-04T20:11:25.000Z",
+          "stats": {
+            "diggCount": 321,
+            "shareCount": 91,
+            "commentCount": 38,
+            "playCount": 26200,
+            "collectCount": 48
+          },
+          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7591601499248151839",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260104201125-7591601499248151839.jpg",
+          "author": "matchupvault"
+        },
+        {
+          "id": "7589859601995009294",
+          "desc": "Joe Rogan x Nicki Minaj Fusion! #fusion #ai #joerogan #nickiminaj ",
+          "createTime": 1767151905,
+          "createTimeISO": "2025-12-31T03:31:45.000Z",
+          "stats": {
+            "diggCount": 1777,
+            "shareCount": 1398,
+            "commentCount": 268,
+            "playCount": 112600,
+            "collectCount": 135
+          },
+          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7589859601995009294",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20251231033145-7589859601995009294.jpg",
+          "author": "matchupvault"
+        },
+        {
+          "id": "7595724498498882830",
+          "desc": "Vlad the Impaler x Bad Bunny\nName this fusion!\n#VladtheImpaler #BadBunny #ai #fusion",
+          "createTime": 1768517439,
+          "createTimeISO": "2026-01-15T22:50:39.000Z",
+          "stats": {
+            "diggCount": 1,
+            "shareCount": 0,
+            "commentCount": 0,
+            "playCount": 121,
+            "collectCount": 0
+          },
+          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7595724498498882830",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260115225039-7595724498498882830.jpg",
+          "author": "matchupvault"
+        },
+        {
+          "id": "7594514968976919839",
+          "desc": "David Harbour x Winona Ryder\nStranger Things\nName this fusion! \n#DavidHarbour #WinonaRyder #ai #fusion #strangerthings",
+          "createTime": 1768235842,
+          "createTimeISO": "2026-01-12T16:37:22.000Z",
+          "stats": {
+            "diggCount": 31,
+            "shareCount": 1,
+            "commentCount": 0,
+            "playCount": 2156,
+            "collectCount": 6
+          },
+          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7594514968976919839",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260112163722-7594514968976919839.jpg",
+          "author": "matchupvault"
+        },
+        {
+          "id": "7594387176243121439",
+          "desc": "Charizard x The Thing \nName this fusion! \n#Charizard #TheThing #ai #fusion #pokemon",
+          "createTime": 1768206111,
+          "createTimeISO": "2026-01-12T08:21:51.000Z",
+          "stats": {
+            "diggCount": 55,
+            "shareCount": 2,
+            "commentCount": 11,
+            "playCount": 1132,
+            "collectCount": 3
+          },
+          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7594387176243121439",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260112082151-7594387176243121439.jpg",
+          "author": "matchupvault"
+        },
+        {
+          "id": "7594261016301636894",
+          "desc": "Tom Brady x Green Lantern \nName this fusion! \n#TomBrady #GreenLantern #ai #fusion #marvel @Tom Brady ",
+          "createTime": 1768176700,
+          "createTimeISO": "2026-01-12T00:11:40.000Z",
+          "stats": {
+            "diggCount": 11,
+            "shareCount": 1,
+            "commentCount": 6,
+            "playCount": 1523,
+            "collectCount": 2
+          },
+          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7594261016301636894",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260112001140-7594261016301636894.jpg",
+          "author": "matchupvault"
+        },
+        {
+          "id": "7593938259772804382",
+          "desc": "Sub-Zero x Barack Obama \nName this fusion! \n#SubZero #BarackObama #ai #fusion #mortalkombat",
+          "createTime": 1768101550,
+          "createTimeISO": "2026-01-11T03:19:10.000Z",
+          "stats": {
+            "diggCount": 29,
+            "shareCount": 2,
+            "commentCount": 22,
+            "playCount": 1010,
+            "collectCount": 3
+          },
+          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7593938259772804382",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260111031910-7593938259772804382.jpg",
+          "author": "matchupvault"
+        },
+        {
+          "id": "7593774756638297374",
+          "desc": "Scorpion x Invisible Woman \nName this fusion! \n#Scorpion #InvisibleWoman #ai #mortalkombat #fantasticfour",
+          "createTime": 1768063495,
+          "createTimeISO": "2026-01-10T16:44:55.000Z",
+          "stats": {
+            "diggCount": 37,
+            "shareCount": 0,
+            "commentCount": 6,
+            "playCount": 882,
+            "collectCount": 3
+          },
+          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7593774756638297374",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260110164455-7593774756638297374.jpg",
+          "author": "matchupvault"
+        },
+        {
+          "id": "7593545830519409950",
+          "desc": "Godzilla x King Kong \nName this fusion! \n#Godzilla #KingKong #ai #fusion #kong",
+          "createTime": 1768010183,
+          "createTimeISO": "2026-01-10T01:56:23.000Z",
+          "stats": {
+            "diggCount": 25,
+            "shareCount": 1,
+            "commentCount": 4,
+            "playCount": 1091,
+            "collectCount": 4
+          },
+          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7593545830519409950",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260110015623-7593545830519409950.jpg",
+          "author": "matchupvault"
+        },
+        {
+          "id": "7593487036447722782",
+          "desc": "Pikachu x Raiden\nName this fusion!\n#pikachu #raiden #mortalkombat #pokemon #ai",
+          "createTime": 1767996490,
+          "createTimeISO": "2026-01-09T22:08:10.000Z",
+          "stats": {
+            "diggCount": 64,
+            "shareCount": 7,
+            "commentCount": 10,
+            "playCount": 1304,
+            "collectCount": 4
+          },
+          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7593487036447722782",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260109220810-7593487036447722782.jpg",
+          "author": "matchupvault"
+        },
+        {
+          "id": "7593431249830546719",
+          "desc": "Batman x Galadriel \nName this fusion! \n#Batman #Galadriel #ai #fusion #dc",
+          "createTime": 1767983518,
+          "createTimeISO": "2026-01-09T18:31:58.000Z",
+          "stats": {
+            "diggCount": 10,
+            "shareCount": 1,
+            "commentCount": 9,
+            "playCount": 771,
+            "collectCount": 0
+          },
+          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7593431249830546719",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260109183158-7593431249830546719.jpg",
+          "author": "matchupvault"
+        },
+        {
+          "id": "7593166344363740446",
+          "desc": "Doctor Strange x Kanye West \nName this fusion! \n#DoctorStrange #KanyeWest #ai #fusion #marvel ",
+          "createTime": 1767921834,
+          "createTimeISO": "2026-01-09T01:23:54.000Z",
+          "stats": {
+            "diggCount": 15,
+            "shareCount": 0,
+            "commentCount": 7,
+            "playCount": 972,
+            "collectCount": 0
+          },
+          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7593166344363740446",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260109012354-7593166344363740446.jpg",
+          "author": "matchupvault"
+        },
+        {
+          "id": "7593035275404594462",
+          "desc": "Stranger Things Fusion!\nCaleb McLaughlin x Sadie Sink \nName this fusion! \n#CalebMcLaughlin #SadieSink #ai #fusion #strangerthings",
+          "createTime": 1767891302,
+          "createTimeISO": "2026-01-08T16:55:02.000Z",
+          "stats": {
+            "diggCount": 23,
+            "shareCount": 4,
+            "commentCount": 5,
+            "playCount": 2476,
+            "collectCount": 9
+          },
+          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7593035275404594462",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260108165502-7593035275404594462.jpg",
+          "author": "matchupvault"
+        },
+        {
+          "id": "7592653673918975262",
+          "desc": "Joe Keery x Maya Hawke \nName this fusion! \n#JoeKeery #MayaHawke #ai #fusion #strangerthings ",
+          "createTime": 1767802454,
+          "createTimeISO": "2026-01-07T16:14:14.000Z",
+          "stats": {
+            "diggCount": 10,
+            "shareCount": 2,
+            "commentCount": 4,
+            "playCount": 1698,
+            "collectCount": 5
+          },
+          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7592653673918975262",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260107161414-7592653673918975262.jpg",
+          "author": "matchupvault"
+        },
+        {
+          "id": "7592406854765006111",
+          "desc": "Millie Bobby Brown x Godzilla \nName this fusion! \n#MillieBobbyBrown #Godzilla #ai #fusion #strangerthings",
+          "createTime": 1767744996,
+          "createTimeISO": "2026-01-07T00:16:36.000Z",
+          "stats": {
+            "diggCount": 16,
+            "shareCount": 0,
+            "commentCount": 5,
+            "playCount": 1358,
+            "collectCount": 4
+          },
+          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7592406854765006111",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260107001636-7592406854765006111.jpg",
+          "author": "matchupvault"
+        },
+        {
+          "id": "7592313480355581214",
+          "desc": "Alien Xenomorph x Kitana \nName this fusion! #AlienXenomorph #Kitana #ai #fusion #mortalkombat ",
+          "createTime": 1767723276,
+          "createTimeISO": "2026-01-06T18:14:36.000Z",
+          "stats": {
+            "diggCount": 32,
+            "shareCount": 0,
+            "commentCount": 5,
+            "playCount": 1241,
+            "collectCount": 4
+          },
+          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7592313480355581214",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260106181436-7592313480355581214.jpg",
+          "author": "matchupvault"
+        },
+        {
+          "id": "7592053749732953374",
+          "desc": "Justin Bieber x Hailey Bieber\nName this fusion!\n#justinbieber #haileybieber #ai #fusion @Justin Bieber @Hailey Bieber #daisies",
+          "createTime": 1767662781,
+          "createTimeISO": "2026-01-06T01:26:21.000Z",
+          "stats": {
+            "diggCount": 7,
+            "shareCount": 0,
+            "commentCount": 6,
+            "playCount": 1532,
+            "collectCount": 4
+          },
+          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7592053749732953374",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260106012621-7592053749732953374.jpg",
+          "author": "matchupvault"
+        },
+        {
+          "id": "7591929616059698462",
+          "desc": "Julius Caesar x Hulk \nName this fusion! #JuliusCaesar #Hulk #ai #fusion  ",
+          "createTime": 1767633898,
+          "createTimeISO": "2026-01-05T17:24:58.000Z",
+          "stats": {
+            "diggCount": 7,
+            "shareCount": 0,
+            "commentCount": 4,
+            "playCount": 675,
+            "collectCount": 2
+          },
+          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7591929616059698462",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260105172458-7591929616059698462.jpg",
+          "author": "matchupvault"
+        },
+        {
+          "id": "7591688737944341790",
+          "desc": "Magneto x Mr. Fantastic\nName this fusion!\n#magneto #xmen #mrfantastic #fantastic4 #ai ",
+          "createTime": 1767577798,
+          "createTimeISO": "2026-01-05T01:49:58.000Z",
+          "stats": {
+            "diggCount": 8,
+            "shareCount": 0,
+            "commentCount": 6,
+            "playCount": 771,
+            "collectCount": 0
+          },
+          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7591688737944341790",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260105014958-7591688737944341790.jpg",
+          "author": "matchupvault"
+        },
+        {
+          "id": "7591364559806532894",
+          "desc": "Mr. Beast x Beast! X-men \nName this fusion\n#mrbeast #xmen #beast #ai #fusion @MrBeast ",
+          "createTime": 1767502319,
+          "createTimeISO": "2026-01-04T04:51:59.000Z",
+          "stats": {
+            "diggCount": 5,
+            "shareCount": 1,
+            "commentCount": 1,
+            "playCount": 724,
+            "collectCount": 3
+          },
+          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7591364559806532894",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260104045159-7591364559806532894.jpg",
+          "author": "matchupvault"
+        },
+        {
+          "id": "7591293679663353119",
+          "desc": "IShowSpeed x Wolverine \nName this fusion! \n#IShowSpeed #Wolverine #ai #fusion @IShowSpeed #xmen ",
+          "createTime": 1767485812,
+          "createTimeISO": "2026-01-04T00:16:52.000Z",
+          "stats": {
+            "diggCount": 8,
+            "shareCount": 2,
+            "commentCount": 3,
+            "playCount": 1425,
+            "collectCount": 2
+          },
+          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7591293679663353119",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260104001652-7591293679663353119.jpg",
+          "author": "matchupvault"
+        },
+        {
+          "id": "7591200331002842399",
+          "desc": "Superman x Kratos 🧬\nName this fusion!\n#superman #kratos #marvel #godofwar #ai #fusion ",
+          "createTime": 1767464088,
+          "createTimeISO": "2026-01-03T18:14:48.000Z",
+          "stats": {
+            "diggCount": 7,
+            "shareCount": 0,
+            "commentCount": 4,
+            "playCount": 631,
+            "collectCount": 2
+          },
+          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7591200331002842399",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260103181448-7591200331002842399.jpg",
+          "author": "matchupvault"
+        },
+        {
+          "id": "7590972427669114142",
+          "desc": "Captain America x Samurai General\n\nName this fusion!\n#ai #fusion #captainamerica #marvel #samurai ",
+          "createTime": 1767411016,
+          "createTimeISO": "2026-01-03T03:30:16.000Z",
+          "stats": {
+            "diggCount": 13,
+            "shareCount": 0,
+            "commentCount": 2,
+            "playCount": 817,
+            "collectCount": 1
+          },
+          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7590972427669114142",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260103033016-7590972427669114142.jpg",
+          "author": "matchupvault"
+        },
+        {
+          "id": "7590872396438048031",
+          "desc": "Caleb McLaughlin (Lucas) x Vecna\nName this fusion! \nStranger Things hybrid\n#CalebMcLaughlin #Vecna #ai #fusion #strangerthings #lucas",
+          "createTime": 1767387728,
+          "createTimeISO": "2026-01-02T21:02:08.000Z",
+          "stats": {
+            "diggCount": 10,
+            "shareCount": 1,
+            "commentCount": 15,
+            "playCount": 2225,
+            "collectCount": 3
+          },
+          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7590872396438048031",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260102210208-7590872396438048031.jpg",
+          "author": "matchupvault"
+        },
+        {
+          "id": "7590804153509776670",
+          "desc": "Billie Eilish x Vladimir Putin \nName this fusion! #BillieEilish #VladimirPutin #ai #fusion #russia ",
+          "createTime": 1767371849,
+          "createTimeISO": "2026-01-02T16:37:29.000Z",
+          "stats": {
+            "diggCount": 36,
+            "shareCount": 17,
+            "commentCount": 19,
+            "playCount": 3067,
+            "collectCount": 6
+          },
+          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7590804153509776670",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260102163729-7590804153509776670.jpg",
+          "author": "matchupvault"
+        },
+        {
+          "id": "7590562335966727455",
+          "desc": "Sadie Sink x Demogorgon (stranger things) \nName this fusion! \n#SadieSink #demogorgon #strangerthings #ai #fusion #max ",
+          "createTime": 1767315536,
+          "createTimeISO": "2026-01-02T00:58:56.000Z",
+          "stats": {
+            "diggCount": 11,
+            "shareCount": 6,
+            "commentCount": 1,
+            "playCount": 3107,
+            "collectCount": 2
+          },
+          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7590562335966727455",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260102005856-7590562335966727455.jpg",
+          "author": "matchupvault"
+        },
+        {
+          "id": "7590444916518456606",
+          "desc": "Noah Schnapp x Princess Peach \nName this fusion! #NoahSchnapp #PrincessPeach #ai #fusion #strangerthings #strangerthings5 #strangerthingsfinale ",
+          "createTime": 1767288197,
+          "createTimeISO": "2026-01-01T17:23:17.000Z",
+          "stats": {
+            "diggCount": 35,
+            "shareCount": 28,
+            "commentCount": 5,
+            "playCount": 3471,
+            "collectCount": 2
+          },
+          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7590444916518456606",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260101172317-7590444916518456606.jpg",
+          "author": "matchupvault"
+        },
+        {
+          "id": "7590202975184882975",
+          "desc": "Eleven x Vecna (stranger things) \nName this fusion! #Eleven #Vecna #ai #fusion #strangerthings #strangerthings5 #strangerthingsedit ",
+          "createTime": 1767231860,
+          "createTimeISO": "2026-01-01T01:44:20.000Z",
+          "stats": {
+            "diggCount": 28,
+            "shareCount": 5,
+            "commentCount": 10,
+            "playCount": 4969,
+            "collectCount": 6
+          },
+          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7590202975184882975",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260101014420-7590202975184882975.jpg",
+          "author": "matchupvault"
+        },
+        {
+          "id": "7590154321870736671",
+          "desc": "Pikachu x Raiden! \nName this fusion. #fusion #ai #pikachu #raiden #metalgearsolid #pokemon ",
+          "createTime": 1767220526,
+          "createTimeISO": "2025-12-31T22:35:26.000Z",
+          "stats": {
+            "diggCount": 17,
+            "shareCount": 1,
+            "commentCount": 4,
+            "playCount": 1353,
+            "collectCount": 2
+          },
+          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7590154321870736671",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20251231223526-7590154321870736671.jpg",
+          "author": "matchupvault"
+        },
+        {
+          "id": "7590063652770778381",
+          "desc": "Donald Trump x Kim Kardashain Fusion! #fusion #ai #trump #donaldtrump #kimkardashian ",
+          "createTime": 1767199442,
+          "createTimeISO": "2025-12-31T16:44:02.000Z",
+          "stats": {
+            "diggCount": 38,
+            "shareCount": 27,
+            "commentCount": 10,
+            "playCount": 6289,
+            "collectCount": 9
+          },
+          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7590063652770778381",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20251231164402-7590063652770778381.jpg",
+          "author": "matchupvault"
+        },
+        {
+          "id": "7589725483181329694",
+          "desc": "Deadpool x Frieza Fusion 🔥\n#deadpool #frieza #dragonball #fusion #fyp ",
+          "createTime": 1767120689,
+          "createTimeISO": "2025-12-30T18:51:29.000Z",
+          "stats": {
+            "diggCount": 13,
+            "shareCount": 4,
+            "commentCount": 6,
+            "playCount": 1447,
+            "collectCount": 1
+          },
+          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7589725483181329694",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20251230185129-7589725483181329694.jpg",
+          "author": "matchupvault"
+        },
+        {
+          "id": "7589397525128285470",
+          "desc": "Who would win? #whowouldwin #fight #battle #vs #starwars",
+          "createTime": 1767044326,
+          "createTimeISO": "2025-12-29T21:38:46.000Z",
+          "stats": {
+            "diggCount": 4,
+            "shareCount": 0,
+            "commentCount": 2,
+            "playCount": 1246,
+            "collectCount": 1
+          },
+          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7589397525128285470",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20251229213846-7589397525128285470.jpg",
+          "author": "matchupvault"
+        },
+        {
+          "id": "7589193496943168799",
+          "desc": "Who would win? Spider-Man vs Thanos #whowouldwin #fight #battle #vs #marvel ",
+          "createTime": 1766996848,
+          "createTimeISO": "2025-12-29T08:27:28.000Z",
+          "stats": {
+            "diggCount": 3,
+            "shareCount": 1,
+            "commentCount": 3,
+            "playCount": 1178,
+            "collectCount": 1
+          },
+          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7589193496943168799",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20251229082728-7589193496943168799.jpg",
+          "author": "matchupvault"
+        },
+        {
+          "id": "7588302202406522142",
+          "desc": "Who would win? #whowouldwin #fight #battle #vs ",
+          "createTime": 1766789310,
+          "createTimeISO": "2025-12-26T22:48:30.000Z",
+          "stats": {
+            "diggCount": 3,
+            "shareCount": 1,
+            "commentCount": 9,
+            "playCount": 1084,
+            "collectCount": 0
+          },
+          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7588302202406522142",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20251226224830-7588302202406522142.jpg",
+          "author": "matchupvault"
+        },
+        {
+          "id": "7587528337111698719",
+          "desc": "Who would win?\n\nWait till you see Wolverine vs Alien Xenomorph #whowouldwin #fight #battle #vs #xmen #dragonballz ",
+          "createTime": 1766609122,
+          "createTimeISO": "2025-12-24T20:45:22.000Z",
+          "stats": {
+            "diggCount": 2,
+            "shareCount": 2,
+            "commentCount": 4,
+            "playCount": 828,
+            "collectCount": 1
+          },
+          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7587528337111698719",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20251224204522-7587528337111698719.jpg",
+          "author": "matchupvault"
+        },
+        {
+          "id": "7587213125842193695",
+          "desc": "1 SPACE MARINE vs 100 ALIENS! 🔫👽 Can heavy armor withstand the hive mind? Or is he bug food? 👇 Drop your prediction! #whowouldwin #scifi #marines #aliens #hordebattle ",
+          "createTime": 1766535726,
+          "createTimeISO": "2025-12-24T00:22:06.000Z",
+          "stats": {
+            "diggCount": 5,
+            "shareCount": 0,
+            "commentCount": 1,
+            "playCount": 770,
+            "collectCount": 0
+          },
+          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7587213125842193695",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20251224002206-7587213125842193695.jpg",
+          "author": "matchupvault"
+        },
+        {
+          "id": "7586731461932371231",
+          "desc": "FUTURE vs PAST! 🤖🦴 Can a bone club dent titanium? The Chrome Titan takes on Grog! 👇 Who takes this? #whowouldwin #robot #caveman #scifi #battle",
+          "createTime": 1766423584,
+          "createTimeISO": "2025-12-22T17:13:04.000Z",
+          "stats": {
+            "diggCount": 2,
+            "shareCount": 0,
+            "commentCount": 0,
+            "playCount": 586,
+            "collectCount": 2
+          },
+          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7586731461932371231",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20251222171304-7586731461932371231.jpg",
+          "author": "matchupvault"
+        },
+        {
+          "id": "7585783784075775245",
+          "desc": "Who would win?\n#whowouldwin #ai #fight #fyp ",
+          "createTime": 1766202949,
+          "createTimeISO": "2025-12-20T03:55:49.000Z",
+          "stats": {
+            "diggCount": 1,
+            "shareCount": 0,
+            "commentCount": 0,
+            "playCount": 469,
+            "collectCount": 0
+          },
+          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7585783784075775245",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20251220035549-7585783784075775245.jpg",
+          "author": "matchupvault"
+        },
+        {
+          "id": "7585279903528946975",
+          "desc": "Who would win?\n#ai #whowouldwin #fight #fyp",
+          "createTime": 1766085614,
+          "createTimeISO": "2025-12-18T19:20:14.000Z",
+          "stats": {
+            "diggCount": 0,
+            "shareCount": 0,
+            "commentCount": 0,
+            "playCount": 384,
+            "collectCount": 0
+          },
+          "videoUrl": "https://www.tiktok.com/@matchupvault/video/7585279903528946975",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20251218192014-7585279903528946975.jpg",
+          "author": "matchupvault"
+        }
+      ]
+    },
+    "ragequitguy": {
+      "name": "ragequitguy",
+      "nickname": "Rage Quit",
+      "avatar": "https://api.apify.com/v2/key-value-stores/bvdrHs7ODGLTggXo3/records/avatar-ragequitgu-7576470850129871927.jpg",
+      "signature": "Caught on camera rage quitting",
+      "fans": 9,
+      "following": 6,
+      "heart": 53,
+      "video": 7,
+      "videos": [
+        {
+          "id": "7595689399027813646",
+          "desc": "digging through old family tapes and found this gem... unc needed therapy 💀📼 #vhs #90s #retro #ragequit #foundfootage",
+          "createTime": 1768509265,
+          "createTimeISO": "2026-01-15T20:34:25.000Z",
+          "stats": {
+            "diggCount": 0,
+            "shareCount": 0,
+            "commentCount": 0,
+            "playCount": 4,
+            "collectCount": 0
+          },
+          "videoUrl": "https://www.tiktok.com/@ragequitguy/video/7595689399027813646",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/bvdrHs7ODGLTggXo3/records/cover-ragequitgu-20260115203425-7595689399027813646.jpg",
+          "author": "ragequitguy"
+        },
+        {
+          "id": "7592874745935252766",
+          "desc": "What is your favorite video game? \nFortnite?\nCall of duty?\nLeague of Legends?\nMortal Kombat?\nMario Kart?",
+          "createTime": 1767853950,
+          "createTimeISO": "2026-01-08T06:32:30.000Z",
+          "stats": {
+            "diggCount": 20,
+            "shareCount": 0,
+            "commentCount": 17,
+            "playCount": 716,
+            "collectCount": 2
+          },
+          "videoUrl": "https://www.tiktok.com/@ragequitguy/video/7592874745935252766",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/bvdrHs7ODGLTggXo3/records/cover-ragequitgu-20260108063230-7592874745935252766.jpg",
+          "author": "ragequitguy"
+        },
+        {
+          "id": "7591643766889532702",
+          "desc": "Angriest gamer in the world. Anyone else freak out like this? 😂 #meltdown #ragequit #freakout #gaming ",
+          "createTime": 1767567328,
+          "createTimeISO": "2026-01-04T22:55:28.000Z",
+          "stats": {
+            "diggCount": 8,
+            "shareCount": 0,
+            "commentCount": 3,
+            "playCount": 534,
+            "collectCount": 2
+          },
+          "videoUrl": "https://www.tiktok.com/@ragequitguy/video/7591643766889532702",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/bvdrHs7ODGLTggXo3/records/cover-ragequitgu-20260104225528-7591643766889532702.jpg",
+          "author": "ragequitguy"
+        },
+        {
+          "id": "7590890988692835614",
+          "desc": "Rage quit 😂 #meltdown #ragequit #freakout #gaming #gamerfreakout ",
+          "createTime": 1767392051,
+          "createTimeISO": "2026-01-02T22:14:11.000Z",
+          "stats": {
+            "diggCount": 4,
+            "shareCount": 1,
+            "commentCount": 3,
+            "playCount": 409,
+            "collectCount": 0
+          },
+          "videoUrl": "https://www.tiktok.com/@ragequitguy/video/7590890988692835614",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/bvdrHs7ODGLTggXo3/records/cover-ragequitgu-20260102221411-7590890988692835614.jpg",
+          "author": "ragequitguy"
+        },
+        {
+          "id": "7590088634762611999",
+          "desc": "First rage quit caught on camera? 😂 #meltdown #ragequit #freakout #gaming ",
+          "createTime": 1767205238,
+          "createTimeISO": "2025-12-31T18:20:38.000Z",
+          "stats": {
+            "diggCount": 5,
+            "shareCount": 0,
+            "commentCount": 2,
+            "playCount": 315,
+            "collectCount": 1
+          },
+          "videoUrl": "https://www.tiktok.com/@ragequitguy/video/7590088634762611999",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/bvdrHs7ODGLTggXo3/records/cover-ragequitgu-20251231182038-7590088634762611999.jpg",
+          "author": "ragequitguy"
+        },
+        {
+          "id": "7589825571136245022",
+          "desc": "I think he lost 😂 #meltdown #ragequit #gamerfreakout #freakout ",
+          "createTime": 1767143984,
+          "createTimeISO": "2025-12-31T01:19:44.000Z",
+          "stats": {
+            "diggCount": 3,
+            "shareCount": 1,
+            "commentCount": 1,
+            "playCount": 297,
+            "collectCount": 0
+          },
+          "videoUrl": "https://www.tiktok.com/@ragequitguy/video/7589825571136245022",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/bvdrHs7ODGLTggXo3/records/cover-ragequitgu-20251231011944-7589825571136245022.jpg",
+          "author": "ragequitguy"
+        },
+        {
+          "id": "7589771192920247582",
+          "desc": "",
+          "createTime": 1767131323,
+          "createTimeISO": "2025-12-30T21:48:43.000Z",
+          "stats": {
+            "diggCount": 13,
+            "shareCount": 2,
+            "commentCount": 20,
+            "playCount": 5496,
+            "collectCount": 1
+          },
+          "videoUrl": "https://www.tiktok.com/@ragequitguy/video/7589771192920247582",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/bvdrHs7ODGLTggXo3/records/cover-ragequitgu-20251230214843-7589771192920247582.jpg",
+          "author": "ragequitguy"
+        }
+      ]
+    },
+    "street.slamdown": {
+      "name": "street.slamdown",
+      "nickname": "STREET SLAMDOWN",
+      "avatar": "https://api.apify.com/v2/key-value-stores/d8c20Gm2oqCYsykRp/records/avatar-streetslam-7575322667214046221.jpg",
+      "signature": "No ring. No rules. All chaos 🔥\nBackyard wrestling at its finest\nDon't try this at home.",
+      "fans": 12,
+      "following": 17,
+      "heart": 328,
+      "video": 8,
+      "videos": [
+        {
+          "id": "7592692799242390814",
+          "desc": "Day 9 - finding the best backyard wrestling in the US - Fredericksburg, Texas #wrestling #backyardwrestling #WWE #wrestlingtiktok ",
+          "createTime": 1767811585,
+          "createTimeISO": "2026-01-07T18:46:25.000Z",
+          "stats": {
+            "diggCount": 18,
+            "shareCount": 0,
+            "commentCount": 1,
+            "playCount": 398,
+            "collectCount": 3
+          },
+          "videoUrl": "https://www.tiktok.com/@street.slamdown/video/7592692799242390814",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/d8c20Gm2oqCYsykRp/records/cover-streetslam-20260107184625-7592692799242390814.jpg",
+          "author": "street.slamdown"
+        },
+        {
+          "id": "7589753658615614751",
+          "desc": "Day 7 - finding the best backyard wrestling in the US - Decorah, Iowa #wrestling #backyardwrestling #WWE #wrestlingtiktok ",
+          "createTime": 1767127240,
+          "createTimeISO": "2025-12-30T20:40:40.000Z",
+          "stats": {
+            "diggCount": 104,
+            "shareCount": 3,
+            "commentCount": 1,
+            "playCount": 1153,
+            "collectCount": 5
+          },
+          "videoUrl": "https://www.tiktok.com/@street.slamdown/video/7589753658615614751",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/d8c20Gm2oqCYsykRp/records/cover-streetslam-20251230204040-7589753658615614751.jpg",
+          "author": "street.slamdown"
+        },
+        {
+          "id": "7589425211515211038",
+          "desc": "Day 6 of finding the best backyard wrestling in the US - Abilene, KS #wrestling #backyardwrestling #WWE #wrestlingtiktok #professionalwrestling ",
+          "createTime": 1767050776,
+          "createTimeISO": "2025-12-29T23:26:16.000Z",
+          "stats": {
+            "diggCount": 1,
+            "shareCount": 0,
+            "commentCount": 0,
+            "playCount": 26,
+            "collectCount": 1
+          },
+          "videoUrl": "https://www.tiktok.com/@street.slamdown/video/7589425211515211038",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/d8c20Gm2oqCYsykRp/records/cover-streetslam-20251229232616-7589425211515211038.jpg",
+          "author": "street.slamdown"
+        },
+        {
+          "id": "7589008899676605727",
+          "desc": "Day 5 - finding the best backyard wrestling in the US! Pella, Iowa\n#wrestling #backyardwrestling #WWE #wrestlingtiktok #professionalwrestling ",
+          "createTime": 1766953857,
+          "createTimeISO": "2025-12-28T20:30:57.000Z",
+          "stats": {
+            "diggCount": 85,
+            "shareCount": 1,
+            "commentCount": 1,
+            "playCount": 1087,
+            "collectCount": 4
+          },
+          "videoUrl": "https://www.tiktok.com/@street.slamdown/video/7589008899676605727",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/d8c20Gm2oqCYsykRp/records/cover-streetslam-20251228203057-7589008899676605727.jpg",
+          "author": "street.slamdown"
+        },
+        {
+          "id": "7588239286395325726",
+          "desc": "Day 4 of finding the best backyard underground wrestling in the US of A! #wrestling #backyardwrestling #WWE #wrestlingtiktok ",
+          "createTime": 1766774663,
+          "createTimeISO": "2025-12-26T18:44:23.000Z",
+          "stats": {
+            "diggCount": 23,
+            "shareCount": 0,
+            "commentCount": 2,
+            "playCount": 500,
+            "collectCount": 4
+          },
+          "videoUrl": "https://www.tiktok.com/@street.slamdown/video/7588239286395325726",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/d8c20Gm2oqCYsykRp/records/cover-streetslam-20251226184423-7588239286395325726.jpg",
+          "author": "street.slamdown"
+        },
+        {
+          "id": "7586830538548317495",
+          "desc": "Day 3 of finding the best underground backyard wrestling in the USA!\n\nToday we're in Livingston, Montana #wrestling #WWE #backyardwrestling #wrestlingtiktok #professionalwrestling",
+          "createTime": 1766446678,
+          "createTimeISO": "2025-12-22T23:37:58.000Z",
+          "stats": {
+            "diggCount": 7,
+            "shareCount": 0,
+            "commentCount": 0,
+            "playCount": 208,
+            "collectCount": 1
+          },
+          "videoUrl": "https://www.tiktok.com/@street.slamdown/video/7586830538548317495",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/d8c20Gm2oqCYsykRp/records/cover-streetslam-20251222233758-7586830538548317495.jpg",
+          "author": "street.slamdown"
+        },
+        {
+          "id": "7585366877036121375",
+          "desc": "Day 2 of finding the best underground backyard wrestling in the USA!\n\nToday we're in Hood River, Oregon #wrestling #WWE #backyardwrestling #wrestlingtiktok #professionalwrestling",
+          "createTime": 1766105869,
+          "createTimeISO": "2025-12-19T00:57:49.000Z",
+          "stats": {
+            "diggCount": 27,
+            "shareCount": 0,
+            "commentCount": 0,
+            "playCount": 396,
+            "collectCount": 1
+          },
+          "videoUrl": "https://www.tiktok.com/@street.slamdown/video/7585366877036121375",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/d8c20Gm2oqCYsykRp/records/cover-streetslam-20251219005749-7585366877036121375.jpg",
+          "author": "street.slamdown"
+        },
+        {
+          "id": "7584958598011194654",
+          "desc": "Day 1 of finding the best underground backyard wrestling in the USA!\n\nToday we’re in Bemidji, Minnesota\n#wrestling #wwe #backyardwrestling #wrestlingtiktok #professionalwrestling ",
+          "createTime": 1766010802,
+          "createTimeISO": "2025-12-17T22:33:22.000Z",
+          "stats": {
+            "diggCount": 63,
+            "shareCount": 1,
+            "commentCount": 2,
+            "playCount": 1301,
+            "collectCount": 4
+          },
+          "videoUrl": "https://www.tiktok.com/@street.slamdown/video/7584958598011194654",
+          "coverUrl": "https://api.apify.com/v2/key-value-stores/d8c20Gm2oqCYsykRp/records/cover-streetslam-20251217223322-7584958598011194654.jpg",
+          "author": "street.slamdown"
         }
       ]
     }
@@ -824,15 +1368,63 @@
       "createTime": 1767151905,
       "createTimeISO": "2025-12-31T03:31:45.000Z",
       "stats": {
-        "diggCount": 1243,
-        "shareCount": 981,
-        "commentCount": 229,
-        "playCount": 77100,
-        "collectCount": 94
+        "diggCount": 1777,
+        "shareCount": 1398,
+        "commentCount": 268,
+        "playCount": 112600,
+        "collectCount": 135
       },
       "videoUrl": "https://www.tiktok.com/@matchupvault/video/7589859601995009294",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20251231033145-7589859601995009294.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20251231033145-7589859601995009294.jpg",
       "author": "matchupvault"
+    },
+    {
+      "id": "7591601499248151839",
+      "desc": "John Cena x Becky Lynch \nName this fusion! \n#JohnCena #BeckyLynch #ai #fusion #wwe  ",
+      "createTime": 1767557485,
+      "createTimeISO": "2026-01-04T20:11:25.000Z",
+      "stats": {
+        "diggCount": 321,
+        "shareCount": 91,
+        "commentCount": 38,
+        "playCount": 26200,
+        "collectCount": 48
+      },
+      "videoUrl": "https://www.tiktok.com/@matchupvault/video/7591601499248151839",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260104201125-7591601499248151839.jpg",
+      "author": "matchupvault"
+    },
+    {
+      "id": "7592761802962865438",
+      "desc": "The Rock x Cardi B \nName this fusion! \n#TheRock #CardiB #ai #fusion #wwe ",
+      "createTime": 1767827638,
+      "createTimeISO": "2026-01-07T23:13:58.000Z",
+      "stats": {
+        "diggCount": 180,
+        "shareCount": 147,
+        "commentCount": 67,
+        "playCount": 16000,
+        "collectCount": 28
+      },
+      "videoUrl": "https://www.tiktok.com/@matchupvault/video/7592761802962865438",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260107231358-7592761802962865438.jpg",
+      "author": "matchupvault"
+    },
+    {
+      "id": "7590893703586270495",
+      "desc": "Who has the most punchable face in the WWW? Who makes your blood boil? Who can you absolutely NOT stand? What WWE superstar do you most want to fight? #wwe #wrestling #fyp #wrestlingtiktok ",
+      "createTime": 1767392697,
+      "createTimeISO": "2026-01-02T22:24:57.000Z",
+      "stats": {
+        "diggCount": 187,
+        "shareCount": 8,
+        "commentCount": 423,
+        "playCount": 7623,
+        "collectCount": 21
+      },
+      "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7590893703586270495",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/sOyRcriEYmAWtpyvq/records/cover-wrestlertr-20260102222457-7590893703586270495.jpg",
+      "author": "wrestler.trivia"
     },
     {
       "id": "7590063652770778381",
@@ -840,14 +1432,14 @@
       "createTime": 1767199442,
       "createTimeISO": "2025-12-31T16:44:02.000Z",
       "stats": {
-        "diggCount": 32,
-        "shareCount": 22,
-        "commentCount": 9,
-        "playCount": 5328,
-        "collectCount": 5
+        "diggCount": 38,
+        "shareCount": 27,
+        "commentCount": 10,
+        "playCount": 6289,
+        "collectCount": 9
       },
       "videoUrl": "https://www.tiktok.com/@matchupvault/video/7590063652770778381",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20251231164402-7590063652770778381.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20251231164402-7590063652770778381.jpg",
       "author": "matchupvault"
     },
     {
@@ -856,78 +1448,14 @@
       "createTime": 1767127548,
       "createTimeISO": "2025-12-30T20:45:48.000Z",
       "stats": {
-        "diggCount": 63,
+        "diggCount": 101,
         "shareCount": 0,
-        "commentCount": 170,
-        "playCount": 4181,
-        "collectCount": 6
+        "commentCount": 209,
+        "playCount": 5885,
+        "collectCount": 19
       },
       "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7589754979087404318",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251230204548-7589754979087404318.jpg",
-      "author": "wrestler.trivia"
-    },
-    {
-      "id": "7590202975184882975",
-      "desc": "Eleven x Vecna (stranger things) \nName this fusion! #Eleven #Vecna #ai #fusion #strangerthings #strangerthings5 #strangerthingsedit ",
-      "createTime": 1767231860,
-      "createTimeISO": "2026-01-01T01:44:20.000Z",
-      "stats": {
-        "diggCount": 20,
-        "shareCount": 5,
-        "commentCount": 8,
-        "playCount": 3408,
-        "collectCount": 3
-      },
-      "videoUrl": "https://www.tiktok.com/@matchupvault/video/7590202975184882975",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20260101014420-7590202975184882975.jpg",
-      "author": "matchupvault"
-    },
-    {
-      "id": "7590444916518456606",
-      "desc": "Noah Schnapp x Princess Peach \nName this fusion! #NoahSchnapp #PrincessPeach #ai #fusion #strangerthings #strangerthings5 #strangerthingsfinale ",
-      "createTime": 1767288197,
-      "createTimeISO": "2026-01-01T17:23:17.000Z",
-      "stats": {
-        "diggCount": 32,
-        "shareCount": 27,
-        "commentCount": 5,
-        "playCount": 2952,
-        "collectCount": 2
-      },
-      "videoUrl": "https://www.tiktok.com/@matchupvault/video/7590444916518456606",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20260101172317-7590444916518456606.jpg",
-      "author": "matchupvault"
-    },
-    {
-      "id": "7590562335966727455",
-      "desc": "Sadie Sink x Demogorgon (stranger things) \nName this fusion! \n#SadieSink #demogorgon #strangerthings #ai #fusion #max ",
-      "createTime": 1767315536,
-      "createTimeISO": "2026-01-02T00:58:56.000Z",
-      "stats": {
-        "diggCount": 8,
-        "shareCount": 5,
-        "commentCount": 1,
-        "playCount": 2218,
-        "collectCount": 1
-      },
-      "videoUrl": "https://www.tiktok.com/@matchupvault/video/7590562335966727455",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20260102005856-7590562335966727455.jpg",
-      "author": "matchupvault"
-    },
-    {
-      "id": "7584919085222317343",
-      "desc": "Can you guess the WWE Superstar?\n\nHow long did it take you to get it right?\n#wwe #trivia #wrestling ",
-      "createTime": 1766001603,
-      "createTimeISO": "2025-12-17T20:00:03.000Z",
-      "stats": {
-        "diggCount": 26,
-        "shareCount": 0,
-        "commentCount": 9,
-        "playCount": 1800,
-        "collectCount": 4
-      },
-      "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7584919085222317343",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251217200003-7584919085222317343.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/sOyRcriEYmAWtpyvq/records/cover-wrestlertr-20251230204548-7589754979087404318.jpg",
       "author": "wrestler.trivia"
     },
     {
@@ -936,31 +1464,223 @@
       "createTime": 1767131323,
       "createTimeISO": "2025-12-30T21:48:43.000Z",
       "stats": {
-        "diggCount": 6,
-        "shareCount": 0,
-        "commentCount": 12,
-        "playCount": 1450,
-        "collectCount": 0
+        "diggCount": 13,
+        "shareCount": 2,
+        "commentCount": 20,
+        "playCount": 5496,
+        "collectCount": 1
       },
       "videoUrl": "https://www.tiktok.com/@ragequitguy/video/7589771192920247582",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/63UDT3Wc5FzgxpGdU/records/cover-ragequitgu-20251230214843-7589771192920247582.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/bvdrHs7ODGLTggXo3/records/cover-ragequitgu-20251230214843-7589771192920247582.jpg",
       "author": "ragequitguy"
     },
     {
-      "id": "7584958598011194654",
-      "desc": "Day 1 of finding the best underground backyard wrestling in the USA!\n\nToday we’re in Bemidji, Minnesota\n#wrestling #wwe #backyardwrestling #wrestlingtiktok #professionalwrestling ",
-      "createTime": 1766010802,
-      "createTimeISO": "2025-12-17T22:33:22.000Z",
+      "id": "7590202975184882975",
+      "desc": "Eleven x Vecna (stranger things) \nName this fusion! #Eleven #Vecna #ai #fusion #strangerthings #strangerthings5 #strangerthingsedit ",
+      "createTime": 1767231860,
+      "createTimeISO": "2026-01-01T01:44:20.000Z",
       "stats": {
-        "diggCount": 62,
+        "diggCount": 28,
+        "shareCount": 5,
+        "commentCount": 10,
+        "playCount": 4969,
+        "collectCount": 6
+      },
+      "videoUrl": "https://www.tiktok.com/@matchupvault/video/7590202975184882975",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260101014420-7590202975184882975.jpg",
+      "author": "matchupvault"
+    },
+    {
+      "id": "7590444916518456606",
+      "desc": "Noah Schnapp x Princess Peach \nName this fusion! #NoahSchnapp #PrincessPeach #ai #fusion #strangerthings #strangerthings5 #strangerthingsfinale ",
+      "createTime": 1767288197,
+      "createTimeISO": "2026-01-01T17:23:17.000Z",
+      "stats": {
+        "diggCount": 35,
+        "shareCount": 28,
+        "commentCount": 5,
+        "playCount": 3471,
+        "collectCount": 2
+      },
+      "videoUrl": "https://www.tiktok.com/@matchupvault/video/7590444916518456606",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260101172317-7590444916518456606.jpg",
+      "author": "matchupvault"
+    },
+    {
+      "id": "7590562335966727455",
+      "desc": "Sadie Sink x Demogorgon (stranger things) \nName this fusion! \n#SadieSink #demogorgon #strangerthings #ai #fusion #max ",
+      "createTime": 1767315536,
+      "createTimeISO": "2026-01-02T00:58:56.000Z",
+      "stats": {
+        "diggCount": 11,
+        "shareCount": 6,
+        "commentCount": 1,
+        "playCount": 3107,
+        "collectCount": 2
+      },
+      "videoUrl": "https://www.tiktok.com/@matchupvault/video/7590562335966727455",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260102005856-7590562335966727455.jpg",
+      "author": "matchupvault"
+    },
+    {
+      "id": "7590804153509776670",
+      "desc": "Billie Eilish x Vladimir Putin \nName this fusion! #BillieEilish #VladimirPutin #ai #fusion #russia ",
+      "createTime": 1767371849,
+      "createTimeISO": "2026-01-02T16:37:29.000Z",
+      "stats": {
+        "diggCount": 36,
+        "shareCount": 17,
+        "commentCount": 19,
+        "playCount": 3067,
+        "collectCount": 6
+      },
+      "videoUrl": "https://www.tiktok.com/@matchupvault/video/7590804153509776670",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260102163729-7590804153509776670.jpg",
+      "author": "matchupvault"
+    },
+    {
+      "id": "7593035275404594462",
+      "desc": "Stranger Things Fusion!\nCaleb McLaughlin x Sadie Sink \nName this fusion! \n#CalebMcLaughlin #SadieSink #ai #fusion #strangerthings",
+      "createTime": 1767891302,
+      "createTimeISO": "2026-01-08T16:55:02.000Z",
+      "stats": {
+        "diggCount": 23,
+        "shareCount": 4,
+        "commentCount": 5,
+        "playCount": 2476,
+        "collectCount": 9
+      },
+      "videoUrl": "https://www.tiktok.com/@matchupvault/video/7593035275404594462",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260108165502-7593035275404594462.jpg",
+      "author": "matchupvault"
+    },
+    {
+      "id": "7590872396438048031",
+      "desc": "Caleb McLaughlin (Lucas) x Vecna\nName this fusion! \nStranger Things hybrid\n#CalebMcLaughlin #Vecna #ai #fusion #strangerthings #lucas",
+      "createTime": 1767387728,
+      "createTimeISO": "2026-01-02T21:02:08.000Z",
+      "stats": {
+        "diggCount": 10,
         "shareCount": 1,
-        "commentCount": 2,
-        "playCount": 1294,
+        "commentCount": 15,
+        "playCount": 2225,
+        "collectCount": 3
+      },
+      "videoUrl": "https://www.tiktok.com/@matchupvault/video/7590872396438048031",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260102210208-7590872396438048031.jpg",
+      "author": "matchupvault"
+    },
+    {
+      "id": "7594514968976919839",
+      "desc": "David Harbour x Winona Ryder\nStranger Things\nName this fusion! \n#DavidHarbour #WinonaRyder #ai #fusion #strangerthings",
+      "createTime": 1768235842,
+      "createTimeISO": "2026-01-12T16:37:22.000Z",
+      "stats": {
+        "diggCount": 31,
+        "shareCount": 1,
+        "commentCount": 0,
+        "playCount": 2156,
+        "collectCount": 6
+      },
+      "videoUrl": "https://www.tiktok.com/@matchupvault/video/7594514968976919839",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260112163722-7594514968976919839.jpg",
+      "author": "matchupvault"
+    },
+    {
+      "id": "7584919085222317343",
+      "desc": "Can you guess the WWE Superstar?\n\nHow long did it take you to get it right?\n#wwe #trivia #wrestling ",
+      "createTime": 1766001603,
+      "createTimeISO": "2025-12-17T20:00:03.000Z",
+      "stats": {
+        "diggCount": 32,
+        "shareCount": 1,
+        "commentCount": 13,
+        "playCount": 2082,
         "collectCount": 4
       },
-      "videoUrl": "https://www.tiktok.com/@street.slamdown/video/7584958598011194654",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/KcQkmz5edsRVr8grq/records/cover-streetslam-20251217223322-7584958598011194654.jpg",
-      "author": "street.slamdown"
+      "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7584919085222317343",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/sOyRcriEYmAWtpyvq/records/cover-wrestlertr-20251217200003-7584919085222317343.jpg",
+      "author": "wrestler.trivia"
+    },
+    {
+      "id": "7592693938054581535",
+      "desc": "Who are you favorite WWE wrestlers? John Cena? Cody Rhodes? Logan Paul? Becky Lynch? #wwe #wrestling #fyp ",
+      "createTime": 1767811855,
+      "createTimeISO": "2026-01-07T18:50:55.000Z",
+      "stats": {
+        "diggCount": 85,
+        "shareCount": 0,
+        "commentCount": 89,
+        "playCount": 1778,
+        "collectCount": 11
+      },
+      "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7592693938054581535",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/sOyRcriEYmAWtpyvq/records/cover-wrestlertr-20260107185055-7592693938054581535.jpg",
+      "author": "wrestler.trivia"
+    },
+    {
+      "id": "7592653673918975262",
+      "desc": "Joe Keery x Maya Hawke \nName this fusion! \n#JoeKeery #MayaHawke #ai #fusion #strangerthings ",
+      "createTime": 1767802454,
+      "createTimeISO": "2026-01-07T16:14:14.000Z",
+      "stats": {
+        "diggCount": 10,
+        "shareCount": 2,
+        "commentCount": 4,
+        "playCount": 1698,
+        "collectCount": 5
+      },
+      "videoUrl": "https://www.tiktok.com/@matchupvault/video/7592653673918975262",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260107161414-7592653673918975262.jpg",
+      "author": "matchupvault"
+    },
+    {
+      "id": "7592053749732953374",
+      "desc": "Justin Bieber x Hailey Bieber\nName this fusion!\n#justinbieber #haileybieber #ai #fusion @Justin Bieber @Hailey Bieber #daisies",
+      "createTime": 1767662781,
+      "createTimeISO": "2026-01-06T01:26:21.000Z",
+      "stats": {
+        "diggCount": 7,
+        "shareCount": 0,
+        "commentCount": 6,
+        "playCount": 1532,
+        "collectCount": 4
+      },
+      "videoUrl": "https://www.tiktok.com/@matchupvault/video/7592053749732953374",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260106012621-7592053749732953374.jpg",
+      "author": "matchupvault"
+    },
+    {
+      "id": "7594261016301636894",
+      "desc": "Tom Brady x Green Lantern \nName this fusion! \n#TomBrady #GreenLantern #ai #fusion #marvel @Tom Brady ",
+      "createTime": 1768176700,
+      "createTimeISO": "2026-01-12T00:11:40.000Z",
+      "stats": {
+        "diggCount": 11,
+        "shareCount": 1,
+        "commentCount": 6,
+        "playCount": 1523,
+        "collectCount": 2
+      },
+      "videoUrl": "https://www.tiktok.com/@matchupvault/video/7594261016301636894",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260112001140-7594261016301636894.jpg",
+      "author": "matchupvault"
+    },
+    {
+      "id": "7590040372525698317",
+      "desc": "Can you guess the WWE Superstar? How long did it take you to get it right? #wwe #trivia #wrestling",
+      "createTime": 1767194003,
+      "createTimeISO": "2025-12-31T15:13:23.000Z",
+      "stats": {
+        "diggCount": 42,
+        "shareCount": 1,
+        "commentCount": 12,
+        "playCount": 1492,
+        "collectCount": 5
+      },
+      "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7590040372525698317",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/sOyRcriEYmAWtpyvq/records/cover-wrestlertr-20251231151323-7590040372525698317.jpg",
+      "author": "wrestler.trivia"
     },
     {
       "id": "7589725483181329694",
@@ -968,14 +1688,46 @@
       "createTime": 1767120689,
       "createTimeISO": "2025-12-30T18:51:29.000Z",
       "stats": {
-        "diggCount": 9,
-        "shareCount": 3,
-        "commentCount": 5,
-        "playCount": 1242,
+        "diggCount": 13,
+        "shareCount": 4,
+        "commentCount": 6,
+        "playCount": 1447,
         "collectCount": 1
       },
       "videoUrl": "https://www.tiktok.com/@matchupvault/video/7589725483181329694",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20251230185129-7589725483181329694.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20251230185129-7589725483181329694.jpg",
+      "author": "matchupvault"
+    },
+    {
+      "id": "7591293679663353119",
+      "desc": "IShowSpeed x Wolverine \nName this fusion! \n#IShowSpeed #Wolverine #ai #fusion @IShowSpeed #xmen ",
+      "createTime": 1767485812,
+      "createTimeISO": "2026-01-04T00:16:52.000Z",
+      "stats": {
+        "diggCount": 8,
+        "shareCount": 2,
+        "commentCount": 3,
+        "playCount": 1425,
+        "collectCount": 2
+      },
+      "videoUrl": "https://www.tiktok.com/@matchupvault/video/7591293679663353119",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260104001652-7591293679663353119.jpg",
+      "author": "matchupvault"
+    },
+    {
+      "id": "7592406854765006111",
+      "desc": "Millie Bobby Brown x Godzilla \nName this fusion! \n#MillieBobbyBrown #Godzilla #ai #fusion #strangerthings",
+      "createTime": 1767744996,
+      "createTimeISO": "2026-01-07T00:16:36.000Z",
+      "stats": {
+        "diggCount": 16,
+        "shareCount": 0,
+        "commentCount": 5,
+        "playCount": 1358,
+        "collectCount": 4
+      },
+      "videoUrl": "https://www.tiktok.com/@matchupvault/video/7592406854765006111",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260107001636-7592406854765006111.jpg",
       "author": "matchupvault"
     },
     {
@@ -984,14 +1736,94 @@
       "createTime": 1767220526,
       "createTimeISO": "2025-12-31T22:35:26.000Z",
       "stats": {
-        "diggCount": 14,
+        "diggCount": 17,
         "shareCount": 1,
         "commentCount": 4,
-        "playCount": 1137,
-        "collectCount": 1
+        "playCount": 1353,
+        "collectCount": 2
       },
       "videoUrl": "https://www.tiktok.com/@matchupvault/video/7590154321870736671",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20251231223526-7590154321870736671.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20251231223526-7590154321870736671.jpg",
+      "author": "matchupvault"
+    },
+    {
+      "id": "7593487036447722782",
+      "desc": "Pikachu x Raiden\nName this fusion!\n#pikachu #raiden #mortalkombat #pokemon #ai",
+      "createTime": 1767996490,
+      "createTimeISO": "2026-01-09T22:08:10.000Z",
+      "stats": {
+        "diggCount": 64,
+        "shareCount": 7,
+        "commentCount": 10,
+        "playCount": 1304,
+        "collectCount": 4
+      },
+      "videoUrl": "https://www.tiktok.com/@matchupvault/video/7593487036447722782",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260109220810-7593487036447722782.jpg",
+      "author": "matchupvault"
+    },
+    {
+      "id": "7584958598011194654",
+      "desc": "Day 1 of finding the best underground backyard wrestling in the USA!\n\nToday we’re in Bemidji, Minnesota\n#wrestling #wwe #backyardwrestling #wrestlingtiktok #professionalwrestling ",
+      "createTime": 1766010802,
+      "createTimeISO": "2025-12-17T22:33:22.000Z",
+      "stats": {
+        "diggCount": 63,
+        "shareCount": 1,
+        "commentCount": 2,
+        "playCount": 1301,
+        "collectCount": 4
+      },
+      "videoUrl": "https://www.tiktok.com/@street.slamdown/video/7584958598011194654",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/d8c20Gm2oqCYsykRp/records/cover-streetslam-20251217223322-7584958598011194654.jpg",
+      "author": "street.slamdown"
+    },
+    {
+      "id": "7589397525128285470",
+      "desc": "Who would win? #whowouldwin #fight #battle #vs #starwars",
+      "createTime": 1767044326,
+      "createTimeISO": "2025-12-29T21:38:46.000Z",
+      "stats": {
+        "diggCount": 4,
+        "shareCount": 0,
+        "commentCount": 2,
+        "playCount": 1246,
+        "collectCount": 1
+      },
+      "videoUrl": "https://www.tiktok.com/@matchupvault/video/7589397525128285470",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20251229213846-7589397525128285470.jpg",
+      "author": "matchupvault"
+    },
+    {
+      "id": "7592313480355581214",
+      "desc": "Alien Xenomorph x Kitana \nName this fusion! #AlienXenomorph #Kitana #ai #fusion #mortalkombat ",
+      "createTime": 1767723276,
+      "createTimeISO": "2026-01-06T18:14:36.000Z",
+      "stats": {
+        "diggCount": 32,
+        "shareCount": 0,
+        "commentCount": 5,
+        "playCount": 1241,
+        "collectCount": 4
+      },
+      "videoUrl": "https://www.tiktok.com/@matchupvault/video/7592313480355581214",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260106181436-7592313480355581214.jpg",
+      "author": "matchupvault"
+    },
+    {
+      "id": "7589193496943168799",
+      "desc": "Who would win? Spider-Man vs Thanos #whowouldwin #fight #battle #vs #marvel ",
+      "createTime": 1766996848,
+      "createTimeISO": "2025-12-29T08:27:28.000Z",
+      "stats": {
+        "diggCount": 3,
+        "shareCount": 1,
+        "commentCount": 3,
+        "playCount": 1178,
+        "collectCount": 1
+      },
+      "videoUrl": "https://www.tiktok.com/@matchupvault/video/7589193496943168799",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20251229082728-7589193496943168799.jpg",
       "author": "matchupvault"
     },
     {
@@ -1003,187 +1835,11 @@
         "diggCount": 19,
         "shareCount": 1,
         "commentCount": 1,
-        "playCount": 1125,
-        "collectCount": 0
+        "playCount": 1155,
+        "collectCount": 1
       },
       "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7587071694028721421",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251223151319-7587071694028721421.jpg",
-      "author": "wrestler.trivia"
-    },
-    {
-      "id": "7589669176294280461",
-      "desc": "Can you guess the WWE Superstar? How long did it take you to get it right? #wwe #trivia #wrestling",
-      "createTime": 1767107603,
-      "createTimeISO": "2025-12-30T15:13:23.000Z",
-      "stats": {
-        "diggCount": 42,
-        "shareCount": 0,
-        "commentCount": 7,
-        "playCount": 1086,
-        "collectCount": 5
-      },
-      "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7589669176294280461",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251230151323-7589669176294280461.jpg",
-      "author": "wrestler.trivia"
-    },
-    {
-      "id": "7589397525128285470",
-      "desc": "Who would win? #whowouldwin #fight #battle #vs #starwars",
-      "createTime": 1767044326,
-      "createTimeISO": "2025-12-29T21:38:46.000Z",
-      "stats": {
-        "diggCount": 3,
-        "shareCount": 0,
-        "commentCount": 2,
-        "playCount": 1081,
-        "collectCount": 1
-      },
-      "videoUrl": "https://www.tiktok.com/@matchupvault/video/7589397525128285470",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20251229213846-7589397525128285470.jpg",
-      "author": "matchupvault"
-    },
-    {
-      "id": "7590040372525698317",
-      "desc": "Can you guess the WWE Superstar? How long did it take you to get it right? #wwe #trivia #wrestling",
-      "createTime": 1767194003,
-      "createTimeISO": "2025-12-31T15:13:23.000Z",
-      "stats": {
-        "diggCount": 25,
-        "shareCount": 1,
-        "commentCount": 7,
-        "playCount": 1076,
-        "collectCount": 3
-      },
-      "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7590040372525698317",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251231151323-7590040372525698317.jpg",
-      "author": "wrestler.trivia"
-    },
-    {
-      "id": "7588927079740083469",
-      "desc": "Can you guess the WWE Superstar? How long did it take you to get it right? #wwe #trivia #wrestling",
-      "createTime": 1766934820,
-      "createTimeISO": "2025-12-28T15:13:40.000Z",
-      "stats": {
-        "diggCount": 27,
-        "shareCount": 0,
-        "commentCount": 8,
-        "playCount": 1050,
-        "collectCount": 5
-      },
-      "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7588927079740083469",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251228151340-7588927079740083469.jpg",
-      "author": "wrestler.trivia"
-    },
-    {
-      "id": "7589193496943168799",
-      "desc": "Who would win? Spider-Man vs Thanos #whowouldwin #fight #battle #vs #marvel ",
-      "createTime": 1766996848,
-      "createTimeISO": "2025-12-29T08:27:28.000Z",
-      "stats": {
-        "diggCount": 3,
-        "shareCount": 1,
-        "commentCount": 3,
-        "playCount": 1032,
-        "collectCount": 1
-      },
-      "videoUrl": "https://www.tiktok.com/@matchupvault/video/7589193496943168799",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20251229082728-7589193496943168799.jpg",
-      "author": "matchupvault"
-    },
-    {
-      "id": "7588184887555820814",
-      "desc": "Can you guess the WWE Superstar? How long did it take you to get it right? #wwe #trivia #wrestling",
-      "createTime": 1766762027,
-      "createTimeISO": "2025-12-26T15:13:47.000Z",
-      "stats": {
-        "diggCount": 20,
-        "shareCount": 0,
-        "commentCount": 5,
-        "playCount": 977,
-        "collectCount": 1
-      },
-      "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7588184887555820814",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251226151347-7588184887555820814.jpg",
-      "author": "wrestler.trivia"
-    },
-    {
-      "id": "7590893703586270495",
-      "desc": "Who has the most punchable face in the WWW? Who makes your blood boil? Who can you absolutely NOT stand? What WWE superstar do you most want to fight? #wwe #wrestling #fyp #wrestlingtiktok ",
-      "createTime": 1767392697,
-      "createTimeISO": "2026-01-02T22:24:57.000Z",
-      "stats": {
-        "diggCount": 17,
-        "shareCount": 0,
-        "commentCount": 31,
-        "playCount": 949,
-        "collectCount": 0
-      },
-      "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7590893703586270495",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20260102222457-7590893703586270495.jpg",
-      "author": "wrestler.trivia"
-    },
-    {
-      "id": "7588302202406522142",
-      "desc": "Who would win? #whowouldwin #fight #battle #vs ",
-      "createTime": 1766789310,
-      "createTimeISO": "2025-12-26T22:48:30.000Z",
-      "stats": {
-        "diggCount": 2,
-        "shareCount": 1,
-        "commentCount": 9,
-        "playCount": 943,
-        "collectCount": 0
-      },
-      "videoUrl": "https://www.tiktok.com/@matchupvault/video/7588302202406522142",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20251226224830-7588302202406522142.jpg",
-      "author": "matchupvault"
-    },
-    {
-      "id": "7589008899676605727",
-      "desc": "Day 5 - finding the best backyard wrestling in the US! Pella, Iowa\n#wrestling #backyardwrestling #WWE #wrestlingtiktok #professionalwrestling ",
-      "createTime": 1766953857,
-      "createTimeISO": "2025-12-28T20:30:57.000Z",
-      "stats": {
-        "diggCount": 68,
-        "shareCount": 0,
-        "commentCount": 1,
-        "playCount": 922,
-        "collectCount": 4
-      },
-      "videoUrl": "https://www.tiktok.com/@street.slamdown/video/7589008899676605727",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/KcQkmz5edsRVr8grq/records/cover-streetslam-20251228203057-7589008899676605727.jpg",
-      "author": "street.slamdown"
-    },
-    {
-      "id": "7590804153509776670",
-      "desc": "Billie Eilish x Vladimir Putin \nName this fusion! #BillieEilish #VladimirPutin #ai #fusion #russia ",
-      "createTime": 1767371849,
-      "createTimeISO": "2026-01-02T16:37:29.000Z",
-      "stats": {
-        "diggCount": 12,
-        "shareCount": 9,
-        "commentCount": 12,
-        "playCount": 922,
-        "collectCount": 2
-      },
-      "videoUrl": "https://www.tiktok.com/@matchupvault/video/7590804153509776670",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20260102163729-7590804153509776670.jpg",
-      "author": "matchupvault"
-    },
-    {
-      "id": "7587442658717584653",
-      "desc": "Can you guess the WWE Superstar? How long did it take you to get it right? #wwe #trivia #wrestling",
-      "createTime": 1766589200,
-      "createTimeISO": "2025-12-24T15:13:20.000Z",
-      "stats": {
-        "diggCount": 20,
-        "shareCount": 0,
-        "commentCount": 4,
-        "playCount": 913,
-        "collectCount": 1
-      },
-      "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7587442658717584653",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251224151320-7587442658717584653.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/sOyRcriEYmAWtpyvq/records/cover-wrestlertr-20251223151319-7587071694028721421.jpg",
       "author": "wrestler.trivia"
     },
     {
@@ -1192,30 +1848,222 @@
       "createTime": 1767127240,
       "createTimeISO": "2025-12-30T20:40:40.000Z",
       "stats": {
-        "diggCount": 65,
-        "shareCount": 2,
+        "diggCount": 104,
+        "shareCount": 3,
         "commentCount": 1,
-        "playCount": 857,
-        "collectCount": 2
+        "playCount": 1153,
+        "collectCount": 5
       },
       "videoUrl": "https://www.tiktok.com/@street.slamdown/video/7589753658615614751",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/KcQkmz5edsRVr8grq/records/cover-streetslam-20251230204040-7589753658615614751.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/d8c20Gm2oqCYsykRp/records/cover-streetslam-20251230204040-7589753658615614751.jpg",
       "author": "street.slamdown"
     },
     {
-      "id": "7586484467582192951",
+      "id": "7588927079740083469",
       "desc": "Can you guess the WWE Superstar? How long did it take you to get it right? #wwe #trivia #wrestling",
-      "createTime": 1766366084,
-      "createTimeISO": "2025-12-22T01:14:44.000Z",
+      "createTime": 1766934820,
+      "createTimeISO": "2025-12-28T15:13:40.000Z",
       "stats": {
-        "diggCount": 24,
-        "shareCount": 1,
+        "diggCount": 30,
+        "shareCount": 0,
+        "commentCount": 8,
+        "playCount": 1145,
+        "collectCount": 6
+      },
+      "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7588927079740083469",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/sOyRcriEYmAWtpyvq/records/cover-wrestlertr-20251228151340-7588927079740083469.jpg",
+      "author": "wrestler.trivia"
+    },
+    {
+      "id": "7589669176294280461",
+      "desc": "Can you guess the WWE Superstar? How long did it take you to get it right? #wwe #trivia #wrestling",
+      "createTime": 1767107603,
+      "createTimeISO": "2025-12-30T15:13:23.000Z",
+      "stats": {
+        "diggCount": 45,
+        "shareCount": 0,
         "commentCount": 7,
-        "playCount": 757,
+        "playCount": 1132,
+        "collectCount": 6
+      },
+      "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7589669176294280461",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/sOyRcriEYmAWtpyvq/records/cover-wrestlertr-20251230151323-7589669176294280461.jpg",
+      "author": "wrestler.trivia"
+    },
+    {
+      "id": "7594387176243121439",
+      "desc": "Charizard x The Thing \nName this fusion! \n#Charizard #TheThing #ai #fusion #pokemon",
+      "createTime": 1768206111,
+      "createTimeISO": "2026-01-12T08:21:51.000Z",
+      "stats": {
+        "diggCount": 55,
+        "shareCount": 2,
+        "commentCount": 11,
+        "playCount": 1132,
+        "collectCount": 3
+      },
+      "videoUrl": "https://www.tiktok.com/@matchupvault/video/7594387176243121439",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260112082151-7594387176243121439.jpg",
+      "author": "matchupvault"
+    },
+    {
+      "id": "7593545830519409950",
+      "desc": "Godzilla x King Kong \nName this fusion! \n#Godzilla #KingKong #ai #fusion #kong",
+      "createTime": 1768010183,
+      "createTimeISO": "2026-01-10T01:56:23.000Z",
+      "stats": {
+        "diggCount": 25,
+        "shareCount": 1,
+        "commentCount": 4,
+        "playCount": 1091,
+        "collectCount": 4
+      },
+      "videoUrl": "https://www.tiktok.com/@matchupvault/video/7593545830519409950",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260110015623-7593545830519409950.jpg",
+      "author": "matchupvault"
+    },
+    {
+      "id": "7589008899676605727",
+      "desc": "Day 5 - finding the best backyard wrestling in the US! Pella, Iowa\n#wrestling #backyardwrestling #WWE #wrestlingtiktok #professionalwrestling ",
+      "createTime": 1766953857,
+      "createTimeISO": "2025-12-28T20:30:57.000Z",
+      "stats": {
+        "diggCount": 85,
+        "shareCount": 1,
+        "commentCount": 1,
+        "playCount": 1087,
+        "collectCount": 4
+      },
+      "videoUrl": "https://www.tiktok.com/@street.slamdown/video/7589008899676605727",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/d8c20Gm2oqCYsykRp/records/cover-streetslam-20251228203057-7589008899676605727.jpg",
+      "author": "street.slamdown"
+    },
+    {
+      "id": "7588302202406522142",
+      "desc": "Who would win? #whowouldwin #fight #battle #vs ",
+      "createTime": 1766789310,
+      "createTimeISO": "2025-12-26T22:48:30.000Z",
+      "stats": {
+        "diggCount": 3,
+        "shareCount": 1,
+        "commentCount": 9,
+        "playCount": 1084,
+        "collectCount": 0
+      },
+      "videoUrl": "https://www.tiktok.com/@matchupvault/video/7588302202406522142",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20251226224830-7588302202406522142.jpg",
+      "author": "matchupvault"
+    },
+    {
+      "id": "7588184887555820814",
+      "desc": "Can you guess the WWE Superstar? How long did it take you to get it right? #wwe #trivia #wrestling",
+      "createTime": 1766762027,
+      "createTimeISO": "2025-12-26T15:13:47.000Z",
+      "stats": {
+        "diggCount": 21,
+        "shareCount": 0,
+        "commentCount": 5,
+        "playCount": 1015,
         "collectCount": 2
       },
-      "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7586484467582192951",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251222011444-7586484467582192951.jpg",
+      "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7588184887555820814",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/sOyRcriEYmAWtpyvq/records/cover-wrestlertr-20251226151347-7588184887555820814.jpg",
+      "author": "wrestler.trivia"
+    },
+    {
+      "id": "7593938259772804382",
+      "desc": "Sub-Zero x Barack Obama \nName this fusion! \n#SubZero #BarackObama #ai #fusion #mortalkombat",
+      "createTime": 1768101550,
+      "createTimeISO": "2026-01-11T03:19:10.000Z",
+      "stats": {
+        "diggCount": 29,
+        "shareCount": 2,
+        "commentCount": 22,
+        "playCount": 1010,
+        "collectCount": 3
+      },
+      "videoUrl": "https://www.tiktok.com/@matchupvault/video/7593938259772804382",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260111031910-7593938259772804382.jpg",
+      "author": "matchupvault"
+    },
+    {
+      "id": "7593166344363740446",
+      "desc": "Doctor Strange x Kanye West \nName this fusion! \n#DoctorStrange #KanyeWest #ai #fusion #marvel ",
+      "createTime": 1767921834,
+      "createTimeISO": "2026-01-09T01:23:54.000Z",
+      "stats": {
+        "diggCount": 15,
+        "shareCount": 0,
+        "commentCount": 7,
+        "playCount": 972,
+        "collectCount": 0
+      },
+      "videoUrl": "https://www.tiktok.com/@matchupvault/video/7593166344363740446",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260109012354-7593166344363740446.jpg",
+      "author": "matchupvault"
+    },
+    {
+      "id": "7587442658717584653",
+      "desc": "Can you guess the WWE Superstar? How long did it take you to get it right? #wwe #trivia #wrestling",
+      "createTime": 1766589200,
+      "createTimeISO": "2025-12-24T15:13:20.000Z",
+      "stats": {
+        "diggCount": 21,
+        "shareCount": 0,
+        "commentCount": 4,
+        "playCount": 943,
+        "collectCount": 2
+      },
+      "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7587442658717584653",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/sOyRcriEYmAWtpyvq/records/cover-wrestlertr-20251224151320-7587442658717584653.jpg",
+      "author": "wrestler.trivia"
+    },
+    {
+      "id": "7593774756638297374",
+      "desc": "Scorpion x Invisible Woman \nName this fusion! \n#Scorpion #InvisibleWoman #ai #mortalkombat #fantasticfour",
+      "createTime": 1768063495,
+      "createTimeISO": "2026-01-10T16:44:55.000Z",
+      "stats": {
+        "diggCount": 37,
+        "shareCount": 0,
+        "commentCount": 6,
+        "playCount": 882,
+        "collectCount": 3
+      },
+      "videoUrl": "https://www.tiktok.com/@matchupvault/video/7593774756638297374",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260110164455-7593774756638297374.jpg",
+      "author": "matchupvault"
+    },
+    {
+      "id": "7590411218121149709",
+      "desc": "Can you guess the WWE Superstar? How long did it take you to get it right? #wwe #trivia #wrestling",
+      "createTime": 1767280386,
+      "createTimeISO": "2026-01-01T15:13:06.000Z",
+      "stats": {
+        "diggCount": 31,
+        "shareCount": 0,
+        "commentCount": 3,
+        "playCount": 864,
+        "collectCount": 2
+      },
+      "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7590411218121149709",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/sOyRcriEYmAWtpyvq/records/cover-wrestlertr-20260101151306-7590411218121149709.jpg",
+      "author": "wrestler.trivia"
+    },
+    {
+      "id": "7594864354537884983",
+      "desc": "Can you guess the WWE Superstar? How long did it take you to get it right? #wwe #trivia #wrestling",
+      "createTime": 1768317225,
+      "createTimeISO": "2026-01-13T15:13:45.000Z",
+      "stats": {
+        "diggCount": 10,
+        "shareCount": 0,
+        "commentCount": 3,
+        "playCount": 844,
+        "collectCount": 2
+      },
+      "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7594864354537884983",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/sOyRcriEYmAWtpyvq/records/cover-wrestlertr-20260113151345-7594864354537884983.jpg",
       "author": "wrestler.trivia"
     },
     {
@@ -1227,11 +2075,75 @@
         "diggCount": 2,
         "shareCount": 2,
         "commentCount": 4,
-        "playCount": 709,
+        "playCount": 828,
         "collectCount": 1
       },
       "videoUrl": "https://www.tiktok.com/@matchupvault/video/7587528337111698719",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20251224204522-7587528337111698719.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20251224204522-7587528337111698719.jpg",
+      "author": "matchupvault"
+    },
+    {
+      "id": "7590972427669114142",
+      "desc": "Captain America x Samurai General\n\nName this fusion!\n#ai #fusion #captainamerica #marvel #samurai ",
+      "createTime": 1767411016,
+      "createTimeISO": "2026-01-03T03:30:16.000Z",
+      "stats": {
+        "diggCount": 13,
+        "shareCount": 0,
+        "commentCount": 2,
+        "playCount": 817,
+        "collectCount": 1
+      },
+      "videoUrl": "https://www.tiktok.com/@matchupvault/video/7590972427669114142",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260103033016-7590972427669114142.jpg",
+      "author": "matchupvault"
+    },
+    {
+      "id": "7586484467582192951",
+      "desc": "Can you guess the WWE Superstar? How long did it take you to get it right? #wwe #trivia #wrestling",
+      "createTime": 1766366084,
+      "createTimeISO": "2025-12-22T01:14:44.000Z",
+      "stats": {
+        "diggCount": 25,
+        "shareCount": 1,
+        "commentCount": 7,
+        "playCount": 786,
+        "collectCount": 3
+      },
+      "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7586484467582192951",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/sOyRcriEYmAWtpyvq/records/cover-wrestlertr-20251222011444-7586484467582192951.jpg",
+      "author": "wrestler.trivia"
+    },
+    {
+      "id": "7593431249830546719",
+      "desc": "Batman x Galadriel \nName this fusion! \n#Batman #Galadriel #ai #fusion #dc",
+      "createTime": 1767983518,
+      "createTimeISO": "2026-01-09T18:31:58.000Z",
+      "stats": {
+        "diggCount": 10,
+        "shareCount": 1,
+        "commentCount": 9,
+        "playCount": 771,
+        "collectCount": 0
+      },
+      "videoUrl": "https://www.tiktok.com/@matchupvault/video/7593431249830546719",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260109183158-7593431249830546719.jpg",
+      "author": "matchupvault"
+    },
+    {
+      "id": "7591688737944341790",
+      "desc": "Magneto x Mr. Fantastic\nName this fusion!\n#magneto #xmen #mrfantastic #fantastic4 #ai ",
+      "createTime": 1767577798,
+      "createTimeISO": "2026-01-05T01:49:58.000Z",
+      "stats": {
+        "diggCount": 8,
+        "shareCount": 0,
+        "commentCount": 6,
+        "playCount": 771,
+        "collectCount": 0
+      },
+      "videoUrl": "https://www.tiktok.com/@matchupvault/video/7591688737944341790",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260105014958-7591688737944341790.jpg",
       "author": "matchupvault"
     },
     {
@@ -1243,11 +2155,107 @@
         "diggCount": 5,
         "shareCount": 0,
         "commentCount": 1,
-        "playCount": 656,
+        "playCount": 770,
         "collectCount": 0
       },
       "videoUrl": "https://www.tiktok.com/@matchupvault/video/7587213125842193695",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20251224002206-7587213125842193695.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20251224002206-7587213125842193695.jpg",
+      "author": "matchupvault"
+    },
+    {
+      "id": "7591364559806532894",
+      "desc": "Mr. Beast x Beast! X-men \nName this fusion\n#mrbeast #xmen #beast #ai #fusion @MrBeast ",
+      "createTime": 1767502319,
+      "createTimeISO": "2026-01-04T04:51:59.000Z",
+      "stats": {
+        "diggCount": 5,
+        "shareCount": 1,
+        "commentCount": 1,
+        "playCount": 724,
+        "collectCount": 3
+      },
+      "videoUrl": "https://www.tiktok.com/@matchupvault/video/7591364559806532894",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260104045159-7591364559806532894.jpg",
+      "author": "matchupvault"
+    },
+    {
+      "id": "7592874745935252766",
+      "desc": "What is your favorite video game? \nFortnite?\nCall of duty?\nLeague of Legends?\nMortal Kombat?\nMario Kart?",
+      "createTime": 1767853950,
+      "createTimeISO": "2026-01-08T06:32:30.000Z",
+      "stats": {
+        "diggCount": 20,
+        "shareCount": 0,
+        "commentCount": 17,
+        "playCount": 716,
+        "collectCount": 2
+      },
+      "videoUrl": "https://www.tiktok.com/@ragequitguy/video/7592874745935252766",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/bvdrHs7ODGLTggXo3/records/cover-ragequitgu-20260108063230-7592874745935252766.jpg",
+      "author": "ragequitguy"
+    },
+    {
+      "id": "7591929616059698462",
+      "desc": "Julius Caesar x Hulk \nName this fusion! #JuliusCaesar #Hulk #ai #fusion  ",
+      "createTime": 1767633898,
+      "createTimeISO": "2026-01-05T17:24:58.000Z",
+      "stats": {
+        "diggCount": 7,
+        "shareCount": 0,
+        "commentCount": 4,
+        "playCount": 675,
+        "collectCount": 2
+      },
+      "videoUrl": "https://www.tiktok.com/@matchupvault/video/7591929616059698462",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260105172458-7591929616059698462.jpg",
+      "author": "matchupvault"
+    },
+    {
+      "id": "7592638120579845389",
+      "desc": "Can you guess the WWE Superstar? How long did it take you to get it right? #wwe #trivia #wrestling",
+      "createTime": 1767798835,
+      "createTimeISO": "2026-01-07T15:13:55.000Z",
+      "stats": {
+        "diggCount": 27,
+        "shareCount": 0,
+        "commentCount": 4,
+        "playCount": 653,
+        "collectCount": 2
+      },
+      "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7592638120579845389",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/sOyRcriEYmAWtpyvq/records/cover-wrestlertr-20260107151355-7592638120579845389.jpg",
+      "author": "wrestler.trivia"
+    },
+    {
+      "id": "7591153356492590391",
+      "desc": "Can you guess the WWE Superstar? How long did it take you to get it right? #wwe #trivia #wrestling",
+      "createTime": 1767453189,
+      "createTimeISO": "2026-01-03T15:13:09.000Z",
+      "stats": {
+        "diggCount": 24,
+        "shareCount": 1,
+        "commentCount": 7,
+        "playCount": 638,
+        "collectCount": 4
+      },
+      "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7591153356492590391",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/sOyRcriEYmAWtpyvq/records/cover-wrestlertr-20260103151309-7591153356492590391.jpg",
+      "author": "wrestler.trivia"
+    },
+    {
+      "id": "7591200331002842399",
+      "desc": "Superman x Kratos 🧬\nName this fusion!\n#superman #kratos #marvel #godofwar #ai #fusion ",
+      "createTime": 1767464088,
+      "createTimeISO": "2026-01-03T18:14:48.000Z",
+      "stats": {
+        "diggCount": 7,
+        "shareCount": 0,
+        "commentCount": 4,
+        "playCount": 631,
+        "collectCount": 2
+      },
+      "videoUrl": "https://www.tiktok.com/@matchupvault/video/7591200331002842399",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260103181448-7591200331002842399.jpg",
       "author": "matchupvault"
     },
     {
@@ -1256,14 +2264,14 @@
       "createTime": 1766157217,
       "createTimeISO": "2025-12-19T15:13:37.000Z",
       "stats": {
-        "diggCount": 24,
+        "diggCount": 25,
         "shareCount": 0,
         "commentCount": 2,
-        "playCount": 595,
+        "playCount": 618,
         "collectCount": 0
       },
       "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7585587428560243982",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251219151337-7585587428560243982.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/sOyRcriEYmAWtpyvq/records/cover-wrestlertr-20251219151337-7585587428560243982.jpg",
       "author": "wrestler.trivia"
     },
     {
@@ -1272,30 +2280,14 @@
       "createTime": 1766171788,
       "createTimeISO": "2025-12-19T19:16:28.000Z",
       "stats": {
-        "diggCount": 20,
+        "diggCount": 21,
         "shareCount": 0,
         "commentCount": 7,
-        "playCount": 584,
-        "collectCount": 1
+        "playCount": 607,
+        "collectCount": 2
       },
       "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7585649959312067895",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251219191628-7585649959312067895.jpg",
-      "author": "wrestler.trivia"
-    },
-    {
-      "id": "7585380853048495373",
-      "desc": "How much do you know about legendary WWE Superstar Kurt Angle?\n\nHow many did you get right?\n#wwe #trivia #wrestling #wrestlemania #wrestlingtiktok ",
-      "createTime": 1766109130,
-      "createTimeISO": "2025-12-19T01:52:10.000Z",
-      "stats": {
-        "diggCount": 16,
-        "shareCount": 0,
-        "commentCount": 2,
-        "playCount": 535,
-        "collectCount": 0
-      },
-      "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7585380853048495373",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251219015210-7585380853048495373.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/sOyRcriEYmAWtpyvq/records/cover-wrestlertr-20251219191628-7585649959312067895.jpg",
       "author": "wrestler.trivia"
     },
     {
@@ -1307,12 +2299,44 @@
         "diggCount": 2,
         "shareCount": 0,
         "commentCount": 0,
-        "playCount": 503,
+        "playCount": 586,
         "collectCount": 2
       },
       "videoUrl": "https://www.tiktok.com/@matchupvault/video/7586731461932371231",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20251222171304-7586731461932371231.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20251222171304-7586731461932371231.jpg",
       "author": "matchupvault"
+    },
+    {
+      "id": "7585380853048495373",
+      "desc": "How much do you know about legendary WWE Superstar Kurt Angle?\n\nHow many did you get right?\n#wwe #trivia #wrestling #wrestlemania #wrestlingtiktok ",
+      "createTime": 1766109130,
+      "createTimeISO": "2025-12-19T01:52:10.000Z",
+      "stats": {
+        "diggCount": 16,
+        "shareCount": 0,
+        "commentCount": 2,
+        "playCount": 565,
+        "collectCount": 0
+      },
+      "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7585380853048495373",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/sOyRcriEYmAWtpyvq/records/cover-wrestlertr-20251219015210-7585380853048495373.jpg",
+      "author": "wrestler.trivia"
+    },
+    {
+      "id": "7591643766889532702",
+      "desc": "Angriest gamer in the world. Anyone else freak out like this? 😂 #meltdown #ragequit #freakout #gaming ",
+      "createTime": 1767567328,
+      "createTimeISO": "2026-01-04T22:55:28.000Z",
+      "stats": {
+        "diggCount": 8,
+        "shareCount": 0,
+        "commentCount": 3,
+        "playCount": 534,
+        "collectCount": 2
+      },
+      "videoUrl": "https://www.tiktok.com/@ragequitguy/video/7591643766889532702",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/bvdrHs7ODGLTggXo3/records/cover-ragequitgu-20260104225528-7591643766889532702.jpg",
+      "author": "ragequitguy"
     },
     {
       "id": "7588239286395325726",
@@ -1323,28 +2347,12 @@
         "diggCount": 23,
         "shareCount": 0,
         "commentCount": 2,
-        "playCount": 486,
+        "playCount": 500,
         "collectCount": 4
       },
       "videoUrl": "https://www.tiktok.com/@street.slamdown/video/7588239286395325726",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/KcQkmz5edsRVr8grq/records/cover-streetslam-20251226184423-7588239286395325726.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/d8c20Gm2oqCYsykRp/records/cover-streetslam-20251226184423-7588239286395325726.jpg",
       "author": "street.slamdown"
-    },
-    {
-      "id": "7590872396438048031",
-      "desc": "Caleb McLaughlin (Lucas) x Vecna\nName this fusion! \nStranger Things hybrid\n#CalebMcLaughlin #Vecna #ai #fusion #strangerthings #lucas",
-      "createTime": 1767387728,
-      "createTimeISO": "2026-01-02T21:02:08.000Z",
-      "stats": {
-        "diggCount": 2,
-        "shareCount": 0,
-        "commentCount": 1,
-        "playCount": 481,
-        "collectCount": 1
-      },
-      "videoUrl": "https://www.tiktok.com/@matchupvault/video/7590872396438048031",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20260102210208-7590872396438048031.jpg",
-      "author": "matchupvault"
     },
     {
       "id": "7585783784075775245",
@@ -1355,12 +2363,44 @@
         "diggCount": 1,
         "shareCount": 0,
         "commentCount": 0,
-        "playCount": 409,
+        "playCount": 469,
         "collectCount": 0
       },
       "videoUrl": "https://www.tiktok.com/@matchupvault/video/7585783784075775245",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20251220035549-7585783784075775245.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20251220035549-7585783784075775245.jpg",
       "author": "matchupvault"
+    },
+    {
+      "id": "7590890988692835614",
+      "desc": "Rage quit 😂 #meltdown #ragequit #freakout #gaming #gamerfreakout ",
+      "createTime": 1767392051,
+      "createTimeISO": "2026-01-02T22:14:11.000Z",
+      "stats": {
+        "diggCount": 4,
+        "shareCount": 1,
+        "commentCount": 3,
+        "playCount": 409,
+        "collectCount": 0
+      },
+      "videoUrl": "https://www.tiktok.com/@ragequitguy/video/7590890988692835614",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/bvdrHs7ODGLTggXo3/records/cover-ragequitgu-20260102221411-7590890988692835614.jpg",
+      "author": "ragequitguy"
+    },
+    {
+      "id": "7592692799242390814",
+      "desc": "Day 9 - finding the best backyard wrestling in the US - Fredericksburg, Texas #wrestling #backyardwrestling #WWE #wrestlingtiktok ",
+      "createTime": 1767811585,
+      "createTimeISO": "2026-01-07T18:46:25.000Z",
+      "stats": {
+        "diggCount": 18,
+        "shareCount": 0,
+        "commentCount": 1,
+        "playCount": 398,
+        "collectCount": 3
+      },
+      "videoUrl": "https://www.tiktok.com/@street.slamdown/video/7592692799242390814",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/d8c20Gm2oqCYsykRp/records/cover-streetslam-20260107184625-7592692799242390814.jpg",
+      "author": "street.slamdown"
     },
     {
       "id": "7585366877036121375",
@@ -1371,28 +2411,12 @@
         "diggCount": 27,
         "shareCount": 0,
         "commentCount": 0,
-        "playCount": 393,
+        "playCount": 396,
         "collectCount": 1
       },
       "videoUrl": "https://www.tiktok.com/@street.slamdown/video/7585366877036121375",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/KcQkmz5edsRVr8grq/records/cover-streetslam-20251219005749-7585366877036121375.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/d8c20Gm2oqCYsykRp/records/cover-streetslam-20251219005749-7585366877036121375.jpg",
       "author": "street.slamdown"
-    },
-    {
-      "id": "7590411218121149709",
-      "desc": "Can you guess the WWE Superstar? How long did it take you to get it right? #wwe #trivia #wrestling",
-      "createTime": 1767280386,
-      "createTimeISO": "2026-01-01T15:13:06.000Z",
-      "stats": {
-        "diggCount": 8,
-        "shareCount": 0,
-        "commentCount": 1,
-        "playCount": 378,
-        "collectCount": 0
-      },
-      "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7590411218121149709",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20260101151306-7590411218121149709.jpg",
-      "author": "wrestler.trivia"
     },
     {
       "id": "7586730661680139575",
@@ -1400,14 +2424,14 @@
       "createTime": 1766423403,
       "createTimeISO": "2025-12-22T17:10:03.000Z",
       "stats": {
-        "diggCount": 9,
+        "diggCount": 10,
         "shareCount": 0,
         "commentCount": 1,
-        "playCount": 363,
-        "collectCount": 1
+        "playCount": 387,
+        "collectCount": 2
       },
       "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7586730661680139575",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/Y38tJth3hsARYkI2F/records/cover-wrestlertr-20251222171003-7586730661680139575.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/sOyRcriEYmAWtpyvq/records/cover-wrestlertr-20251222171003-7586730661680139575.jpg",
       "author": "wrestler.trivia"
     },
     {
@@ -1419,11 +2443,11 @@
         "diggCount": 0,
         "shareCount": 0,
         "commentCount": 0,
-        "playCount": 329,
+        "playCount": 384,
         "collectCount": 0
       },
       "videoUrl": "https://www.tiktok.com/@matchupvault/video/7585279903528946975",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/XiFf1i7g2QBCtsquj/records/cover-matchupvau-20251218192014-7585279903528946975.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20251218192014-7585279903528946975.jpg",
       "author": "matchupvault"
     },
     {
@@ -1435,11 +2459,11 @@
         "diggCount": 5,
         "shareCount": 0,
         "commentCount": 2,
-        "playCount": 295,
+        "playCount": 315,
         "collectCount": 1
       },
       "videoUrl": "https://www.tiktok.com/@ragequitguy/video/7590088634762611999",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/63UDT3Wc5FzgxpGdU/records/cover-ragequitgu-20251231182038-7590088634762611999.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/bvdrHs7ODGLTggXo3/records/cover-ragequitgu-20251231182038-7590088634762611999.jpg",
       "author": "ragequitguy"
     },
     {
@@ -1451,28 +2475,28 @@
         "diggCount": 3,
         "shareCount": 1,
         "commentCount": 1,
-        "playCount": 288,
+        "playCount": 297,
         "collectCount": 0
       },
       "videoUrl": "https://www.tiktok.com/@ragequitguy/video/7589825571136245022",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/63UDT3Wc5FzgxpGdU/records/cover-ragequitgu-20251231011944-7589825571136245022.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/bvdrHs7ODGLTggXo3/records/cover-ragequitgu-20251231011944-7589825571136245022.jpg",
       "author": "ragequitguy"
     },
     {
-      "id": "7590890988692835614",
-      "desc": "Rage quit 😂 #meltdown #ragequit #freakout #gaming #gamerfreakout ",
-      "createTime": 1767392051,
-      "createTimeISO": "2026-01-02T22:14:11.000Z",
+      "id": "7594122274349927735",
+      "desc": "Can you guess the WWE Superstar? How long did it take you to get it right? #wwe #trivia #wrestling",
+      "createTime": 1768144431,
+      "createTimeISO": "2026-01-11T15:13:51.000Z",
       "stats": {
-        "diggCount": 1,
+        "diggCount": 5,
         "shareCount": 0,
-        "commentCount": 3,
-        "playCount": 273,
+        "commentCount": 0,
+        "playCount": 214,
         "collectCount": 0
       },
-      "videoUrl": "https://www.tiktok.com/@ragequitguy/video/7590890988692835614",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/63UDT3Wc5FzgxpGdU/records/cover-ragequitgu-20260102221411-7590890988692835614.jpg",
-      "author": "ragequitguy"
+      "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7594122274349927735",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/sOyRcriEYmAWtpyvq/records/cover-wrestlertr-20260111151351-7594122274349927735.jpg",
+      "author": "wrestler.trivia"
     },
     {
       "id": "7586830538548317495",
@@ -1480,15 +2504,31 @@
       "createTime": 1766446678,
       "createTimeISO": "2025-12-22T23:37:58.000Z",
       "stats": {
-        "diggCount": 6,
+        "diggCount": 7,
         "shareCount": 0,
         "commentCount": 0,
-        "playCount": 204,
+        "playCount": 208,
         "collectCount": 1
       },
       "videoUrl": "https://www.tiktok.com/@street.slamdown/video/7586830538548317495",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/KcQkmz5edsRVr8grq/records/cover-streetslam-20251222233758-7586830538548317495.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/d8c20Gm2oqCYsykRp/records/cover-streetslam-20251222233758-7586830538548317495.jpg",
       "author": "street.slamdown"
+    },
+    {
+      "id": "7593380037081058573",
+      "desc": "Can you guess the WWE Superstar? How long did it take you to get it right? #wwe #trivia #wrestling",
+      "createTime": 1767971619,
+      "createTimeISO": "2026-01-09T15:13:39.000Z",
+      "stats": {
+        "diggCount": 2,
+        "shareCount": 0,
+        "commentCount": 1,
+        "playCount": 163,
+        "collectCount": 0
+      },
+      "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7593380037081058573",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/sOyRcriEYmAWtpyvq/records/cover-wrestlertr-20260109151339-7593380037081058573.jpg",
+      "author": "wrestler.trivia"
     },
     {
       "id": "7589435114535308574",
@@ -1499,12 +2539,44 @@
         "diggCount": 2,
         "shareCount": 0,
         "commentCount": 0,
-        "playCount": 118,
+        "playCount": 126,
         "collectCount": 0
       },
       "videoUrl": "https://www.tiktok.com/@callthemoment/video/7589435114535308574",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/JkvCJglI63VvqTLaJ/records/cover-callthemom-20251230000441-7589435114535308574.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/jYu1hapvNPM7rT6Bd/records/cover-callthemom-20251230000441-7589435114535308574.jpg",
       "author": "callthemoment"
+    },
+    {
+      "id": "7595690703045266701",
+      "desc": "How much do you know about Ric Flair? How many did you get right? #wwe #trivia #wrestling",
+      "createTime": 1768509569,
+      "createTimeISO": "2026-01-15T20:39:29.000Z",
+      "stats": {
+        "diggCount": 0,
+        "shareCount": 0,
+        "commentCount": 0,
+        "playCount": 121,
+        "collectCount": 0
+      },
+      "videoUrl": "https://www.tiktok.com/@wrestler.trivia/video/7595690703045266701",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/sOyRcriEYmAWtpyvq/records/cover-wrestlertr-20260115203929-7595690703045266701.jpg",
+      "author": "wrestler.trivia"
+    },
+    {
+      "id": "7595724498498882830",
+      "desc": "Vlad the Impaler x Bad Bunny\nName this fusion!\n#VladtheImpaler #BadBunny #ai #fusion",
+      "createTime": 1768517439,
+      "createTimeISO": "2026-01-15T22:50:39.000Z",
+      "stats": {
+        "diggCount": 1,
+        "shareCount": 0,
+        "commentCount": 0,
+        "playCount": 121,
+        "collectCount": 0
+      },
+      "videoUrl": "https://www.tiktok.com/@matchupvault/video/7595724498498882830",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/52Nu6QM9go0KKUIBm/records/cover-matchupvau-20260115225039-7595724498498882830.jpg",
+      "author": "matchupvault"
     },
     {
       "id": "7586071577754750221",
@@ -1515,11 +2587,11 @@
         "diggCount": 0,
         "shareCount": 0,
         "commentCount": 0,
-        "playCount": 86,
+        "playCount": 88,
         "collectCount": 0
       },
       "videoUrl": "https://www.tiktok.com/@callthemoment/video/7586071577754750221",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/JkvCJglI63VvqTLaJ/records/cover-callthemom-20251220223248-7586071577754750221.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/jYu1hapvNPM7rT6Bd/records/cover-callthemom-20251220223248-7586071577754750221.jpg",
       "author": "callthemoment"
     },
     {
@@ -1528,15 +2600,31 @@
       "createTime": 1767050776,
       "createTimeISO": "2025-12-29T23:26:16.000Z",
       "stats": {
+        "diggCount": 1,
+        "shareCount": 0,
+        "commentCount": 0,
+        "playCount": 26,
+        "collectCount": 1
+      },
+      "videoUrl": "https://www.tiktok.com/@street.slamdown/video/7589425211515211038",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/d8c20Gm2oqCYsykRp/records/cover-streetslam-20251229232616-7589425211515211038.jpg",
+      "author": "street.slamdown"
+    },
+    {
+      "id": "7595689399027813646",
+      "desc": "digging through old family tapes and found this gem... unc needed therapy 💀📼 #vhs #90s #retro #ragequit #foundfootage",
+      "createTime": 1768509265,
+      "createTimeISO": "2026-01-15T20:34:25.000Z",
+      "stats": {
         "diggCount": 0,
         "shareCount": 0,
         "commentCount": 0,
-        "playCount": 17,
+        "playCount": 4,
         "collectCount": 0
       },
-      "videoUrl": "https://www.tiktok.com/@street.slamdown/video/7589425211515211038",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/KcQkmz5edsRVr8grq/records/cover-streetslam-20251229232616-7589425211515211038.jpg",
-      "author": "street.slamdown"
+      "videoUrl": "https://www.tiktok.com/@ragequitguy/video/7595689399027813646",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/bvdrHs7ODGLTggXo3/records/cover-ragequitgu-20260115203425-7595689399027813646.jpg",
+      "author": "ragequitguy"
     },
     {
       "id": "7585423252105809183",
@@ -1551,7 +2639,7 @@
         "collectCount": 0
       },
       "videoUrl": "https://www.tiktok.com/@callthemoment/video/7585423252105809183",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/JkvCJglI63VvqTLaJ/records/cover-callthemom-20251219043627-7585423252105809183.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/jYu1hapvNPM7rT6Bd/records/cover-callthemom-20251219043627-7585423252105809183.jpg",
       "author": "callthemoment"
     },
     {
@@ -1567,7 +2655,7 @@
         "collectCount": 1
       },
       "videoUrl": "https://www.tiktok.com/@callthemoment/video/7584951085303876894",
-      "coverUrl": "https://api.apify.com/v2/key-value-stores/JkvCJglI63VvqTLaJ/records/cover-callthemom-20251217220412-7584951085303876894.jpg",
+      "coverUrl": "https://api.apify.com/v2/key-value-stores/jYu1hapvNPM7rT6Bd/records/cover-callthemom-20251217220412-7584951085303876894.jpg",
       "author": "callthemoment"
     }
   ]
