@@ -56,7 +56,7 @@ function ViewToggle({ current, onChange }: { current: number; onChange: (v: numb
 // ============================================================
 function View1({ data, profiles, videos, topIds, metrics }: ViewProps) {
   const [activeProfile, setActiveProfile] = useState("all");
-  const [sortBy, setSortBy] = useState<"views" | "likes" | "top" | "comments" | "date">("top");
+  const [sortBy, setSortBy] = useState<"views" | "likes" | "comments" | "date">("views");
   const [sortAsc, setSortAsc] = useState(false);
   const [query, setQuery] = useState("");
   const [selected, setSelected] = useState<Video | null>(null);
@@ -87,7 +87,6 @@ function View1({ data, profiles, videos, topIds, metrics }: ViewProps) {
         switch (sortBy) {
           case "views": return v.stats.playCount;
           case "likes": return v.stats.diggCount;
-          case "top": return v.stats.playCount > 0 ? ((v.stats.diggCount + v.stats.commentCount + v.stats.shareCount) / v.stats.playCount) * 100 : 0;
           case "comments": return v.stats.commentCount;
           case "date": return v.createTime;
         }
@@ -170,7 +169,7 @@ function View1({ data, profiles, videos, topIds, metrics }: ViewProps) {
           <div style={{ height: 44, display: "flex", alignItems: "center", justifyContent: "space-between", padding: "0 16px", background: c.bgAlt, borderBottom: `1px solid ${c.border}` }}>
             <input type="text" placeholder="Search..." value={query} onChange={e => setQuery(e.target.value)} style={{ width: 200, height: 30, padding: "0 10px", borderRadius: 6, border: `1px solid ${c.border}`, background: c.bg, color: c.text, fontSize: 12 }} />
             <div style={{ display: "flex", gap: 4 }}>
-              {(["views", "likes", "top", "comments", "date"] as const).map(key => (
+              {(["views", "likes", "comments", "date"] as const).map(key => (
                 <button key={key} onClick={() => { if (sortBy === key) setSortAsc(!sortAsc); else { setSortBy(key); setSortAsc(false); } }} style={{ background: sortBy === key ? c.accent : c.bg, border: "none", borderRadius: 4, padding: "4px 8px", cursor: "pointer", fontSize: 10, color: sortBy === key ? "#fff" : c.textMuted, textTransform: "capitalize" }}>
                   {key} {sortBy === key && (sortAsc ? "↑" : "↓")}
                 </button>
