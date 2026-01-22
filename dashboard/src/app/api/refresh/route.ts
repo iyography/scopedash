@@ -190,8 +190,9 @@ export async function POST() {
         });
     } catch (error) {
         console.error('Failed to refresh data:', error);
+        const errorMessage = error instanceof Error ? error.message : 'Unknown error';
         return NextResponse.json(
-            { success: false, error: 'Failed to refresh data' },
+            { success: false, error: `Failed to refresh data: ${errorMessage}` },
             { status: 500 }
         );
     }
