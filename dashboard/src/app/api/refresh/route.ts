@@ -1,30 +1,195 @@
 import { NextResponse } from 'next/server';
-import { exec } from 'child_process';
-import path from 'path';
-import util from 'util';
+import { ApifyClient } from 'apify-client';
 
-const execPromise = util.promisify(exec);
+// Allow up to 5 minutes for Apify scraping (requires Vercel Pro for >60s)
+export const maxDuration = 300;
+
+const PROFILES = [
+    "matchupvault",
+    "wrestler.trivia",
+    "callthemoment",
+    "street.slamdown",
+    "ragequitguy"
+];
+
+const BASE_ACTOR_INPUT = {
+    excludePinnedPosts: false,
+    oldestPostDateUnified: "60 days",
+    profileScrapeSections: ["videos"],
+    profileSorting: "latest",
+    proxyCountryCode: "None",
+    resultsPerPage: 100,
+    scrapeRelatedVideos: false,
+    shouldDownloadAvatars: true,
+    shouldDownloadCovers: true,
+    shouldDownloadMusicCovers: false,
+    shouldDownloadSlideshowImages: false,
+    shouldDownloadSubtitles: false,
+    shouldDownloadVideos: false
+};
+
+interface ApifyItem {
+    id?: string;
+    text?: string;
+    createTime?: number;
+    createTimeISO?: string;
+    diggCount?: number;
+    shareCount?: number;
+    commentCount?: number;
+    playCount?: number;
+    collectCount?: number;
+    webVideoUrl?: string;
+    videoMeta?: { coverUrl?: string };
+    authorMeta?: {
+        name?: string;
+        nickName?: string;
+        avatar?: string;
+        signature?: string;
+        fans?: number;
+        following?: number;
+        heart?: number;
+        video?: number;
+    };
+}
+
+async function fetchSingleProfile(client: ApifyClient, profile: string): Promise<ApifyItem[]> {
+    console.log(`[START] Scraping profile: ${profile}`);
+
+    const runInput = {
+        ...BASE_ACTOR_INPUT,
+        profiles: [profile]
+    };
+
+    try {
+        const run = await client.actor("GdWCkxBtKWOsKjdch").call(runInput);
+        const { items } = await client.dataset(run.defaultDatasetId).listItems();
+        console.log(`[DONE] Finished ${profile}: Found ${items.length} items`);
+        return items as ApifyItem[];
+    } catch (error) {
+        console.error(`[ERROR] Failed to scrape ${profile}:`, error);
+        return [];
+    }
+}
+
+function transformData(items: ApifyItem[]) {
+    const processedData: {
+        metadata: { last_updated: string; profile_count: number };
+        profiles: Record<string, {
+            name: string;
+            nickname?: string;
+            avatar?: string;
+            signature?: string;
+            fans: number;
+            following: number;
+            heart: number;
+            video: number;
+            videos: Array<{
+                id?: string;
+                desc?: string;
+                createTime?: number;
+                createTimeISO?: string;
+                stats: { diggCount: number; shareCount: number; commentCount: number; playCount: number; collectCount: number };
+                videoUrl?: string;
+                coverUrl?: string;
+                author: string;
+            }>;
+        }>;
+        all_videos: Array<{
+            id?: string;
+            desc?: string;
+            createTime?: number;
+            createTimeISO?: string;
+            stats: { diggCount: number; shareCount: number; commentCount: number; playCount: number; collectCount: number };
+            videoUrl?: string;
+            coverUrl?: string;
+            author: string;
+        }>;
+    } = {
+        metadata: {
+            last_updated: new Date().toISOString(),
+            profile_count: PROFILES.length
+        },
+        profiles: {},
+        all_videos: []
+    };
+
+    for (const item of items) {
+        const author = item.authorMeta;
+        const authorName = author?.name;
+
+        if (!authorName) continue;
+
+        if (!processedData.profiles[authorName]) {
+            processedData.profiles[authorName] = {
+                name: authorName,
+                nickname: author?.nickName,
+                avatar: author?.avatar,
+                signature: author?.signature,
+                fans: author?.fans || 0,
+                following: author?.following || 0,
+                heart: author?.heart || 0,
+                video: author?.video || 0,
+                videos: []
+            };
+        }
+
+        const videoData = {
+            id: item.id,
+            desc: item.text,
+            createTime: item.createTime,
+            createTimeISO: item.createTimeISO,
+            stats: {
+                diggCount: item.diggCount || 0,
+                shareCount: item.shareCount || 0,
+                commentCount: item.commentCount || 0,
+                playCount: item.playCount || 0,
+                collectCount: item.collectCount || 0
+            },
+            videoUrl: item.webVideoUrl,
+            coverUrl: item.videoMeta?.coverUrl,
+            author: authorName
+        };
+
+        processedData.profiles[authorName].videos.push(videoData);
+        processedData.all_videos.push(videoData);
+    }
+
+    processedData.all_videos.sort((a, b) => (b.stats.playCount || 0) - (a.stats.playCount || 0));
+
+    return processedData;
+}
 
 export async function POST() {
+    const apiKey = process.env.APIFY_API_KEY;
+
+    if (!apiKey) {
+        return NextResponse.json(
+            { success: false, error: 'APIFY_API_KEY not configured' },
+            { status: 500 }
+        );
+    }
+
     try {
-        console.log("Triggering refresh...");
+        console.log("Starting Apify refresh...");
+        const client = new ApifyClient({ token: apiKey });
 
-        // We assume the Next.js process is running in <root>/dashboard
-        // We want to execute the script from <root> so it finds .env and writes to dashboard/public correctly
-        const projectRoot = path.resolve(process.cwd(), '..');
+        // Fetch all profiles in parallel
+        const results = await Promise.all(
+            PROFILES.map(profile => fetchSingleProfile(client, profile))
+        );
 
-        console.log(`Executing scraper from root: ${projectRoot}`);
+        const allItems = results.flat();
+        console.log(`Total items fetched: ${allItems.length}`);
 
-        const { stdout, stderr } = await execPromise('python3 execution/fetch_tiktok_data.py', {
-            cwd: projectRoot
+        const transformedData = transformData(allItems);
+
+        return NextResponse.json({
+            success: true,
+            message: 'Data refreshed successfully',
+            data: transformedData
         });
-
-        console.log('Scraper output:', stdout);
-        if (stderr) console.error('Scraper error output:', stderr);
-
-        return NextResponse.json({ success: true, message: 'Data refreshed successfully' });
     } catch (error) {
-        console.error('Failed to run scraper:', error);
+        console.error('Failed to refresh data:', error);
         return NextResponse.json(
             { success: false, error: 'Failed to refresh data' },
             { status: 500 }

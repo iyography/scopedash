@@ -54,7 +54,7 @@ function ViewToggle({ current, onChange }: { current: number; onChange: (v: numb
 // ============================================================
 // VIEW 1: Professional Dark Dashboard (Current design refined)
 // ============================================================
-function View1({ data, profiles, videos, topIds, metrics }: ViewProps) {
+function View1({ data, profiles, videos, topIds, metrics, onRefresh, refreshing }: ViewProps) {
   const [activeProfile, setActiveProfile] = useState("all");
   const [sortBy, setSortBy] = useState<"views" | "likes" | "comments" | "date">("views");
   const [sortAsc, setSortAsc] = useState(false);
@@ -62,19 +62,6 @@ function View1({ data, profiles, videos, topIds, metrics }: ViewProps) {
   const [selected, setSelected] = useState<Video | null>(null);
   const [isDark, setIsDark] = useState(true);
   const [viewMode, setViewMode] = useState<"list" | "grid">("grid");
-  const [refreshing, setRefreshing] = useState(false);
-
-  const handleRefresh = async () => {
-    setRefreshing(true);
-    try {
-      await fetch("/api/refresh", { method: "POST" });
-      window.location.reload();
-    } catch (e) {
-      console.error("Refresh failed:", e);
-    } finally {
-      setRefreshing(false);
-    }
-  };
 
   const filteredVideos = useMemo(() => {
     let list = activeProfile === "all" ? data.all_videos : data.profiles[activeProfile]?.videos || [];
@@ -126,7 +113,7 @@ function View1({ data, profiles, videos, topIds, metrics }: ViewProps) {
             </button>
           </div>
           {/* Refresh button */}
-          <button onClick={handleRefresh} disabled={refreshing} style={{ background: c.bg, border: `1px solid ${c.border}`, borderRadius: 6, padding: "6px 10px", cursor: refreshing ? "wait" : "pointer", display: "flex", alignItems: "center", gap: 6, fontSize: 11, fontWeight: 500, color: c.textMuted, opacity: refreshing ? 0.6 : 1 }}>
+          <button onClick={onRefresh} disabled={refreshing} style={{ background: c.bg, border: `1px solid ${c.border}`, borderRadius: 6, padding: "6px 10px", cursor: refreshing ? "wait" : "pointer", display: "flex", alignItems: "center", gap: 6, fontSize: 11, fontWeight: 500, color: c.textMuted, opacity: refreshing ? 0.6 : 1 }}>
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ animation: refreshing ? "spin 1s linear infinite" : "none" }}><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M3 21v-5h5"/></svg>
             {refreshing ? "..." : "Refresh"}
           </button>
@@ -601,16 +588,38 @@ interface ViewProps {
   videos: Video[];
   topIds: Set<string>;
   metrics: { views: number; likes: number; comments: number; followers: number };
+  onRefresh: () => Promise<void>;
+  refreshing: boolean;
 }
 
 export default function Page() {
   const [data, setData] = useState<Data | null>(null);
   const [loading, setLoading] = useState(true);
   const [currentView, setCurrentView] = useState(1);
+  const [refreshing, setRefreshing] = useState(false);
 
   useEffect(() => {
     fetch("/data.json").then(r => r.json()).then(setData).finally(() => setLoading(false));
   }, []);
+
+  const handleRefresh = async () => {
+    setRefreshing(true);
+    try {
+      const res = await fetch("/api/refresh", { method: "POST" });
+      const result = await res.json();
+      if (result.success && result.data) {
+        setData(result.data);
+      } else {
+        console.error("Refresh failed:", result.error);
+        alert("Refresh failed: " + (result.error || "Unknown error"));
+      }
+    } catch (e) {
+      console.error("Refresh failed:", e);
+      alert("Refresh failed - check console for details");
+    } finally {
+      setRefreshing(false);
+    }
+  };
 
   const profiles = useMemo(() => data ? Object.values(data.profiles) : [], [data]);
   const videos = useMemo(() => data?.all_videos || [], [data]);
@@ -636,7 +645,7 @@ export default function Page() {
   if (loading) return <div style={{ height: "100vh", display: "flex", alignItems: "center", justifyContent: "center", background: "#000", color: "#fff" }}>Loading...</div>;
   if (!data) return <div style={{ height: "100vh", display: "flex", alignItems: "center", justifyContent: "center", background: "#000", color: "#fff" }}>Error loading data</div>;
 
-  const viewProps: ViewProps = { data, profiles, videos, topIds, metrics };
+  const viewProps: ViewProps = { data, profiles, videos, topIds, metrics, onRefresh: handleRefresh, refreshing };
 
   return (
     <>
