@@ -1,5 +1,7 @@
 import { NextResponse } from 'next/server';
 import { ApifyClient } from 'apify-client';
+import fs from 'fs';
+import path from 'path';
 
 // Allow up to 5 minutes for Apify scraping (requires Vercel Pro for >60s)
 export const maxDuration = 300;
@@ -9,7 +11,10 @@ const PROFILES = [
     "wrestler.trivia",
     "callthemoment",
     "street.slamdown",
-    "ragequitguy"
+    "ragequitguy",
+    "celebolution",
+    "nearmiss529",
+    "arena.fever"
 ];
 
 const BASE_ACTOR_INPUT = {
@@ -159,13 +164,20 @@ function transformData(items: ApifyItem[]) {
     return processedData;
 }
 
-export async function POST() {
-    const apiKey = process.env.APIFY_API_KEY;
+export async function POST(request: Request) {
+    let apiKey: string;
+    
+    try {
+        const body = await request.json();
+        apiKey = body.apiKey || process.env.APIFY_API_KEY;
+    } catch {
+        apiKey = process.env.APIFY_API_KEY || '';
+    }
 
     if (!apiKey) {
         return NextResponse.json(
-            { success: false, error: 'APIFY_API_KEY not configured' },
-            { status: 500 }
+            { success: false, error: 'APIFY_API_KEY not provided. Please set your API key in Settings.' },
+            { status: 400 }
         );
     }
 
@@ -182,6 +194,43 @@ export async function POST() {
         console.log(`Total items fetched: ${allItems.length}`);
 
         const transformedData = transformData(allItems);
+
+        // Save the data to public/data.json so it persists (only if we got actual data)
+        if (Object.keys(transformedData.profiles).length > 0 || transformedData.all_videos.length > 0) {
+            const publicDataPath = path.join(process.cwd(), 'public/data.json');
+            const backupDataPath = path.join(process.cwd(), `public/data-backup-${Date.now()}.json`);
+            
+            try {
+                // Create backup of existing data if it exists
+                if (fs.existsSync(publicDataPath)) {
+                    const existingData = fs.readFileSync(publicDataPath, 'utf8');
+                    fs.writeFileSync(backupDataPath, existingData, 'utf8');
+                    console.log('Created backup at:', backupDataPath);
+                }
+                
+                // Save new data
+                fs.writeFileSync(publicDataPath, JSON.stringify(transformedData, null, 2), 'utf8');
+                console.log('Successfully saved data to public/data.json');
+                console.log(`Profiles: ${Object.keys(transformedData.profiles).length}, Videos: ${transformedData.all_videos.length}`);
+                
+                // Clean up old backups (keep only last 3)
+                const backupFiles = fs.readdirSync(path.join(process.cwd(), 'public'))
+                    .filter(f => f.startsWith('data-backup-'))
+                    .sort()
+                    .reverse();
+                
+                if (backupFiles.length > 3) {
+                    backupFiles.slice(3).forEach(file => {
+                        fs.unlinkSync(path.join(process.cwd(), 'public', file));
+                    });
+                }
+            } catch (saveError) {
+                console.warn('Failed to save data.json:', saveError);
+                // Don't fail the request if we can't save the file
+            }
+        } else {
+            console.log('Skipping data.json save - no profiles or videos found (likely invalid API key)');
+        }
 
         return NextResponse.json({
             success: true,
