@@ -10,51 +10,11 @@ interface Data { metadata: { last_updated: string }; profiles: Record<string, Pr
 
 const fmt = (n: number) => n >= 1e6 ? (n / 1e6).toFixed(1) + "M" : n >= 1e3 ? (n / 1e3).toFixed(1) + "K" : String(n);
 
-// View Toggle Component (bottom left - vertical)
-function ViewToggle({ current, onChange }: { current: number; onChange: (v: number) => void }) {
-  return (
-    <div style={{
-      position: "fixed",
-      bottom: 20,
-      left: 20,
-      zIndex: 1000,
-      display: "flex",
-      flexDirection: "column",
-      gap: 4,
-      background: "rgba(0,0,0,0.85)",
-      padding: 8,
-      borderRadius: 12,
-      backdropFilter: "blur(10px)",
-      boxShadow: "0 4px 20px rgba(0,0,0,0.4)",
-    }}>
-      {[1, 2, 3, 4].map(v => (
-        <button
-          key={v}
-          onClick={() => onChange(v)}
-          style={{
-            background: current === v ? "#fff" : "transparent",
-            color: current === v ? "#000" : "#888",
-            border: "none",
-            borderRadius: 6,
-            padding: "10px 16px",
-            fontSize: 12,
-            fontWeight: 600,
-            cursor: "pointer",
-            transition: "all 0.2s",
-            textAlign: "left",
-          }}
-        >
-          View {v}
-        </button>
-      ))}
-    </div>
-  );
-}
 
 // ============================================================
-// VIEW 1: Professional Dark Dashboard (Current design refined)
+// DASHBOARD COMPONENT
 // ============================================================
-function View1({ data, profiles, videos, topIds, metrics, onRefresh, refreshing }: ViewProps) {
+function Dashboard({ data, profiles, videos, topIds, metrics, onRefresh, refreshing }: ViewProps) {
   const [activeProfile, setActiveProfile] = useState("all");
   const [sortBy, setSortBy] = useState<"views" | "likes" | "comments" | "date">("views");
   const [sortAsc, setSortAsc] = useState(false);
@@ -164,12 +124,12 @@ function View1({ data, profiles, videos, topIds, metrics, onRefresh, refreshing 
             </div>
           </div>
 
-          <div style={{ flex: 1, overflow: "auto", padding: 16, display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(160px, 1fr))", gap: 16 }}>
-            {filteredVideos.map(v => (
+          <div style={{ flex: 1, overflow: "auto", padding: 16, display: viewMode === "grid" ? "grid" : "flex", gridTemplateColumns: viewMode === "grid" ? "repeat(auto-fill, minmax(220px, 1fr))" : undefined, flexDirection: viewMode === "list" ? "column" : undefined, gap: viewMode === "grid" ? 20 : 8 }}>
+            {filteredVideos.map(v => viewMode === "grid" ? (
               <div key={v.id} onClick={() => setSelected(v)} style={{ background: c.bgAlt, borderRadius: 12, overflow: "hidden", cursor: "pointer", transition: "transform 0.2s, box-shadow 0.2s", position: "relative" }} onMouseEnter={e => { e.currentTarget.style.transform = "translateY(-4px)"; e.currentTarget.style.boxShadow = "0 12px 40px rgba(0,0,0,0.3)"; }} onMouseLeave={e => { e.currentTarget.style.transform = "none"; e.currentTarget.style.boxShadow = "none"; }}>
                 {topIds.has(v.id) && <div style={{ position: "absolute", top: 8, left: 8, zIndex: 10, background: "linear-gradient(135deg, #f59e0b, #ef4444)", padding: "4px 8px", borderRadius: 6, display: "flex", alignItems: "center", gap: 4, fontSize: 10, fontWeight: 700, color: "#fff" }}><svg width="10" height="10" viewBox="0 0 24 24" fill="#fff"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>TOP</div>}
                 <div style={{ aspectRatio: "9/16", position: "relative", background: c.bgHover }}>
-                  {v.coverUrl && <img src={v.coverUrl} alt="" style={{ width: "100%", height: "100%", objectFit: "cover" }} />}
+                  {v.coverUrl && <img src={v.coverUrl} alt="" style={{ width: "100%", height: "100%", objectFit: "cover", imageRendering: "crisp-edges" }} />}
                   <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, padding: "24px 8px 8px", background: "linear-gradient(transparent, rgba(0,0,0,0.8))", display: "flex", justifyContent: "space-around" }}>
                     <div style={{ textAlign: "center" }}><div style={{ fontSize: 12, fontWeight: 700, color: "#fff" }}>{fmt(v.stats.playCount)}</div><div style={{ fontSize: 9, color: "rgba(255,255,255,0.6)" }}>views</div></div>
                     <div style={{ textAlign: "center" }}><div style={{ fontSize: 12, fontWeight: 700, color: "#fff" }}>{fmt(v.stats.diggCount)}</div><div style={{ fontSize: 9, color: "rgba(255,255,255,0.6)" }}>likes</div></div>
@@ -178,6 +138,24 @@ function View1({ data, profiles, videos, topIds, metrics, onRefresh, refreshing 
                 <div style={{ padding: 10 }}>
                   <div style={{ fontSize: 11, fontWeight: 600, color: c.text, marginBottom: 2 }}>@{v.author}</div>
                   <div style={{ fontSize: 10, color: c.textMuted, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{v.desc || "—"}</div>
+                </div>
+              </div>
+            ) : (
+              // List view
+              <div key={v.id} onClick={() => setSelected(v)} style={{ background: c.bgAlt, borderRadius: 8, padding: 12, cursor: "pointer", transition: "all 0.2s", display: "flex", alignItems: "center", gap: 12, position: "relative" }} onMouseEnter={e => e.currentTarget.style.background = c.bgHover} onMouseLeave={e => e.currentTarget.style.background = c.bgAlt}>
+                {topIds.has(v.id) && <div style={{ position: "absolute", top: 8, right: 8, zIndex: 10, background: "linear-gradient(135deg, #f59e0b, #ef4444)", padding: "2px 6px", borderRadius: 4, display: "flex", alignItems: "center", gap: 2, fontSize: 9, fontWeight: 700, color: "#fff" }}><svg width="8" height="8" viewBox="0 0 24 24" fill="#fff"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>TOP</div>}
+                <div style={{ width: 80, height: 80, borderRadius: 8, overflow: "hidden", background: c.bgHover, flexShrink: 0 }}>
+                  {v.coverUrl && <img src={v.coverUrl} alt="" style={{ width: "100%", height: "100%", objectFit: "cover", imageRendering: "crisp-edges" }} />}
+                </div>
+                <div style={{ flex: 1, minWidth: 0 }}>
+                  <div style={{ fontSize: 14, fontWeight: 600, color: c.text, marginBottom: 4 }}>@{v.author}</div>
+                  <div style={{ fontSize: 12, color: c.textMuted, marginBottom: 8, overflow: "hidden", textOverflow: "ellipsis", display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical" }}>{v.desc || "—"}</div>
+                  <div style={{ display: "flex", gap: 16, fontSize: 11, color: c.textMuted }}>
+                    <span><strong style={{ color: c.text }}>{fmt(v.stats.playCount)}</strong> views</span>
+                    <span><strong style={{ color: c.text }}>{fmt(v.stats.diggCount)}</strong> likes</span>
+                    <span><strong style={{ color: c.text }}>{fmt(v.stats.commentCount)}</strong> comments</span>
+                    <span><strong style={{ color: c.text }}>{fmt(v.stats.shareCount)}</strong> shares</span>
+                  </div>
                 </div>
               </div>
             ))}
@@ -227,7 +205,6 @@ interface ViewProps {
 export default function Page() {
   const [data, setData] = useState<Data | null>(null);
   const [loading, setLoading] = useState(true);
-  const [currentView, setCurrentView] = useState(1);
   const [refreshing, setRefreshing] = useState(false);
 
   useEffect(() => {
@@ -279,10 +256,5 @@ export default function Page() {
 
   const viewProps: ViewProps = { data, profiles, videos, topIds, metrics, onRefresh: handleRefresh, refreshing };
 
-  return (
-    <>
-      <ViewToggle current={currentView} onChange={setCurrentView} />
-      <View1 {...viewProps} />
-    </>
-  );
+  return <Dashboard {...viewProps} />;
 }
