@@ -209,7 +209,8 @@ export async function POST(request: Request) {
                     fs.writeFileSync(publicDataPath, JSON.stringify(transformedData, null, 2), 'utf8');
                     console.log('Also saved to public/data.json for local development');
                 } catch (fileError) {
-                    console.warn('Failed to save to file (expected in production):', fileError.message);
+                    const errorMessage = fileError instanceof Error ? fileError.message : String(fileError);
+                    console.warn('Failed to save to file (expected in production):', errorMessage);
                 }
 
                 console.log(`Profiles: ${Object.keys(transformedData.profiles).length}, Videos: ${transformedData.all_videos.length}`);
