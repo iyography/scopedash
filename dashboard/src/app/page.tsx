@@ -587,18 +587,49 @@ export default function Page() {
 
   useEffect(() => {
     setMounted(true);
-    // Use new API endpoint that handles both database and file fallback
-    fetch("/api/data")
-      .then(r => r.json())
-      .then(result => {
+    
+    const loadData = async () => {
+      try {
+        // First try localStorage if available
+        if (typeof window !== 'undefined') {
+          const stored = localStorage.getItem('scopedash_data');
+          if (stored) {
+            try {
+              const localData = JSON.parse(stored);
+              setData(localData);
+              console.log('Data loaded from localStorage');
+              setLoading(false);
+              return; // Use localStorage data and continue loading in background
+            } catch (error) {
+              console.warn('Failed to parse localStorage data:', error);
+            }
+          }
+        }
+        
+        // Try API endpoint as fallback
+        const response = await fetch("/api/data");
+        const result = await response.json();
+        
         if (result.success) {
           setData(result.data);
           console.log('Data loaded from:', result.source);
+          
+          // Save to localStorage for future loads
+          if (typeof window !== 'undefined') {
+            localStorage.setItem('scopedash_data', JSON.stringify(result.data));
+            localStorage.setItem('scopedash_data_timestamp', new Date().toISOString());
+          }
         } else {
           console.error('Failed to load data:', result.error);
         }
-      })
-      .finally(() => setLoading(false));
+      } catch (error) {
+        console.error('Error loading data:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+    
+    loadData();
     
     // Load saved API key immediately
     const savedApiKey = localStorage.getItem('apify_api_key');
@@ -675,6 +706,12 @@ export default function Page() {
         const videoCount = result.data.all_videos?.length || 0;
         if (videoCount > 0) {
           setData(result.data);
+          
+          // Immediately save to localStorage to persist the data
+          localStorage.setItem('scopedash_data', JSON.stringify(result.data));
+          localStorage.setItem('scopedash_data_timestamp', new Date().toISOString());
+          console.log('Data refreshed and saved to localStorage');
+          
           alert(`Successfully refreshed ${videoCount} videos!`);
         } else {
           alert('Refresh completed but no new videos found. Check your profiles and API key.');

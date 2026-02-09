@@ -10,21 +10,32 @@ class PersistentStorage {
   }
 
   async saveData(data: TikTokData): Promise<void> {
-    // Save to localStorage for immediate persistence
+    // Save to localStorage immediately if in browser
     if (typeof window !== 'undefined') {
-      localStorage.setItem('scopedash_data', JSON.stringify(data));
-      localStorage.setItem('scopedash_data_timestamp', new Date().toISOString());
+      try {
+        localStorage.setItem('scopedash_data', JSON.stringify(data));
+        localStorage.setItem('scopedash_data_timestamp', new Date().toISOString());
+        console.log('Data saved to localStorage');
+      } catch (error) {
+        console.warn('Failed to save to localStorage:', error);
+      }
     }
 
-    // Also save to API endpoint for sharing between sessions/devices
+    // Save to API endpoint for server persistence
     try {
-      await fetch('/api/persist', {
+      const response = await fetch('/api/persist', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ data, timestamp: new Date().toISOString() })
       });
+      
+      if (response.ok) {
+        console.log('Data saved to server memory');
+      } else {
+        console.warn('Failed to save to server memory:', response.status);
+      }
     } catch (error) {
-      console.warn('Failed to persist to API, using localStorage only:', error);
+      console.warn('Failed to persist to API:', error);
     }
   }
 
