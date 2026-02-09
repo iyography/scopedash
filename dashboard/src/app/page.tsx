@@ -587,7 +587,18 @@ export default function Page() {
 
   useEffect(() => {
     setMounted(true);
-    fetch("/data.json").then(r => r.json()).then(setData).finally(() => setLoading(false));
+    // Use new API endpoint that handles both database and file fallback
+    fetch("/api/data")
+      .then(r => r.json())
+      .then(result => {
+        if (result.success) {
+          setData(result.data);
+          console.log('Data loaded from:', result.source);
+        } else {
+          console.error('Failed to load data:', result.error);
+        }
+      })
+      .finally(() => setLoading(false));
     
     // Load saved API key immediately
     const savedApiKey = localStorage.getItem('apify_api_key');
