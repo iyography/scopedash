@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { ApifyClient } from 'apify-client';
-import { supabase, type TikTokData } from '../../../../lib/supabase';
+import { storage, type TikTokData } from '../../../../lib/supabase';
 import fs from 'fs';
 import path from 'path';
 
@@ -196,67 +196,23 @@ export async function POST(request: Request) {
 
         const transformedData = transformData(allItems);
 
-        // Save the data to both database and file (for backward compatibility)
+        // Save the data using our simple persistent storage
         if (Object.keys(transformedData.profiles).length > 0 || transformedData.all_videos.length > 0) {
             try {
-                // Save to Supabase database
-                const { data: existingData } = await supabase
-                    .from('tiktok_data')
-                    .select('*')
-                    .order('created_at', { ascending: false })
-                    .limit(1)
-                    .single();
+                // Save using localStorage + in-memory storage
+                await storage.saveData(transformedData);
+                console.log('Successfully saved data to persistent storage');
 
-                // Create backup of existing data
-                if (existingData) {
-                    await supabase
-                        .from('tiktok_data_backups')
-                        .insert({
-                            data: existingData.data,
-                            created_at: existingData.created_at
-                        });
-                    console.log('Created database backup');
-                }
-
-                // Save new data
-                const { error: insertError } = await supabase
-                    .from('tiktok_data')
-                    .upsert({
-                        id: 'current',
-                        data: transformedData,
-                        updated_at: new Date().toISOString()
-                    });
-
-                if (insertError) {
-                    console.error('Failed to save to database:', insertError);
-                } else {
-                    console.log('Successfully saved data to database');
-                }
-
-                // Also save to file for backward compatibility (but don't fail if it doesn't work in production)
+                // Also try to save to file for local development
                 try {
                     const publicDataPath = path.join(process.cwd(), 'public/data.json');
                     fs.writeFileSync(publicDataPath, JSON.stringify(transformedData, null, 2), 'utf8');
-                    console.log('Also saved to public/data.json for compatibility');
+                    console.log('Also saved to public/data.json for local development');
                 } catch (fileError) {
                     console.warn('Failed to save to file (expected in production):', fileError.message);
                 }
 
                 console.log(`Profiles: ${Object.keys(transformedData.profiles).length}, Videos: ${transformedData.all_videos.length}`);
-
-                // Clean up old backups (keep only last 5)
-                const { data: backups } = await supabase
-                    .from('tiktok_data_backups')
-                    .select('id')
-                    .order('created_at', { ascending: false })
-                    .range(5, 100);
-
-                if (backups && backups.length > 0) {
-                    await supabase
-                        .from('tiktok_data_backups')
-                        .delete()
-                        .in('id', backups.map(b => b.id));
-                }
 
             } catch (saveError) {
                 console.error('Failed to save data:', saveError);

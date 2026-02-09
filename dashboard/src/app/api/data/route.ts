@@ -1,29 +1,24 @@
 import { NextResponse } from 'next/server';
-import { supabase } from '../../../../lib/supabase';
+import { storage } from '../../../../lib/supabase';
 import fs from 'fs';
 import path from 'path';
 
 export async function GET() {
     try {
-        // Try to get data from database first
-        const { data: dbData, error: dbError } = await supabase
-            .from('tiktok_data')
-            .select('data, updated_at')
-            .eq('id', 'current')
-            .single();
-
-        if (dbData && !dbError) {
-            console.log('Successfully loaded data from database');
+        // Try to load from persistent storage first
+        const persistedData = await storage.loadData();
+        
+        if (persistedData) {
+            console.log('Successfully loaded data from persistent storage');
             return NextResponse.json({
                 success: true,
-                data: dbData.data,
-                source: 'database',
-                updated_at: dbData.updated_at
+                data: persistedData,
+                source: 'persistent_storage'
             });
         }
 
-        // Fallback to file system if database is not available
-        console.log('Database not available, trying file system fallback...');
+        // Fallback to file system if persistent storage is not available
+        console.log('Persistent storage not available, trying file system fallback...');
         const publicDataPath = path.join(process.cwd(), 'public/data.json');
         
         if (fs.existsSync(publicDataPath)) {
@@ -32,8 +27,7 @@ export async function GET() {
             return NextResponse.json({
                 success: true,
                 data: fileData,
-                source: 'file',
-                updated_at: null
+                source: 'file'
             });
         }
 

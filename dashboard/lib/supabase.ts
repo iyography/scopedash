@@ -1,9 +1,64 @@
-import { createClient } from '@supabase/supabase-js'
+// Simple persistent storage utility using localStorage and API endpoint
+class PersistentStorage {
+  private static instance: PersistentStorage;
+  
+  public static getInstance(): PersistentStorage {
+    if (!PersistentStorage.instance) {
+      PersistentStorage.instance = new PersistentStorage();
+    }
+    return PersistentStorage.instance;
+  }
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!
-const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+  async saveData(data: TikTokData): Promise<void> {
+    // Save to localStorage for immediate persistence
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('scopedash_data', JSON.stringify(data));
+      localStorage.setItem('scopedash_data_timestamp', new Date().toISOString());
+    }
 
-export const supabase = createClient(supabaseUrl, supabaseKey)
+    // Also save to API endpoint for sharing between sessions/devices
+    try {
+      await fetch('/api/persist', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ data, timestamp: new Date().toISOString() })
+      });
+    } catch (error) {
+      console.warn('Failed to persist to API, using localStorage only:', error);
+    }
+  }
+
+  async loadData(): Promise<TikTokData | null> {
+    // Try to load from API first
+    try {
+      const response = await fetch('/api/persist');
+      if (response.ok) {
+        const result = await response.json();
+        if (result.success && result.data) {
+          return result.data;
+        }
+      }
+    } catch (error) {
+      console.warn('Failed to load from API, trying localStorage:', error);
+    }
+
+    // Fallback to localStorage
+    if (typeof window !== 'undefined') {
+      const stored = localStorage.getItem('scopedash_data');
+      if (stored) {
+        try {
+          return JSON.parse(stored);
+        } catch (error) {
+          console.warn('Failed to parse localStorage data:', error);
+        }
+      }
+    }
+
+    return null;
+  }
+}
+
+export const storage = PersistentStorage.getInstance();
 
 export interface TikTokData {
   id?: string
