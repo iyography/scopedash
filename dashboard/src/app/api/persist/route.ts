@@ -1,29 +1,52 @@
 import { NextResponse } from 'next/server';
+import { serverStorage } from '../../../../lib/server-storage';
 
 // In-memory storage (will reset on deployment, but better than files)
-let storedData: any = null;
+let storedData: object | null = null;
 let lastUpdated: string | null = null;
+let storedChannels: string[] = [
+    "matchupvault",
+    "wrestler.trivia",
+    "callthemoment",
+    "street.slamdown",
+    "ragequitguy",
+    "celebolution",
+    "nearmiss529",
+    "arena.fever"
+];
+let channelsLastUpdated: string | null = null;
 
 export async function POST(request: Request) {
     try {
         const body = await request.json();
-        const { data, timestamp } = body;
+        const { data, timestamp, channels } = body;
 
-        if (!data) {
+        if (!data && !channels) {
             return NextResponse.json(
-                { success: false, error: 'No data provided' },
+                { success: false, error: 'No data or channels provided' },
                 { status: 400 }
             );
         }
 
-        // Store in memory
-        storedData = data;
-        lastUpdated = timestamp || new Date().toISOString();
+        // Store data in memory
+        if (data) {
+            storedData = data;
+            lastUpdated = timestamp || new Date().toISOString();
+        }
+
+        // Store channels in server storage
+        if (channels) {
+            serverStorage.setChannels(channels);
+            storedChannels = channels;
+            channelsLastUpdated = new Date().toISOString();
+        }
 
         return NextResponse.json({
             success: true,
-            message: 'Data persisted successfully',
-            timestamp: lastUpdated
+            message: data && channels ? 'Data and channels persisted successfully' : 
+                     data ? 'Data persisted successfully' : 'Channels persisted successfully',
+            timestamp: lastUpdated,
+            channelsTimestamp: channelsLastUpdated
         });
 
     } catch (error) {
@@ -39,17 +62,12 @@ export async function POST(request: Request) {
 
 export async function GET() {
     try {
-        if (!storedData) {
-            return NextResponse.json({
-                success: false,
-                error: 'No data available'
-            }, { status: 404 });
-        }
-
         return NextResponse.json({
             success: true,
             data: storedData,
-            timestamp: lastUpdated
+            channels: serverStorage.getChannels(),
+            timestamp: lastUpdated,
+            channelsTimestamp: channelsLastUpdated
         });
 
     } catch (error) {

@@ -1,22 +1,13 @@
 import { NextResponse } from 'next/server';
 import { ApifyClient } from 'apify-client';
-import { storage, type TikTokData } from '../../../../lib/supabase';
+import { storage } from '../../../../lib/supabase';
+import { serverStorage } from '../../../../lib/server-storage';
 import fs from 'fs';
 import path from 'path';
 
 // Allow up to 5 minutes for Apify scraping (requires Vercel Pro for >60s)
 export const maxDuration = 300;
 
-const PROFILES = [
-    "matchupvault",
-    "wrestler.trivia",
-    "callthemoment",
-    "street.slamdown",
-    "ragequitguy",
-    "celebolution",
-    "nearmiss529",
-    "arena.fever"
-];
 
 const BASE_ACTOR_INPUT = {
     excludePinnedPosts: false,
@@ -77,7 +68,7 @@ async function fetchSingleProfile(client: ApifyClient, profile: string): Promise
     }
 }
 
-function transformData(items: ApifyItem[]) {
+function transformData(items: ApifyItem[], profileCount: number) {
     const processedData: {
         metadata: { last_updated: string; profile_count: number };
         profiles: Record<string, {
@@ -113,7 +104,7 @@ function transformData(items: ApifyItem[]) {
     } = {
         metadata: {
             last_updated: new Date().toISOString(),
-            profile_count: PROFILES.length
+            profile_count: profileCount
         },
         profiles: {},
         all_videos: []
@@ -171,11 +162,16 @@ export async function POST(request: Request) {
     try {
         const body = await request.json();
         apiKey = body.apiKey || process.env.APIFY_API_KEY;
+        console.log('🔑 API Key from request body:', body.apiKey ? 'PRESENT' : 'MISSING');
+        console.log('🔑 API Key from env:', process.env.APIFY_API_KEY ? 'PRESENT' : 'MISSING');
+        console.log('🔑 Final API Key used:', apiKey ? `${apiKey.substring(0, 8)}...` : 'NONE');
     } catch {
         apiKey = process.env.APIFY_API_KEY || '';
+        console.log('🔑 Using env API key only:', apiKey ? `${apiKey.substring(0, 8)}...` : 'NONE');
     }
 
     if (!apiKey) {
+        console.log('❌ No API key provided - returning error');
         return NextResponse.json(
             { success: false, error: 'APIFY_API_KEY not provided. Please set your API key in Settings.' },
             { status: 400 }
@@ -184,8 +180,11 @@ export async function POST(request: Request) {
 
     try {
         console.log("Starting Apify refresh...");
+        console.log('🚀 Creating Apify client with token:', apiKey ? `${apiKey.substring(0, 8)}...${apiKey.substring(apiKey.length-4)}` : 'NONE');
         const client = new ApifyClient({ token: apiKey });
 
+        const PROFILES = serverStorage.getChannels();
+        
         // Fetch all profiles in parallel
         const results = await Promise.all(
             PROFILES.map(profile => fetchSingleProfile(client, profile))
@@ -194,7 +193,7 @@ export async function POST(request: Request) {
         const allItems = results.flat();
         console.log(`Total items fetched: ${allItems.length}`);
 
-        const transformedData = transformData(allItems);
+        const transformedData = transformData(allItems, PROFILES.length);
 
         // Save the data using our simple persistent storage
         if (Object.keys(transformedData.profiles).length > 0 || transformedData.all_videos.length > 0) {
