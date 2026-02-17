@@ -12,7 +12,8 @@ let storedChannels: string[] = [
     "ragequitguy",
     "celebolution",
     "nearmiss529",
-    "arena.fever"
+    "arena.fever",
+    "slidernightmare"
 ];
 let channelsLastUpdated: string | null = null;
 

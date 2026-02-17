@@ -9,7 +9,8 @@ class ServerStorage {
     "ragequitguy",
     "celebolution",
     "nearmiss529",
-    "arena.fever"
+    "arena.fever",
+    "slidernightmare"
   ];
 
   public static getInstance(): ServerStorage {

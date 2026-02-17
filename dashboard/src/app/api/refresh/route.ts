@@ -185,10 +185,24 @@ export async function POST(request: Request) {
 
         const PROFILES = serverStorage.getChannels();
         
-        // Fetch all profiles in parallel
-        const results = await Promise.all(
-            PROFILES.map(profile => fetchSingleProfile(client, profile))
-        );
+        // Process profiles in smaller batches to avoid memory limits
+        const batchSize = 3; // Process 3 profiles at a time
+        const results: ApifyItem[][] = [];
+        
+        for (let i = 0; i < PROFILES.length; i += batchSize) {
+            const batch = PROFILES.slice(i, i + batchSize);
+            console.log(`Processing batch ${Math.floor(i/batchSize) + 1}/${Math.ceil(PROFILES.length/batchSize)}: ${batch.join(', ')}`);
+            
+            const batchResults = await Promise.all(
+                batch.map(profile => fetchSingleProfile(client, profile))
+            );
+            results.push(...batchResults);
+            
+            // Small delay between batches to help with memory management
+            if (i + batchSize < PROFILES.length) {
+                await new Promise(resolve => setTimeout(resolve, 2000));
+            }
+        }
 
         const allItems = results.flat();
         console.log(`Total items fetched: ${allItems.length}`);
